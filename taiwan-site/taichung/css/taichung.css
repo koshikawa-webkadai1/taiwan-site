@@ -36,11 +36,10 @@ header div.kasou div img.header-rogo2 {
 
 header p {
     width: 247px;
-    /* 247/375=0.658 */
     color: #FFFFFF;
     font-size: 12px;
     line-height: 1.6em;
-    /* 19.2/12= */
+    /* 19.2/12=1.6 */
     margin-left: auto;
     margin-right: 0px;
 
