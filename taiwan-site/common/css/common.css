@@ -1,25 +1,32 @@
 @charset "utf-8";
 
+/* 共通フォント */
+body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
 /* 共有部分footer */
 
-footer{
+footer {
   background-color: #007AB7;
   text-align: center;
-  padding:20px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
-footer ul{
-margin-left: 31%;
+
+footer ul {
+  margin-left: 31%;
 }
-footer li{
+
+footer li {
   color: #fff;
-  width:53%;
+  width: 53%;
   text-align: left;
   border-bottom: 1px solid #fff;
-  padding:20px 0 8px 0;
+  padding: 20px 0 8px 0;
 }
-footer small{
+
+footer small {
   display: block;
   color: #fff;
   margin-top: 20px;
 }
-
