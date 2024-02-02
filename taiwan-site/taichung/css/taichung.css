@@ -1,31 +1,32 @@
 @charset "UTF-8";
 
 header {
-    height: 100vh;
+    /* height: 100vh; */
     background: url(../image/taichung_top_bg.jpg) no-repeat bottom/cover;
     object-fit: contain;
 }
 
-header div {
-    margin: 8px;
-    hi
+header div.kasou {
+    padding: 8px;
+    /* width: 100%; */
+    /* height: 100%; */
 }
 
-header div img.header-rogo1 {
+header div.kasou img.header-rogo1 {
     width: 30%;
     /*111/375= 0.296*/
     opacity: 45%;
 
 }
 
-header div div {
+header div.kasou div {
     display: flex;
     justify-content: center;
 }
 
 
 
-header div div img.header-rogo2 {
+header div.kasou div img.header-rogo2 {
     width: 53%;
     /*  199/375=0.53 */
     margin: 67px 0 109.4px;
