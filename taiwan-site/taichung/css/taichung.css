@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+/* header */
 header {
     /* height: 100vh; */
     background: url(../image/taichung_top_bg.jpg) no-repeat bottom/cover;
@@ -35,7 +37,7 @@ header div.kasou div img.header-rogo2 {
 }
 
 header p {
-    width: 66%;
+    width: 247px;
     /* 247/375=0.658 */
     color: #FFFFFF;
     font-size: 12px;
