@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 共有部分footer */
+
+footer{
+  background-color: #007AB7;
+  text-align: center;
+  padding-bottom:20px;
+}
+footer ul{
+margin-left: 31%;
+}
+footer li{
+  color: #fff;
+  width:53%;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  padding:20px 0 8px 0;
+}
+footer small{
+  display: block;
+  color: #fff;
+  margin-top: 20px;
+}
+
