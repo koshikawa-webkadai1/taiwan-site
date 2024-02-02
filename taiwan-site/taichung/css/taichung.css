@@ -26,7 +26,6 @@ header div.kasou div {
 }
 
 
-
 header div.kasou div img.header-rogo2 {
     width: 53%;
     /*  199/375=0.53 */
@@ -37,11 +36,10 @@ header div.kasou div img.header-rogo2 {
 
 header p {
     width: 247px;
-    /* 247/375=0.658 */
     color: #FFFFFF;
     font-size: 12px;
     line-height: 1.6em;
-    /* 19.2/12= */
+    /* 19.2/12=1.6 */
     margin-left: auto;
     margin-right: 0px;
 
@@ -55,14 +53,21 @@ header p {
 /* background: rgba(0, 0, 0, 1); */
 /* } */
 
-nav {
+nav div.nav {
     position: fixed;
     right: 0;
     top: 0;
     width: 100%;
     z-index: 99;
 
-    background: aqua;
+    /* background: rgba(0, 0, 0, 0.7); */
+}
+
+nav img {
+    width: 30%;
+    /*111/375= 0.296*/
+
+
 }
 
 nav input.menu-botan {
@@ -114,14 +119,15 @@ nav label.menu-icon span.nav-icon::after {
 
 nav ul.nav-menu {
     width: 100%;
-    background: #242424;
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
-    /* max-height: 0; */
+    max-height: 0;
     margin: 0;
     overflow: hidden;
     transition: max-height 0.6s;
     height: 667px;
 }
+
 
 nav ul.nav-menu li:first-of-type {
     padding-top: 50px;
@@ -142,7 +148,7 @@ nav ul.nav-menu li a:hover {
     color: black;
 }
 
-nav input.menu-botan:checked~.menu {
+nav input.menu-botan:checked~ul.nav-menu {
     /* メニューボタンをチェックした際の設定 */
     max-height: 667px;
     /* 最大高さ設定 */
