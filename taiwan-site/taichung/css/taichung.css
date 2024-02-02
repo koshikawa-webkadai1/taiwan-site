@@ -10,8 +10,7 @@ header {
 
 header div.kasou {
     padding: 8px;
-    /* width: 100%; */
-    /* height: 100%; */
+    /* background-color: blueviolet; */
 }
 
 header div.kasou img.header-rogo1 {
@@ -49,7 +48,7 @@ header p {
 }
 
 
-/* ナビ作成 */
+/* ナビ作成 共通 */
 /* div.nav-icon-bg { */
 /* width: 200px; */
 /* height: 48px; */
@@ -57,9 +56,9 @@ header p {
 /* } */
 
 nav {
-    /* position: fixed; */
-    /* right: 0; */
-    /* top: 0; */
+    position: fixed;
+    right: 0;
+    top: 0;
     width: 100%;
     z-index: 99;
 
@@ -67,7 +66,7 @@ nav {
 }
 
 nav input.menu-botan {
-    /* display: none; */
+    display: none;
 }
 
 nav label.menu-icon {
@@ -83,7 +82,7 @@ nav label.menu-icon span.nav-icon {
     display: block;
     width: 32px;
     height: 2px;
-    /* background: #ffffff; */
+    background: #ffffff;
 
     position: relative;
     transition: background .4s ease-out;
@@ -97,7 +96,7 @@ nav label.menu-icon span.nav-icon::after {
     display: block;
     width: 70%;
     height: 100%;
-    /* background: #ffffff; */
+    background: #ffffff;
 
     position: absolute;
     transition: all .4s ease-out;
@@ -115,18 +114,21 @@ nav label.menu-icon span.nav-icon::after {
 
 nav ul.nav-menu {
     width: 100%;
-    background: #FFFFFF;
+    background: #242424;
     text-align: center;
     /* max-height: 0; */
     margin: 0;
     overflow: hidden;
     transition: max-height 0.6s;
-    height: 50px;
+    height: 667px;
 }
 
 nav ul.nav-menu li:first-of-type {
     padding-top: 50px;
-    /* color: #FFFFFF; */
+}
+
+nav ul.nav-menu li {
+    color: #FFFFFF;
 }
 
 nav ul.nav-menu li a {
@@ -136,12 +138,13 @@ nav ul.nav-menu li a {
 
 nav ul.nav-menu li a:hover {
     /* ナビメニューの項目にカーソルを合わせたときの設定 */
-    /* background: rgb(255, 255, 91); */
+    background: rgb(255, 255, 91);
+    color: black;
 }
 
 nav input.menu-botan:checked~.menu {
     /* メニューボタンをチェックした際の設定 */
-    max-height: 532px;
+    max-height: 667px;
     /* 最大高さ設定 */
 }
 
@@ -152,12 +155,16 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon {
 
 }
 
-nav input.menu-botan:checked~label.nav-icon span.nav-icon::before {
+nav input.menu-botan:checked~label.menu-icon span.nav-icon::before {
     transform: rotate(-45deg);
     top: 0;
+    width: 99%;
+    /* 40:56.57=70:X 比率の計算 */
+    /* 70*56.57/40=99% */
 }
 
-nav input.menu-botan:checked~label.nav-icon span.nav-icon::after {
+nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
     transform: rotate(45deg);
     top: 0;
+    width: 99%;
 }
