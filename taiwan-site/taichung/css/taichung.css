@@ -1,1 +1,5 @@
 @charset "UTF-8";
+
+header {
+    background: url(../image/taichung_top_bg.jpg) no-repeat;
+}

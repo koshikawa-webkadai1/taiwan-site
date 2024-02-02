@@ -17,6 +17,19 @@ footer ul {
   margin-left: 31%;
 }
 
+#footer-div {
+  display: block;
+}
+
+#kokki-ikon {
+  width: 38px;
+  height: 24px;
+}
+
+footer ul {
+  margin-left: 31%;
+}
+
 footer li {
   color: #fff;
   width: 53%;
@@ -29,4 +42,42 @@ footer small {
   display: block;
   color: #fff;
   margin-top: 20px;
+}
+
+footer div {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+footer .snslink {
+  display: block;
+  width: 38px;
+  margin: 20px 10px 0 10px;
+}
+
+footer .snsicon {
+  display: block;
+  width: 38px;
+}
+
+footer small {
+  display: block;
+  color: #fff;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  footer {
+    max-width: 1366px;
+  }
+
+  footer ul {
+    margin-left: 7%;
+  }
+
+  footer li {
+    width: 26%;
+  }
+
 }
