@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 
+body {
+    max-width: 1366px;
+}
+
 /* header */
 header {
     /* height: 100vh; */
@@ -47,11 +51,16 @@ header p {
 
 
 /* ナビ作成 共通 */
-/* div.nav-icon-bg { */
-/* width: 200px; */
-/* height: 48px; */
-/* background: rgba(0, 0, 0, 1); */
-/* } */
+div.nav-icon-bg {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.5);
+}
 
 nav div.nav {
     position: fixed;
@@ -76,8 +85,8 @@ nav input.menu-botan {
 
 nav label.menu-icon {
     position: absolute;
-    right: 5px;
-    top: 10px;
+    right: 8px;
+    top: 17.5px;
     padding-top: 5px;
     height: 12px;
     cursor: pointer;
@@ -128,9 +137,16 @@ nav ul.nav-menu {
     height: 667px;
 }
 
+nav ul.nav-menu li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 0;
+}
+
 
 nav ul.nav-menu li:first-of-type {
-    padding-top: 50px;
+    padding-top: 120px;
 }
 
 nav ul.nav-menu li {
@@ -148,7 +164,7 @@ nav ul.nav-menu li a:hover {
     color: black;
 }
 
-nav input.menu-botan:checked~ul.nav-menu {
+nav input.menu-botan:checked~ul.nav-menu ul.nav-menu li img {
     /* メニューボタンをチェックした際の設定 */
     max-height: 667px;
     /* 最大高さ設定 */
@@ -164,6 +180,7 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon {
 nav input.menu-botan:checked~label.menu-icon span.nav-icon::before {
     transform: rotate(-45deg);
     top: 0;
+    right: 0.5px;
     width: 99%;
     /* 40:56.57=70:X 比率の計算 */
     /* 70*56.57/40=99% */
@@ -172,5 +189,6 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::before {
 nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
     transform: rotate(45deg);
     top: 0;
+    right: 0.5px;
     width: 99%;
 }
