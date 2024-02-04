@@ -203,3 +203,113 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
     right: 0.5px;
     width: 99%;
 }
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    header div.kasou {
+        padding: 0 83px;
+        position: relative;
+    }
+
+    /* ナビ作成 共通 */
+    div.nav-icon-bg {
+        position: none;
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+        background: transparent;
+    }
+
+    nav div.nav {
+        display: none;
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        width: 100%;
+        height: 58px;
+        position: relative;
+    }
+
+    nav img {
+        display: none;
+
+    }
+
+    nav input.menu-botan {
+        display: none;
+    }
+
+    nav label.menu-icon {
+        position: none;
+        padding-top: 0px;
+        height: 0px;
+        cursor: none;
+    }
+
+    nav label.menu-icon span.nav-icon {
+        display: none;
+        width: 0px;
+        height: 0px;
+        background: #ffffff;
+
+        position: relative;
+        transition: background .4s ease-out;
+
+    }
+
+    nav ul.nav-menu {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        background: rgba(0, 0, 0, 0);
+        text-align: center;
+        max-height: none;
+        overflow: none;
+        transition: none;
+
+        height: 56px;
+
+        text-transform: uppercase;
+        text-decoration-line: none;
+
+        position: absolute;
+        /* top: 0px; */
+        /* right: 0px; */
+    }
+
+    nav ul.nav-menu li img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-height: 0;
+    }
+
+
+    nav ul.nav-menu li:first-of-type {
+        padding-top: 120px;
+    }
+
+    nav ul.nav-menu li {
+        color: #FFFFFF;
+    }
+
+    nav ul.nav-menu li a {
+        display: block;
+        padding: 24px 20px;
+    }
+
+
+
+
+
+
+
+
+}
