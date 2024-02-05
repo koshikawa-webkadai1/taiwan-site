@@ -54,6 +54,10 @@ body {
   transition: opacity 2000ms;
 }
 
+/* ローディングpc */
+.loading img {
+  width: 318px;
+}
 /* *********************************************** */
 
 
@@ -61,7 +65,7 @@ body {
 
 
 
-/* モーダルウィンドウ!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* モーダルウィンドウ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 #modal-openbutton {
   position: fixed;
   border: 2px solid #ff7b00;
@@ -88,7 +92,22 @@ body {
   opacity: 1;
   visibility: visible;
 }
+/* アニメーション変更場所（設定自由です）************** */
+.Opening {
+  visibility: visible;
+  animation: modalanime forwards 0.5s ease-in 0s 1;
+}
 
+@keyframes modalanime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* --------------------------------------------------- */
 /* 閉じるボタンdiv */
 .modalclose {
   position: absolute;
@@ -326,9 +345,5 @@ footer small {
   }
 }
 
-/* ローディングpc */
-.loading img {
-  width: 318px;
-}
 
-/* ************* */
+/* ********************************************************/
