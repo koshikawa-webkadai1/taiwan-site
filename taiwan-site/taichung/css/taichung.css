@@ -1,5 +1,66 @@
 @charset "UTF-8";
 
+/* *********************************************** */
+/* ローディング***javascriptのパターンのcss */
+/* *********************************************** */
+
+.loading {
+    background-color: #0180BE;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading img {
+    width: 287px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: img_fade 2.0s 0.5s forwards;
+}
+
+@keyframes img_fade {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ローディングが終わったらhideクラスを付与 */
+.loading.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 2000ms;
+}
+
+/* ローディングpc */
+.loading img {
+    width: 318px;
+}
+
+/* *********************************************** */
+
+
+
+
+
+
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
 }
@@ -216,6 +277,100 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 /* ---ナビ作成 共通--- */
 
 /* --------------------header-------------------- */
+
+
+/* モーダルウィンドウ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+#modal-openbutton {
+    position: fixed;
+    border: 2px solid #ff7b00;
+    width: 120px;
+    height: 36px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    /* ----------------モーダル背景色変更場所------------------------- */
+
+    /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* アニメーション変更場所（設定自由です）************** */
+.Opening {
+    visibility: visible;
+    animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------------------- */
+/* 閉じるボタンdiv */
+.modalclose {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 99%;
+    width: 1px;
+    height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: 45deg;
+}
+
+.modalclose::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: -12px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身変更場所SP--------------- */
+.modal img {
+    width: 280px;
+    height: 280px;
+    margin-top: 80px;
+    box-shadow: 10px 10px 12px 4px #ccc;
+}
+
+/* ----------------------------------------------------------------
+    spモーダルコンテンツSP版の上部マージンは80px */
+
 
 
 /* --------------------main-------------------- */
@@ -485,7 +640,15 @@ footer small {
     /* ---ナビ作成 共通--- */
     /* --------------------header-------------------- */
 
+    /* ------------------- モーダルの中身変更場所PC-------------------*/
+    .modal img {
+        margin-top: 120px;
+        width: 33%;
+        height: auto;
+    }
 
+    /* -------------------------------------------------------------- 
+pcモーダルコンテンツPC版の上部マージンは120px*/
 
     /* --------------------main-------------------- */
     main div.kasou {
