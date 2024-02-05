@@ -7,9 +7,8 @@ body {
 
 /* header */
 header {
-    /* height: 100vh; */
-    background: url(../image/taichung_top_bg.jpg) no-repeat bottom/cover;
-    object-fit: contain;
+    background: url(../image/taichung_top_bg.jpg) no-repeat center /cover;
+    /* height: 100%; */
 }
 
 header div.kasou {
@@ -156,6 +155,7 @@ nav ul.nav-menu li:first-of-type {
 
 nav ul.nav-menu li {
     color: #FFFFFF;
+    font-size: 20px;
 }
 
 nav ul.nav-menu li a {
@@ -211,10 +211,24 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 
 @media (min-width: 768px) {
 
+    header {
+        height: 60vh;
+    }
+
     header div.kasou {
         padding: 0 83px;
         position: relative;
     }
+
+    header div.kasou img.header-rogo1 {
+        width: 30%;
+        /*140/375= 0.296*/
+        opacity: 45%;
+        margin-top: 20px;
+
+    }
+
+
 
     /* ナビ作成 共通 */
     div.nav-icon-bg {
@@ -230,11 +244,11 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
         position: absolute;
 
         top: 0;
-        right: 0;
+        right: 6%;
 
         width: 100%;
         height: 58px;
-        position: relative;
+        margin-top: 20px;
     }
 
     nav img {
@@ -280,8 +294,8 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
         text-decoration-line: none;
 
         position: absolute;
-        /* top: 0px; */
-        /* right: 0px; */
+        top: 0px;
+        right: 0px;
     }
 
     nav ul.nav-menu li img {
@@ -293,16 +307,17 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 
 
     nav ul.nav-menu li:first-of-type {
-        padding-top: 120px;
+        padding-top: 0px;
     }
 
     nav ul.nav-menu li {
         color: #FFFFFF;
+        font-size: 24px;
     }
 
     nav ul.nav-menu li a {
         display: block;
-        padding: 24px 20px;
+        padding: 0px 20px;
     }
 
 
