@@ -56,7 +56,101 @@ body {
 
 /* *********************************************** */
 
-/* 共有部分footer */
+
+
+
+
+
+/* モーダルウィンドウ!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+#modal-openbutton {
+  position: fixed;
+  border: 2px solid #ff7b00;
+  width: 120px;
+  height: 36px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  /* ----------------モーダル背景色変更場所------------------------- */
+
+  /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 閉じるボタンdiv */
+.modalclose {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 99%;
+  width: 1px;
+  height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: 45deg;
+}
+
+.modalclose::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身変更場所SP--------------- */
+.modal img {
+  width: 280px;
+  height: 280px;
+  margin-top: 80px;
+  box-shadow: 10px 10px 12px 4px #ccc;
+}
+
+/* ----------------------------------------------------------------
+  spモーダルコンテンツSP版の上部マージンは80px */
+
+@media screen and (min-width: 767px) {
+
+  /* ------------------- モーダルの中身変更場所PC-------------------*/
+  .modal img {
+    margin-top: 120px;
+    width: 33%;
+    height: auto;
+  }
+  /* -------------------------------------------------------------- 
+pcモーダルコンテンツPC版の上部マージンは120px*/
+}
+
+
+
+/* 共有部分footer!!!!!!!!!!!!!!!!!!!!! ***************************/
 
 footer {
   background-color: #007AB7;
@@ -230,8 +324,6 @@ footer small {
   footer li {
     width: 26%;
   }
-
-
 }
 
 /* ローディングpc */

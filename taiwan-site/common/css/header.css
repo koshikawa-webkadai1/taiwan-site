@@ -213,15 +213,6 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 /* ---ナビ作成 共通--- */
 /* -----header----- */
 
-/* -----main----- */
-
-main nav ul {
-    display: flex;
-}
-
-
-/* -----main----- */
-
 
 
 
@@ -367,7 +358,3 @@ main nav ul {
 
 /* ---ナビ作成 共通--- */
 /* -----header----- */
-
-/* -----main----- */
-
-/* -----main----- */
