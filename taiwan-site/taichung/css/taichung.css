@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-/* -----header----- */
+/* --------------------header-------------------- */
 header {
 
     /* ※背景画像の変更場所※ */
@@ -211,21 +211,36 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 }
 
 /* ---ナビ作成 共通--- */
-/* -----header----- */
 
-/* -----main----- */
+/* --------------------header-------------------- */
 
+
+/* --------------------main-------------------- */
+main div.kasou {
+    padding: 8px;
+}
+
+/* ---パンくず--- */
 main nav ul {
     display: flex;
 }
 
+main nav ul li.previous-screen {
+    text-transform: capitalize;
+    text-decoration-line: underline;
 
-/* -----main----- */
+    margin-right: 4px;
+}
+
+/* ---パンくず--- */
+
+
+/* --------------------main-------------------- */
 
 
 
 
-/* -----header----- */
+/* --------------------header-------------------- */
 @media (min-width: 768px) {
 
     /* ※背景画像の変更場所※ */
@@ -363,11 +378,20 @@ main nav ul {
         display: block;
         padding: 16px 20px;
     }
+
+    /* ---ナビ作成 共通--- */
+    /* --------------------header-------------------- */
+
+
+
+    /* --------------------main-------------------- */
+    main div.kasou {
+        padding: 0 83px;
+    }
+
+
+
+    /* --------------------main-------------------- */
+
+
 }
-
-/* ---ナビ作成 共通--- */
-/* -----header----- */
-
-/* -----main----- */
-
-/* -----main----- */
