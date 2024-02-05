@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
 
 /* --------------------header-------------------- */
 header {
@@ -237,11 +240,111 @@ main nav ul li.previous-screen {
 
 /* --------------------main-------------------- */
 
+/* 共有部分footer!!!!!!!!!!!!!!!!!!!!! ***************************/
+
+footer {
+    background-color: #007AB7;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+#footer-div {
+    display: block;
+}
+
+#kokki-ikon {
+    width: 38px;
+    height: 24px;
+}
+
+footer ul {
+    margin-left: 31%;
+}
+
+footer li {
+    color: #fff;
+    width: 23%;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    padding: 20px 0 8px 0;
+}
+
+#footer-tiwandiv {
+    display: none
+}
+
+footer div {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+footer .snslink {
+    display: block;
+    width: 38px;
+    margin: 20px 10px 0 10px;
+}
+
+footer .snsicon {
+    display: block;
+    width: 38px;
+    padding: 20px 0 20px 0;
+}
+
+
+
+#footer-div {
+    display: block;
+}
+
+#kokki-ikon {
+    width: 38px;
+    height: 24px;
+}
+
+footer li {
+    color: #fff;
+    width: 53%;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    padding: 20px 0 8px 0;
+}
+
+footer small {
+    display: block;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer div {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+footer .snslink {
+    display: block;
+    width: 38px;
+    margin: 20px 10px 0 10px;
+}
+
+footer .snsicon {
+    display: block;
+    width: 38px;
+}
+
+footer small {
+    display: block;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
 
 
 
 /* --------------------header-------------------- */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
 
     /* ※背景画像の変更場所※ */
     header {
@@ -394,4 +497,82 @@ main nav ul li.previous-screen {
     /* --------------------main-------------------- */
 
 
+    /* --------------------footer--------------------  */
+    footer {
+        max-width: 1366px;
+    }
+
+    #kokki-ikon {
+        width: 64px;
+        height: 48px;
+        margin-bottom: 13px;
+    }
+
+    footer ul {
+        margin-left: 7%;
+    }
+
+    footer small {
+        position: relative;
+    }
+
+    #footer-tiwandiv {
+        display: block;
+        width: 20px;
+        position: relative;
+        background-color: #007AB7;
+        height: 1px;
+        left: 50%
+    }
+
+    #footer-tiwanicon {
+        position: absolute;
+        right: -90px;
+        bottom: 0px;
+    }
+
+    #footer-snsdiv {
+        position: relative;
+        height: 0.5px;
+        left: 99%;
+        width: 100%;
+    }
+
+    footer #snslink1 {
+        position: absolute;
+        right: 240px;
+        top: -80px;
+        width: 100%;
+        height: 100px;
+        ;
+    }
+
+    footer #snslink2 {
+        position: absolute;
+        right: 180px;
+        top: -80px;
+        width: 100%;
+        height: 100px;
+        ;
+    }
+
+    footer #snslink3 {
+        position: absolute;
+        right: 120px;
+        top: -80px;
+        width: 100%;
+        height: 100px;
+        ;
+    }
+
+    footer ul {
+        margin-left: 7%;
+    }
+
+    footer li {
+        width: 26%;
+    }
 }
+
+
+/* ********************************************************/
