@@ -4,15 +4,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-.loading {
-  width: 100vw;
-  height: 100vh;
-  background-color: #0180BE;
-  transition: all 1s;
-}
-
-.loading img {
-  min-width: ;
-  height: ;
-}

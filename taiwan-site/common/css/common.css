@@ -4,46 +4,106 @@
 body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
 }
+
+/* *********************************************** */
+/* ローディング***javascriptのパターンのcss */
+/* *********************************************** */
+
+.loading {
+  background-color: #0180BE;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* z-index:1000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading img {
+  width: 287px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: img_fade 2.0s 0.5s forwards;
+}
+
+@keyframes img_fade {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ローディングが終わったらhideクラスを付与 */
+.loading.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2000ms;
+}
+
+/* *********************************************** */
+
 /* 共有部分footer */
 
 footer {
   background-color: #007AB7;
   text-align: center;
-  padding:20px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
-#footer-div{
- display: block;
+
+#footer-div {
+  display: block;
 }
-#kokki-ikon{
-  width:38px;
+
+#kokki-ikon {
+  width: 38px;
   height: 24px;
 }
-footer ul{
-margin-left: 31%;
+
+footer ul {
+  margin-left: 31%;
 }
-footer li{
+
+footer li {
   color: #fff;
-  width:23%;
+  width: 23%;
   text-align: left;
   border-bottom: 1px solid #fff;
-  padding:20px 0 8px 0;
+  padding: 20px 0 8px 0;
 }
-#footer-tiwandiv{
-  display:none
+
+#footer-tiwandiv {
+  display: none
 }
-footer div{
+
+footer div {
   justify-content: center;
   display: flex;
-  width:100%;
+  width: 100%;
 }
-footer .snslink{
+
+footer .snslink {
   display: block;
-  width:38px;
-  margin:20px 10px 0 10px; 
+  width: 38px;
+  margin: 20px 10px 0 10px;
 }
-footer .snsicon{
-  display:block;
-  width:38px;
+
+footer .snsicon {
+  display: block;
+  width: 38px;
   padding: 20px 0 20px 0;
 }
 
@@ -99,66 +159,82 @@ footer small {
   footer {
     max-width: 1366px;
   }
-  #kokki-ikon{
-    width:64px;
+
+  #kokki-ikon {
+    width: 64px;
     height: 48px;
     margin-bottom: 13px;
   }
-  footer ul{
-    margin-left: 7%;
-  }
 
-    footer small{
-     position: relative;
-    }
-  
-  #footer-tiwandiv{
-    display: block;
-    width:20px;
-    position: relative;
-    background-color:#007AB7;
-    height: 1px;
-    left:50%
-  }
-  
-  #footer-tiwanicon{
-    position:absolute;
-    right:-90px;
-    bottom:0px;
-  }
-  #footer-snsdiv{
-    position: relative;
-    height: 0.5px;
-    left:99%;
-    width:100%;
-  }
-  footer #snslink1{
-    position:absolute;
-    right:240px;
-    top:-80px;
-    width:100%;
-    height: 100px;;
-  }
-  footer #snslink2{
-    position:absolute;
-    right:180px;
-    top:-80px;
-    width:100%;
-    height: 100px;;
-  }
-  footer #snslink3{
-    position:absolute;
-    right:120px;
-    top:-80px;
-    width:100%;
-    height: 100px;;
-  }
   footer ul {
     margin-left: 7%;
   }
+
+  footer small {
+    position: relative;
+  }
+
+  #footer-tiwandiv {
+    display: block;
+    width: 20px;
+    position: relative;
+    background-color: #007AB7;
+    height: 1px;
+    left: 50%
+  }
+
+  #footer-tiwanicon {
+    position: absolute;
+    right: -90px;
+    bottom: 0px;
+  }
+
+  #footer-snsdiv {
+    position: relative;
+    height: 0.5px;
+    left: 99%;
+    width: 100%;
+  }
+
+  footer #snslink1 {
+    position: absolute;
+    right: 240px;
+    top: -80px;
+    width: 100%;
+    height: 100px;
+    ;
+  }
+
+  footer #snslink2 {
+    position: absolute;
+    right: 180px;
+    top: -80px;
+    width: 100%;
+    height: 100px;
+    ;
+  }
+
+  footer #snslink3 {
+    position: absolute;
+    right: 120px;
+    top: -80px;
+    width: 100%;
+    height: 100px;
+    ;
+  }
+
+  footer ul {
+    margin-left: 7%;
+  }
+
   footer li {
     width: 26%;
   }
-
-
 }
+
+/* ローディングpc */
+.loading img {
+  width: 318px;
+}
+
+/* ************* */
