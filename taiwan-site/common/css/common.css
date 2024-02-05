@@ -23,9 +23,7 @@ body {
 }
 
 .loading img {
-  width: 318px;
-  /* SP用サイズ↓ */
-  /* width:287px; */
+  width: 287px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -236,9 +234,9 @@ footer small {
 
 }
 
-/* ローディングsp */
+/* ローディングpc */
 .loading img {
-  width: 287px;
+  width: 318px;
 }
 
 /* ************* */
