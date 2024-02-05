@@ -344,11 +344,11 @@ footer small {
 
 
 /* --------------------header-------------------- */
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
 
     /* ※背景画像の変更場所※ */
     header {
-        background: url(../image/taichung_top_bg_sp.jpg) no-repeat 0% 58%/cover;
+        background: url(../image/taichung_top_bg.jpg) no-repeat 0% 58%/cover;
     }
 
     header div.kasou {
