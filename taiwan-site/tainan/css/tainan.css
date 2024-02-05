@@ -24,8 +24,18 @@
 
 /* クラス付与 */
 .Opening {
-  opacity: 1;
   visibility: visible;
+  animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* 閉じるボタンdiv */
@@ -83,6 +93,7 @@
     width: 33%;
     height: auto;
   }
+
   /* -------------------------------------------------------------- 
 pcモーダルコンテンツPC版の上部マージンは120px*/
 }
