@@ -1,43 +1,29 @@
 @charset "UTF-8";
 
 /* --------------------main-------------------- */
-main {
-    margin: 0 40px 0 8px;
+main div.kasou-main {
+    text-align: center;
 }
 
-main div.kasou {
-    margin: 0 0 0 32px;
+main div.kasou-main h3 {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0.3em;
 }
 
-/* ---パンくず--- */
-main nav ul {
-    display: flex;
+main div.kasou-main img {
+    width: 100%;
+
 }
 
-main nav ul li.previous-screen {
-    text-transform: capitalize;
-    text-decoration-line: underline;
 
-    margin-right: 4px;
-}
-
-/* ---パンくず--- */
 
 /* --------------------main-------------------- */
 
 @media screen and (min-width: 767px) {
 
     /* --------------------main-------------------- */
-    main {
-        margin: 0 20px;
-    }
-
-    main div.kasou {
-        margin: 0px;
-    }
 
 
+    /* --------------------main-------------------- */
 }
-
-
-/* --------------------main-------------------- */
