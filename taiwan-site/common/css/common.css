@@ -457,8 +457,8 @@ main nav ul li.previous-screen {
   background-size: contain;
   width: 220px;
   height: 40px;
-  top: -12px;
-  left: -105px;
+  top: -8px;
+  left: -110px;
   /* --------------------------------------------------- */
 }
 
@@ -729,7 +729,6 @@ footer small {
     height: 100px;
     ;
   }
-
   footer #snslink3 {
     position: absolute;
     right: 120px;
@@ -738,11 +737,9 @@ footer small {
     height: 100px;
     ;
   }
-
   footer ul {
     margin-left: 7%;
   }
-
   footer li {
     width: 26%;
   }
