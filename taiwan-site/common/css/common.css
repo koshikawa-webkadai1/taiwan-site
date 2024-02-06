@@ -9,55 +9,55 @@ body {
 /* ローディング***javascriptのパターンのcss */
 /* *********************************************** */
 
-.loading {
-  background-color: #0180BE;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* .loading { */
+/* background-color: #0180BE; */
+/* width: 100vw; */
+/* height: 100vh; */
+/* position: fixed; */
+/* top: 0; */
+/* left: 0; */
+/* z-index: 1000; */
+/* display: flex; */
+/* align-items: center; */
+/* justify-content: center; */
+/* } */
 
-.loading img {
-  width: 287px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 0 auto;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  animation: img_fade 2.0s 0.5s forwards;
-}
+/* .loading img { */
+/* width: 287px; */
+/* position: absolute; */
+/* top: 50%; */
+/* left: 50%; */
+/* margin: 0 auto; */
+/* opacity: 0;
+  transform: translate(-50%, -50%); */
+/* animation: img_fade 2.0s 0.5s forwards; */
+/* } */
 
-@keyframes img_fade {
-  0% {
-    opacity: 0;
-  }
+/* @keyframes img_fade { */
+/* 0% { */
+/* opacity: 0; */
+/* } */
 
-  60% {
-    opacity: 1;
-  }
+/* 60% { */
+/* opacity: 1; */
+/* } */
 
-  100% {
-    opacity: 0;
-  }
-}
+/* 100% { */
+/* opacity: 0; */
+/* } */
+/* } */
 
 /* ローディングが終わったらhideクラスを付与 */
-.loading.hide {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 2000ms;
-}
+/* .loading.hide { */
+/* opacity: 0; */
+/* pointer-events: none; */
+/* transition: opacity 2000ms; */
+/* } */
 
 /* ローディングpc */
-.loading img {
-  width: 318px;
-}
+/* .loading img { */
+/* width: 318px; */
+/* } */
 
 /* *********************************************** */
 
