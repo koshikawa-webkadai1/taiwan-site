@@ -438,6 +438,35 @@ main nav ul li.previous-screen {
 
 /* ---パンくず--- */
 
+
+#Midashiimg {
+  position: relative;
+  height: 0.5px;
+  /* 見出しの基準位置変更場所％で指定してください------- */
+  left: 50%;
+  /* --------------------------------------------------- */
+  width: 100%;
+}
+
+#Midashiimg::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  /* 画像サイズurl変更場所------------------------------ */
+  background-image: url(../../common/image/h2_bg.png);
+  background-size: contain;
+  width: 220px;
+  height: 40px;
+  top: -12px;
+  left: -105px;
+  /* --------------------------------------------------- */
+}
+
+/* ----------------------------------------------------- */
+
+
+
+
 /* モーダルウィンドウ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 #modal-openbutton {
   position: fixed;
