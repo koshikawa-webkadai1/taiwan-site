@@ -5,12 +5,12 @@ main {
     margin: 0 40px 0 8px;
 }
 
-main div.kasou-main {
+main div.kasou {
     margin: 0 0 0 32px;
 }
 
 /* ---パンくず--- */
-/* main nav ul {
+main nav ul {
     display: flex;
 }
 
@@ -19,7 +19,7 @@ main nav ul li.previous-screen {
     text-decoration-line: underline;
 
     margin-right: 4px;
-} */
+}
 
 /* ---パンくず--- */
 
@@ -32,7 +32,7 @@ main nav ul li.previous-screen {
         margin: 0 20px;
     }
 
-    main div.kasou-main {
+    main div.kasou {
         margin: 0px;
     }
 
