@@ -399,7 +399,19 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 /* ---ナビ作成 共通--- */
 /* --------------------header-------------------- */
 
+/* ---パンくず--- */
+main nav ul {
+  display: flex;
+}
 
+main nav ul li.previous-screen {
+  text-transform: capitalize;
+  text-decoration-line: underline;
+
+  margin-right: 4px;
+}
+
+/* ---パンくず--- */
 
 /* モーダルウィンドウ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 #modal-openbutton {
