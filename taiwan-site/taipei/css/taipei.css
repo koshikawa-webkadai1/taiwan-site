@@ -21,8 +21,13 @@ main nav ul {
 
 
 /* -----main-----*/
+/* 説明文 */
 .setumei {
   font-size: 12px;
+}
+
+.att {
+  background-color: rgba(108, 186, 216, 0.2);
 }
 
 h3 {
@@ -53,7 +58,17 @@ h3 {
     font-weight: bold;
   }
 
-  /* 区切り線 */
+  /* 説明文 */
+  .setumei {
+    font-size: 20px;
+  }
+
+  .att {
+    width: 295px;
+    background-color: rgba(108, 186, 216, 0.2);
+  }
+
+  /* 区切り線 pc*/
   .kugiri {
     display: block;
     margin: 0 auto;
