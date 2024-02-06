@@ -19,59 +19,96 @@
 
   <title>台中</title>
 
+
+  <!-- header用画像のHTML、各ページに要コピー -->
+  <style>
+    header {
+      /* ※背景画像の変更場所※ */
+      background: url(image/taichung_top_bg_sp.jpg) no-repeat 0% 40%/cover;
+    }
+
+    @media screen and (min-width: 767px) {
+
+      /* ※背景画像の変更場所※ */
+      header {
+        background: url(image/taichung_top_bg_sp.jpg) no-repeat 0% 58%/cover;
+      }
+    }
+  </style>
+
+
 </head>
 
 
 <body>
-  <header>
 
-    <div class="kasou">
+  <!-- loading -->
+  <div class="loading">
+    <img src="../common/image/top_logo.svg">
+  </div>
+  <!-------------->
 
-      <img src="../common/image/top_logo.svg" alt="TAIWAN画像" class="header-rogo1">
-      <div>
+
+  <div class="pc-kasou">
+
+    <header>
+
+      <div class="kasou">
+
+        <img src="../common/image/top_logo.svg" alt="TAIWAN画像" class="header-rogo1">
+        <div>
+
+          <!-- ナビアイコン共通 -->
+          <nav>
+
+
+            <!-- メニューボタン -->
+            <div class="nav">
+              <div class="nav-icon-bg">
+              </div>
+              <input type="checkbox" class="menu-botan" id="menu-botan">
+              <label for="menu-botan" class="menu-icon">
+                <span class="nav-icon"></span>
+              </label>
+
+
+
+              <ul class="nav-menu">
+
+
+                <li><img src="../common/image/top_logo.svg" alt="TAIWAN画像"></li>
+
+
+                <!-- メニュー一覧 -->
+                <li><a href="../index.html">top</a></li>
+                <li><a href="../taipei/index.html">台北</a></li>
+                <li><a href="../taichung/index.html">台中</a></li>
+                <li><a href="../tainan/index.html">台南</a></li>
+              </ul>
+
+            </div>
+
+          </nav>
+
+          <!-- ※地名画像の変更場所※  -->
+          <img src="image/taichung_logo.svg" alt="台中画像" class="header-rogo2">
+        </div>
 
         <!-- ナビアイコン共通 -->
-        <nav>
 
-
-          <!-- メニューボタン -->
-
-          <div class="nav">
-            <div class="nav-icon-bg">
-            </div>
-            <input type="checkbox" class="menu-botan" id="menu-botan">
-            <label for="menu-botan" class="menu-icon">
-              <span class="nav-icon"></span>
-            </label>
+        <!-- ※詳細テキストの変更場所※  -->
+        <p>台湾で2番目の大都市を誇る台中市。台中市は台湾中部の台中盆地にあり、いくつもの河川が台中市の中心地を貫いています。</p>
 
 
 
-            <ul class="nav-menu">
 
-
-              <li><img src="../common/image/top_logo.svg" alt="TAIWAN画像"></li>
-
-
-              <!-- メニュー一覧 -->
-              <li><a href="../index.html">top</a></li>
-              <li><a href="../taipei/index.html">台北</a></li>
-              <li><a href="../taichung/index.html">台中</a></li>
-              <li><a href="../tainan/index.html">台南</a></li>
-            </ul>
-
-          </div>
-
-        </nav>
-
-        <!-- ※地名画像の変更場所※  -->
-        <img src="image/taichung_logo.svg" alt="台中画像" class="header-rogo2">
       </div>
 
-      <!-- ナビアイコン共通 -->
+    </header>
 
-      <!-- ※詳細テキストの変更場所※  -->
-      <p>台湾で2番目の大都市を誇る台中市。台中市は台湾中部の台中盆地にあり、いくつもの河川が台中市の中心地を貫いています。</p>
+    <main>
 
+<<<<<<< HEAD
 
 
 
@@ -96,78 +133,109 @@
     <div class="kasou">
 
       <h2>Attraction 観光名所</h2>
+=======
+      <!-- パンくずメニューのHTML、各ページに要コピー -->
+      <nav>
+        <ul>
+          <li class="previous-screen"><a href="../index.html">top</a></li>
 
-      <h3>高美湿地</h3>
-      <!-- <img src="image/att_gaomay_img01.jpg" alt=""> -->
-      <p>
-        台中から北西へ約20km、大甲溪の河口に広がるおよそ1500ヘクタールの高美湿地は、天気など条件が重なると周りの風景を鏡面のように反射されることから「台湾のウユニ塩湖」と呼ばれて注目を集めています。湿地には100種以上の鳥が生息しており、バードウォッチングを楽しんでいる人も！周辺には海から吹き付ける風を利用した風力発電の施設があり、自然の景色と人工物が融合して独特の景観をつくり出しています。穴場のスポットです。
-      </p>
-      <!-- <img src="image/att_gaomay_img02.jpg" alt=""> -->
-      <p>干潮と日暮れが重なるタイミングの景色がおすすめです。</p>
+          <!-- ※パンくずの変更場所※  -->
+          <li><a href="#">> 台中</a></li>
+        </ul>
 
+      </nav>
+      <!-- パンくずメニュー -->
 
+      <div class="kasou-main">
 
-      <h3>彩虹眷村</h3>
-      <!-- <img src="image/att_rainbow_img01.jpg" alt=""> -->
-      <p>
-        台湾中部台中市には「彩虹眷村」というインパクトのある場所があります。一度見たら忘れられない鮮やかな色使いの絵で埋め尽くされたこの地区、日本語にすると「虹の村」と称されるこの場所は、家にも壁にも道路にもびっしりと絵が描かれています。そしてこの絵を描いたのは、たった一人のおじいちゃんなのです。今回は見れば元気になる台中市の必見スポットをご紹介します。
-      </p>
+        <h2>Attraction 観光名所</h2>
+>>>>>>> ebd2b69f765802eeb90314683b3c023adb6bf5a8
 
-      <!-- <img src="image/att_rainbow_img02.jpg" alt=""> -->
+        <h3>高美湿地</h3>
+        <!-- <img src="image/att_gaomay_img01.jpg" alt=""> -->
+        <p>
+          台中から北西へ約20km、大甲溪の河口に広がるおよそ1500ヘクタールの高美湿地は、天気など条件が重なると周りの風景を鏡面のように反射されることから「台湾のウユニ塩湖」と呼ばれて注目を集めています。湿地には100種以上の鳥が生息しており、バードウォッチングを楽しんでいる人も！周辺には海から吹き付ける風を利用した風力発電の施設があり、自然の景色と人工物が融合して独特の景観をつくり出しています。穴場のスポットです。
+        </p>
+        <!-- <img src="image/att_gaomay_img02.jpg" alt=""> -->
+        <p>干潮と日暮れが重なるタイミングの景色がおすすめです。</p>
 
-      <p>周辺住民の方々のご迷惑とならないように早朝や深夜は避けて、日中に訪れましょう。</p>
+        -----------------------
 
+        <h3>彩虹眷村</h3>
+        <!-- <img src="image/att_rainbow_img01.jpg" alt=""> -->
+        <p>
+          台湾中部台中市には「彩虹眷村」というインパクトのある場所があります。一度見たら忘れられない鮮やかな色使いの絵で埋め尽くされたこの地区、日本語にすると「虹の村」と称されるこの場所は、家にも壁にも道路にもびっしりと絵が描かれています。そしてこの絵を描いたのは、たった一人のおじいちゃんなのです。今回は見れば元気になる台中市の必見スポットをご紹介します。
+        </p>
 
-      <h2>attraction 観光名所</h2>
-    </div>
+        <!-- <img src="image/att_rainbow_img02.jpg" alt=""> -->
 
-  </main>
-
-  <footer>
-
-    <div id="footer-div">
-      <img src="../common/image/taiwankokki.svg" alt="台湾国旗" id="kokki-ikon">
-    </div>
-
-
-    <ul>
-      <li><a href="#">TOP</a></li>
-      <li><a href="#">台中</a></li>
-      <li><a href="#">台南</a></li>
-      <li><a href="#">当サイトのポリシー</a></li>
-      <li><a href="#">お問い合わせ</a></li>
-    </ul>
-
-    <div id="footer-tiwandiv">
-      <img src="../common/image/footerlogo.svg" alt="Taiwan画像" id="footer-tiwanicon">
-    </div>
-
-    <div id="footer-snsdiv">
-      <a href="#" class="snslink" id="snslink1">
-        <img src="../common/image/facebook_img.png" alt="facebook link" class="snsicon">
-      </a>
-      <a href="#" class="snslink" id="snslink2">
-        <img src="../common/image/Instagram_Glyph_Gradient.svg" alt="instagram link" class="snsicon" id="instamargin">
-      </a>
-      <a href="#" class="snslink" id="snslink3">
-        <img src="../common/image/x_img.png" alt="X link" class="snsicon">
-      </a>
-    </div>
+        <p>周辺住民の方々のご迷惑とならないように早朝や深夜は避けて、日中に訪れましょう。</p>
 
 
+        <h2>Museum 文化施設</h2>
 
-    <small>Copylight(c)TAIWAN Traveler</small>
-  </footer>
-
-
-
+        <p>文化の街とも呼ばれる台中。
+          おすすめの文化施設をご紹介します。</p>
 
 
-  <!-- <script src="../common/js/loading.js"></script> -->
+        <p>アンティーク博物館</p>
+
+        <p> 新天地西洋博物館</p>
+
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      <div id="footer-div">
+        <img src="../common/image/taiwankokki.svg" alt="台湾国旗" id="kokki-ikon">
+      </div>
+
+
+      <ul>
+        <li><a href="#">TOP</a></li>
+        <li><a href="#">台中</a></li>
+        <li><a href="#">台南</a></li>
+        <li><a href="#">当サイトのポリシー</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+
+      <div id="footer-tiwandiv">
+        <img src="../common/image/footerlogo.svg" alt="Taiwan画像" id="footer-tiwanicon">
+      </div>
+
+      <div id="footer-snsdiv">
+        <a href="#" class="snslink" id="snslink1">
+          <img src="../common/image/facebook_img.png" alt="facebook link" class="snsicon">
+        </a>
+        <a href="#" class="snslink" id="snslink2">
+          <img src="../common/image/Instagram_Glyph_Gradient.svg" alt="instagram link" class="snsicon" id="instamargin">
+        </a>
+        <a href="#" class="snslink" id="snslink3">
+          <img src="../common/image/x_img.png" alt="X link" class="snsicon">
+        </a>
+      </div>
+
+
+
+      <small>Copylight(c)TAIWAN Traveler</small>
+    </footer>
+
+  </div>
+
+
+
+
+
+  <script src="../common/js/loading.js"></script>
   <!-- <script src="../common/js/main.js"></script> -->
   <!-- <script src="../common/js/modal.js"></script> -->
   <!-- <script src="../common/js/others.js"></script> -->
   <script src="js/taichung.js"></script>
+
+
 </body>
 
 </html>
