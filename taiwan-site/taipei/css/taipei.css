@@ -20,41 +20,61 @@ main nav ul {
 }
 
 
-/* -----main-----
-main.kasou {
-  max-width: 375px;
-  padding: 0px 40px;
-} */
+/* -----main-----*/
+/* 説明文 */
+.setumei {
+  font-size: 12px;
+}
+
+.att {
+  background-color: rgba(108, 186, 216, 0.2);
+}
 
 h3 {
   font-size: 36px;
 }
 
-
-
-/* ※背景画像の変更場所※ */
-
-
-/* ---ナビ作成 共通--- */
-/* -----header----- */
-
-/* -----main----- */
-/* .kasou {
-  max-width: 1366px;
-  padding: 103px;
-
-} */
-
-h3 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
+/* 区切り線 */
 .kugiri {
   display: block;
   margin: 0 auto;
-  max-width: 420px;
+  max-width: 225px;
   border-top: 1px solid #000000;
+}
+
+
+
+/* ※背景画像の変更場所※ */
+@media screen and (min-width: 767px) {
+
+  /* ---ナビ作成 共通--- */
+  /* -----header----- */
+
+  /* -----main----- */
+
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* 説明文 */
+  .setumei {
+    font-size: 20px;
+  }
+
+  .att {
+    width: 295px;
+    background-color: rgba(108, 186, 216, 0.2);
+  }
+
+  /* 区切り線 pc*/
+  .kugiri {
+    display: block;
+    margin: 0 auto;
+    max-width: 420px;
+    border-top: 1px solid #000000;
+  }
 }
 
 /* -----main----- */
