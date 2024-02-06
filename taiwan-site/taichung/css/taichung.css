@@ -13,8 +13,23 @@ main div.kasou-main h3 {
 }
 
 main div.kasou-main img {
-    width: 100%
+    width: 100%;
+    margin-bottom: 20px;
 }
+
+main div.kasou-main p.attraction-ex {
+    background: rgba(237, 161, 132, 0.2);
+    font-size: 12px;
+    line-height: 19.2px;
+    padding: 20px 16px;
+    margin-bottom: 20px;
+}
+
+main div.kasou-main p.attraction-exs {
+    margin-bottom: 60px
+}
+
+
 
 
 
