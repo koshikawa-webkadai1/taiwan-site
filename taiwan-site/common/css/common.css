@@ -404,7 +404,7 @@ main {
   margin: 0 40px 0 8px;
 }
 
-main div.kasou {
+main div.kasou-main {
   margin: 0 0 0 32px;
 }
 
@@ -414,7 +414,7 @@ main div.kasou {
     margin: 0 20px;
   }
 
-  main div.kasou {
+  main div.kasou-main {
     margin: 0px;
   }
 
