@@ -399,6 +399,31 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 /* ---ナビ作成 共通--- */
 /* --------------------header-------------------- */
 
+/* --------------------main領域スペース設定-------------------- */
+main {
+  margin: 0 40px 0 8px;
+}
+
+main div.kasou {
+  margin: 0 0 0 32px;
+}
+
+@media screen and (min-width: 767px) {
+
+  main {
+    margin: 0 20px;
+  }
+
+  main div.kasou {
+    margin: 0px;
+  }
+
+
+}
+
+/* --------------------main領域スペース設定-------------------- */
+
+
 /* ---パンくず--- */
 main nav ul {
   display: flex;
