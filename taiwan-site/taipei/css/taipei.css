@@ -20,13 +20,15 @@ main nav ul {
 }
 
 
-/* -----main----- */
+/* -----main-----
 main.kasou {
   max-width: 375px;
   padding: 0px 40px;
+} */
+
+h3 {
+  font-size: 36px;
 }
-
-
 
 
 
@@ -37,10 +39,22 @@ main.kasou {
 /* -----header----- */
 
 /* -----main----- */
-.kasou {
+/* .kasou {
   max-width: 1366px;
   padding: 103px;
 
+} */
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.kugiri {
+  display: block;
+  margin: 0 auto;
+  max-width: 420px;
+  border-top: 1px solid #000000;
 }
 
 /* -----main----- */
