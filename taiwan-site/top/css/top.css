@@ -2,23 +2,19 @@
 
 
 /* section1 bg調整 */
-#Formasa1 {
+#Formosa1 {
   background-image: url(../../top/image/intro_img01_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 80px;
+  padding-top: 60px;
   text-align: center;
-  height: 408px;;
-}
-
-#Formasa2 {
-  background-image: url(../../top/image/intro_img02_bg.jpg);
+  height: 408px;
 }
 
 /* イントロ写真調整 */
-#formasaimg {
+#formosaimg {
   display: lnline-block;
-  width:35px;
+  width: 35px;
   height: 24px;
 }
 
@@ -26,5 +22,73 @@
   display: block;
   margin: auto;
   width: 89%;
-  height: 180px;
+  height: 140px;
 }
+
+#Formosa1 h2 {
+  margin: 40px 0 20px 0;
+  font-size: 20px;
+}
+
+#Formosa1 h3 {
+  font-size: 12px;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+/* フォルモサ下部 */
+#Formosa2 {
+  background-image: url(../../top/image/intro_img02_bg.jpg);
+  height: 400px;
+  text-align: center;
+}
+
+#Formosa2 p {
+  display: inline-block;
+  width: 225px;
+  font-size: 12px;
+  margin: 60px 0 20px 0;
+  padding: 12px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  line-height: 19.2px;
+}
+
+/* -----------------見出し 共有-------------------------------------*/
+/* 疑似要素の親 */
+#Midashidiv {
+  display: block;
+}
+
+#Midashi {
+  font-size: 20px;
+  text-align: center;
+
+}
+#Midashi span {
+  font-size: 12px;
+}
+#Midashiimg{
+  position: relative;
+  height: 0.5px;
+  /* 見出しの基準位置変更場所％で指定してください------- */
+  left: 50%;
+  /* --------------------------------------------------- */
+  width: 100%;
+}
+#Midashiimg::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  /* 画像サイズurl変更場所------------------------------ */
+  background-image: url(../../common/image/h2_bg.png);
+  background-size: contain;
+  width: 220px;
+  height: 40px;
+  top:-12px;
+  left:-105px;
+  /* --------------------------------------------------- */
+}
+/* ----------------------------------------------------- */
