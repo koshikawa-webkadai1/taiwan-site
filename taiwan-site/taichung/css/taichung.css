@@ -7,13 +7,6 @@ body {
 }
 
 /* --------------------header-------------------- */
-header {
-
-    /* ※背景画像の変更場所※ */
-    background: url(../image/taichung_top_bg_sp.jpg) no-repeat 0% 40%/cover;
-
-
-}
 
 header div.kasou {
     padding: 8px;
@@ -347,10 +340,6 @@ footer small {
 /* --------------------header-------------------- */
 @media screen and (min-width: 767px) {
 
-    /* ※背景画像の変更場所※ */
-    header {
-        background: url(../image/taichung_top_bg.jpg) no-repeat 0% 58%/cover;
-    }
 
     header div.kasou {
         padding: 0 83px;
