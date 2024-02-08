@@ -29,6 +29,7 @@ main div.kasou-main {
 h3 {
   text-align: center;
   font-size: 24px;
+  font-weight: bold;
   letter-spacing: 0.3em;
   margin-bottom: 20px;
 }
@@ -38,17 +39,34 @@ main div.kasou-main img {
   margin-bottom: 20px;
 }
 
-p.att {
+p.setumei {
   background-color: rgba(108, 186, 216, 0.2);
   font-size: 12px;
   line-height: 19.2px;
   padding: 20px 16px;
   margin-bottom: 20px;
-
+  text-align: left;
 }
 
 main div.kasou-main p.attraction-exs {
   margin-bottom: 60px
+}
+
+.att-sub {
+  width: 100%;
+  display: flex;
+  gap: 4%;
+  justify-content: center;
+}
+
+.att-sub img>* {
+  max-width: 45.4%;
+}
+
+.att-sub img {
+  /* aspect-ratio: 2/3;
+object-fit: cover; 
+display: block; */
 }
 
 /* ********************************************* */
@@ -103,7 +121,7 @@ main div.kasou-main p.attraction-exs {
 
 
   .att {
-    width: 35.1%;
+    width: 100%;
     background-color: rgba(108, 186, 216, 0.2);
   }
 
