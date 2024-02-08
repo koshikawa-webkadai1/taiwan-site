@@ -112,7 +112,10 @@ div#museum p.hall-name {
 
 div#museum img {
     margin-bottom: 12px;
-
+    height: 17vh;
+    /* 135/812=0.166 */
+    object-fit: cover;
+    /* object-position: 100% 0%; */
 }
 
 div#museum p.explanation {
