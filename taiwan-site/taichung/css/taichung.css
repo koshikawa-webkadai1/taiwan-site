@@ -5,9 +5,45 @@ main div.kasou-main {
     text-align: center;
 }
 
+/* -----------------見出し 共有-------------------------------------*/
+/* 疑似要素の親 */
+#Midashi {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+#Midashi span {
+    font-size: 12px;
+}
+
+#Midashiimg {
+    position: relative;
+    height: 0.5px;
+
+
+    /* 見出しの基準位置変更場所％で指定してください------- */
+    left: 50%;
+    /* --------------------------------------------------- */
+}
+
+#Midashiimg::before {
+
+    /* 画像サイズurl変更場所------------------------------ */
+    background-image: url(../../common/image/h2_bg.png);
+    width: 220px;
+    height: 40px;
+    top: -8px;
+    left: -110px;
+    /* --------------------------------------------------- */
+}
+
+/* ----------------------------------------------------- */
+
 main div.kasou-main h3 {
     text-align: center;
     font-size: 24px;
+    font-weight: bold;
     letter-spacing: 0.3em;
     margin-top: 45px;
     margin-bottom: 20px;
