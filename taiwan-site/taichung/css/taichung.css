@@ -7,19 +7,19 @@ main div.kasou-main {
 
 /* -----------------見出し 共有-------------------------------------*/
 /* 疑似要素の親 */
-/* .Midashi { */
-/* font-size: 24px; */
-/* text-align: center; */
-/* margin-bottom: 48px; */
-/* } */
+.Midashi {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 48px;
+}
 
-/* .Midashi span { */
-/* font-size: 12px; */
-/* } */
+.Midashi span {
+    font-size: 12px;
+}
 
 .Midashiimg {
-    /* position: relative; */
-    /* height: 0.5px; */
+    position: relative;
+    height: 0.5px;
 
 
     /* 見出しの基準位置変更場所％で指定してください------- */
@@ -77,32 +77,59 @@ main div.kasou-main p.museum {
     font-size: 12px;
     line-height: 19.2px;
     padding: 0 12px;
-    margin: 52px auto;
+    margin: 0px auto;
+    margin-bottom: 40px;
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main div.kasou-main div.museum {
+main div.kasou-main div#museum {
     text-align: left;
 }
+
+main div.kasou-main div#museum p.subtitle {
+    font-size: 12px;
+    line-height: 22.5px;
+}
+
+main div.kasou-main div#museum p.hall-name {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22.5px;
+    margin-bottom: 12px;
+
+}
+
+main div.kasou-main div#museum img {
+    margin-bottom: 12px;
+
+}
+
+main div.kasou-main div#museum p.explanation {
+    font-size: 12px;
+    margin-bottom: 12px;
+
+}
+
+
+div#museum div.museum-elements {
+    margin-bottom: 40px;
+}
+
+div#museum div#taichung {
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
 
 /* --------------------main-------------------- */
 
