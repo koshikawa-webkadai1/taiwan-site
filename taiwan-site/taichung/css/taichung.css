@@ -124,10 +124,10 @@ div#museum p.explanation {
 }
 
 div#museum div.button {
-    margin: 0 0 0 auto;
-    width: 41%;
+    width: 100%;
     /* 120/295=0.406 */
-
+    display: flex;
+    justify-content: right;
 }
 
 div#museum div button {
@@ -167,13 +167,14 @@ section.sweets div {
 }
 
 section.sweets div img {
-    width: 47%;
+    width: 50%;
     /* 140/295=0.47 */
+    margin-bottom: 0px;
 
 }
 
 section.sweets div img#calc {
-    margin-right: 15px;
+    padding-right: 15px;
 }
 
 section.sweets img#sweets-set {
