@@ -89,31 +89,6 @@ main div.kasou-main div#museum {
     text-align: left;
 }
 
-main div.kasou-main div#museum p.subtitle {
-    font-size: 12px;
-    line-height: 22.5px;
-}
-
-main div.kasou-main div#museum p.hall-name {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 22.5px;
-    margin-bottom: 12px;
-
-}
-
-main div.kasou-main div#museum img {
-    margin-bottom: 12px;
-
-}
-
-main div.kasou-main div#museum p.explanation {
-    font-size: 12px;
-    margin-bottom: 12px;
-
-}
-
-
 div#museum div.museum-elements {
     margin-bottom: 40px;
 }
@@ -121,6 +96,62 @@ div#museum div.museum-elements {
 div#museum div#taichung {
     margin-bottom: 60px;
 }
+
+div#museum p.subtitle {
+    font-size: 12px;
+    line-height: 22.5px;
+}
+
+div#museum p.hall-name {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22.5px;
+    margin-bottom: 12px;
+
+}
+
+div#museum img {
+    margin-bottom: 12px;
+
+}
+
+div#museum p.explanation {
+    font-size: 12px;
+    margin-bottom: 12px;
+
+}
+
+div#museum div.button {
+    margin: 0 0 0 auto;
+    width: 41%;
+    /* 120/295=0.406 */
+
+}
+
+div#museum div button {
+    font-size: 12px;
+    border: 2px solid rgba(1, 128, 190, 0.5);
+    padding: 12px;
+}
+
+
+div#museum button span.arrow {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid rgb(1, 128, 190);
+
+    margin-left: 2.1px;
+
+}
+
+
+
+
+
+
 
 
 
