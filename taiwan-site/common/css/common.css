@@ -436,6 +436,13 @@ main nav ul li.previous-screen {
   margin-right: 4px;
 }
 
+@media screen and (min-width: 767px) {
+  main nav ul {
+    font-size: 20px;
+  }
+
+}
+
 /* ---パンくず--- */
 
 /* 見出し */
