@@ -88,12 +88,12 @@ section.attraction p.attraction-exs {
 
 
 
-section.attraction p.museum {
+section.museum p.museum {
     width: 76%;
     /* 225/295=0.763 */
     font-size: 12px;
     line-height: 19.2px;
-    padding: 0 12px;
+    padding: 12px 0;
     margin: 0px auto;
     margin-bottom: 40px;
     border-top: solid 1px #000;
@@ -102,7 +102,7 @@ section.attraction p.museum {
 }
 
 
-main div.kasou-main section.museum div#museum {
+section.museum div#museum {
     text-align: left;
 }
 
@@ -249,7 +249,8 @@ section.sweets img#sweets-set {
     /* 疑似要素の親 */
     .Midashi {
         font-size: 48px;
-        text-align: center;
+        text-align: left;
+        margin-left: 63px;
         margin-bottom: 48px;
     }
 
@@ -263,7 +264,7 @@ section.sweets img#sweets-set {
 
 
         /* 見出しの基準位置変更場所％で指定してください------- */
-        left: 50%;
+        left: 19%;
         /* --------------------------------------------------- */
     }
 
@@ -273,7 +274,8 @@ section.sweets img#sweets-set {
         background-image: url(../../common/image/h2_bg.png);
         width: 530px;
         height: 96px;
-        top: -36px;
+        top: -21px;
+        /* 45(線と画像の底辺が同じ時)-24(スペース量)=21px */
         left: -265px;
         /* --------------------------------------------------- */
     }
@@ -327,27 +329,48 @@ section.sweets img#sweets-set {
 
     section.attraction div#rainbow-village-2 {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 120px;
         align-items: center;
     }
 
 
 
-    main div.kasou-main p.museum {
+
+    main div.kasou-main section.museum div#structural-change {
+        display: flex;
+        flex-basis: 200px;
+        column-gap: 58px;
+    }
+
+    section.museum div#structural-change div#tentative,
+    section.museum div#structural-change div#midasi-explanation {
+        width: 50%;
+    }
+
+    section.museum div#museum div#museum-element-1,
+    section.museum div#museum div#museum-element-2 {
+        display: flex;
+        column-gap: 58px;
+
+    }
+
+
+    section.museum p.museum {
         width: 76%;
         /* 225/295=0.763 */
-        font-size: 12px;
-        line-height: 19.2px;
-        padding: 0 12px;
-        margin: 0px auto;
-        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 20px;
+        /* margin: 0px auto; */
+        margin-top: 80px;
+        margin-bottom: 80px;
         border-top: solid 1px #000;
         border-bottom: solid 1px #000;
 
     }
 
 
-    main div.kasou-main section.museum div#museum {
+    section.museum div#museum {
         text-align: left;
     }
 
