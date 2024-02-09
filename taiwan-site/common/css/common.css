@@ -65,7 +65,6 @@ body {
 
 header div.kasou {
   padding: 8px;
-
 }
 
 header div.kasou img.header-rogo1 {
@@ -401,23 +400,42 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 
 /* --------------------main領域スペース設定-------------------- */
 main {
-  margin: 0 40px 0 8px;
+  margin: 8px 40px 60px 8px;
 }
 
 main div.kasou-main {
   margin: 0 0 0 32px;
 }
 
+/* --------------------SP用、PC用画像切り替え-------------------- */
+main div.kasou-main img.sp {
+  display: inline-block;
+}
+
+main div.kasou-main img.pc {
+  display: none
+}
+
+
+
 @media screen and (min-width: 767px) {
 
   main {
-    margin: 0 20px;
+    margin: 20px 20px;
   }
 
   main div.kasou-main {
     margin: 0px;
   }
 
+  /* --------------------SP用、PC用画像切り替え-------------------- */
+  main div.kasou-main img.sp {
+    display: none;
+  }
+
+  main div.kasou-main img.pc {
+    display: inline-block;
+  }
 
 }
 
@@ -436,15 +454,21 @@ main nav ul li.previous-screen {
   margin-right: 4px;
 }
 
+@media screen and (min-width: 767px) {
+  main nav ul {
+    font-size: 20px;
+  }
+
+}
+
 /* ---パンくず--- */
 
 /* 見出し */
 .Midashiimg {
   position: relative;
+  display: inline;
   height: 0.5px;
-  /* 見出しの基準位置変更場所％で指定してください------- */
   left: 50%;
-  /* --------------------------------------------------- */
   width: 100%;
 }
 
@@ -452,15 +476,14 @@ main nav ul li.previous-screen {
   content: '';
   display: inline-block;
   position: absolute;
-  /* 画像サイズurl変更場所------------------------------ */
   background-image: url(../../common/image/h2_bg.png);
   background-size: contain;
   width: 220px;
   height: 40px;
   top: -8px;
   left: -110px;
-  /* --------------------------------------------------- */
 }
+
 
 /* 区切り線sp */
 .kugiri {
@@ -595,6 +618,7 @@ footer {
   background-color: #007AB7;
   text-align: center;
   padding: 20px 0 20px 0;
+  width: 100%;
 }
 
 #footer-div {
@@ -687,9 +711,6 @@ footer small {
 }
 
 @media screen and (min-width: 767px) {
-  footer {
-    max-width: 1366px;
-  }
 
   #kokki-ikon {
     width: 64px;
@@ -744,6 +765,7 @@ footer small {
     height: 100px;
     ;
   }
+
   footer #snslink3 {
     position: absolute;
     right: 120px;
@@ -752,9 +774,11 @@ footer small {
     height: 100px;
     ;
   }
+
   footer ul {
     margin-left: 7%;
   }
+
   footer li {
     width: 26%;
   }

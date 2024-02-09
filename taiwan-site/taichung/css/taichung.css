@@ -5,6 +5,11 @@ main div.kasou-main {
     text-align: center;
 }
 
+section.attraction {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 /* -----------------見出し 共有-------------------------------------*/
 /* 疑似要素の親 */
 .Midashi {
@@ -40,6 +45,8 @@ main div.kasou-main {
 
 /* ----------------------------------------------------- */
 
+
+
 main div.kasou-main h3 {
     text-align: center;
     font-size: 24px;
@@ -51,6 +58,8 @@ main div.kasou-main h3 {
 main div.kasou-main section.attraction h3 {
     margin-top: 60px;
 }
+
+
 
 main div.kasou-main img {
     width: 100%;
@@ -85,34 +94,9 @@ main div.kasou-main p.museum {
 }
 
 
-main div.kasou-main div#museum {
+main div.kasou-main section.museum div#museum {
     text-align: left;
 }
-
-main div.kasou-main div#museum p.subtitle {
-    font-size: 12px;
-    line-height: 22.5px;
-}
-
-main div.kasou-main div#museum p.hall-name {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 22.5px;
-    margin-bottom: 12px;
-
-}
-
-main div.kasou-main div#museum img {
-    margin-bottom: 12px;
-
-}
-
-main div.kasou-main div#museum p.explanation {
-    font-size: 12px;
-    margin-bottom: 12px;
-
-}
-
 
 div#museum div.museum-elements {
     margin-bottom: 40px;
@@ -121,6 +105,94 @@ div#museum div.museum-elements {
 div#museum div#taichung {
     margin-bottom: 60px;
 }
+
+div#museum p.subtitle {
+    font-size: 12px;
+    line-height: 22.5px;
+}
+
+div#museum p.hall-name {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22.5px;
+    margin-bottom: 12px;
+
+}
+
+div#museum img {
+    margin-bottom: 12px;
+    height: 17vh;
+    /* 135/812=0.166 */
+    object-fit: cover;
+}
+
+div#museum p.explanation {
+    font-size: 12px;
+    margin-bottom: 12px;
+
+}
+
+div#museum div.button {
+    width: 100%;
+    /* 120/295=0.406 */
+    display: flex;
+    justify-content: right;
+}
+
+div#museum div button {
+    font-size: 12px;
+    border: 2px solid rgba(1, 128, 190, 0.5);
+    padding: 12px;
+}
+
+
+div#museum button span.arrow {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid rgb(1, 128, 190);
+
+    margin-left: 2.1px;
+
+}
+
+
+main div.kasou-main section.sweets p {
+    font-size: 12px;
+    margin-bottom: 20px;
+
+}
+
+section.sweets img#ophthalmology {
+    margin-bottom: 20px;
+}
+
+section.sweets div {
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+section.sweets div img {
+    width: 50%;
+    /* 140/295=0.47 */
+    margin-bottom: 0px;
+
+}
+
+section.sweets div img#calc {
+    padding-right: 15px;
+}
+
+section.sweets img#sweets-set {
+    margin-bottom: 60px;
+}
+
+
+
+
 
 
 
@@ -136,6 +208,202 @@ div#museum div#taichung {
 @media screen and (min-width: 767px) {
 
     /* --------------------main-------------------- */
+
+    main div.kasou-main {
+        text-align: left;
+    }
+
+    section.attraction {
+        margin-top: 80px;
+
+        margin-bottom: 120px;
+    }
+
+    /* -----------------見出し 共有-------------------------------------*/
+    /* 疑似要素の親 */
+    .Midashi {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .Midashi span {
+        font-size: 12px;
+    }
+
+    .Midashiimg {
+        position: relative;
+        height: 0.5px;
+
+
+        /* 見出しの基準位置変更場所％で指定してください------- */
+        left: 50%;
+        /* --------------------------------------------------- */
+    }
+
+    .Midashiimg::before {
+
+        /* 画像サイズurl変更場所------------------------------ */
+        background-image: url(../../common/image/h2_bg.png);
+        width: 220px;
+        height: 40px;
+        top: -8px;
+        left: -110px;
+        /* --------------------------------------------------- */
+    }
+
+    /* ----------------------------------------------------- */
+
+
+
+    main div.kasou-main h3 {
+        text-align: left;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.3em;
+        margin-bottom: 20px;
+    }
+
+    main div.kasou-main section.attraction h3 {
+        margin-top: 80px;
+    }
+
+
+    main div.kasou-main img {
+        width: 44%;
+        /* 600/1366=0.44 */
+        margin-right: 40px;
+        margin-bottom: 0px;
+    }
+
+    main div.kasou-main p.attraction-ex {
+        background: rgba(237, 161, 132, 0.2);
+        font-size: 12px;
+        line-height: 19.2px;
+        padding: 20px 16px;
+        margin-bottom: 0px;
+    }
+
+    main div.kasou-main p.attraction-exs {
+        margin-bottom: 60px
+    }
+
+    main div.kasou-main div#gaomei-wetland {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+
+
+    main div.kasou-main p.museum {
+        width: 76%;
+        /* 225/295=0.763 */
+        font-size: 12px;
+        line-height: 19.2px;
+        padding: 0 12px;
+        margin: 0px auto;
+        margin-bottom: 40px;
+        border-top: solid 1px #000;
+        border-bottom: solid 1px #000;
+
+    }
+
+
+    main div.kasou-main section.museum div#museum {
+        text-align: left;
+    }
+
+    div#museum div.museum-elements {
+        margin-bottom: 40px;
+    }
+
+    div#museum div#taichung {
+        margin-bottom: 60px;
+    }
+
+    div#museum p.subtitle {
+        font-size: 12px;
+        line-height: 22.5px;
+    }
+
+    div#museum p.hall-name {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 22.5px;
+        margin-bottom: 12px;
+
+    }
+
+    div#museum img {
+        margin-bottom: 12px;
+        height: 17vh;
+        /* 135/812=0.166 */
+        object-fit: cover;
+    }
+
+    div#museum p.explanation {
+        font-size: 12px;
+        margin-bottom: 12px;
+
+    }
+
+    div#museum div.button {
+        width: 100%;
+        /* 120/295=0.406 */
+        display: flex;
+        justify-content: right;
+    }
+
+    div#museum div button {
+        font-size: 12px;
+        border: 2px solid rgba(1, 128, 190, 0.5);
+        padding: 12px;
+    }
+
+
+    div#museum button span.arrow {
+        display: inline-block;
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid rgb(1, 128, 190);
+
+        margin-left: 2.1px;
+
+    }
+
+
+    main div.kasou-main section.sweets p {
+        font-size: 12px;
+        margin-bottom: 20px;
+
+    }
+
+    section.sweets img#ophthalmology {
+        margin-bottom: 20px;
+    }
+
+    section.sweets div {
+        width: 100%;
+        display: flex;
+        object-fit: cover;
+    }
+
+    section.sweets div img {
+        width: 50%;
+        /* 140/295=0.47 */
+        margin-bottom: 0px;
+
+    }
+
+    section.sweets div img#calc {
+        padding-right: 15px;
+    }
+
+    section.sweets img#sweets-set {
+        margin-bottom: 60px;
+    }
 
 
     /* --------------------main-------------------- */
