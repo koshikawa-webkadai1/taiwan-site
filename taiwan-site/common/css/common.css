@@ -408,6 +408,17 @@ main div.kasou-main {
   margin: 0 0 0 32px;
 }
 
+/* --------------------SP用、PC用画像切り替え-------------------- */
+main div.kasou-main img.sp {
+  display: inline-block;
+}
+
+main div.kasou-main img.pc {
+  display: none
+}
+
+
+
 @media screen and (min-width: 767px) {
 
   main {
@@ -418,6 +429,14 @@ main div.kasou-main {
     margin: 0px;
   }
 
+  /* --------------------SP用、PC用画像切り替え-------------------- */
+  main div.kasou-main img.sp {
+    display: none;
+  }
+
+  main div.kasou-main img.pc {
+    display: inline-block;
+  }
 
 }
 
