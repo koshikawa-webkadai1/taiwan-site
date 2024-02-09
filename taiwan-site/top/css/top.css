@@ -1,14 +1,20 @@
 @charset "UTF-8";
 
+
+header {
+  /* height: 82vh;
+   */
+  height: 667px;
+}
+
 main {
-  margin: 0
+  margin: 0;
 }
 
 /* section1 bg調整 */
 #Formosa1 {
-  background-image: url(../../top/image/intro_img01_bg.jpg);
+  background: url(../../top/image/intro_img01_bg.jpg) no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   padding-top: 60px;
   text-align: center;
   height: 408px;
@@ -25,6 +31,7 @@ main {
   display: block;
   margin: auto;
   width: 89%;
+  max-width: 500px;
   height: 140px;
 }
 
@@ -47,7 +54,6 @@ main {
   background-size: cover;
   text-align: center;
   height: 400px;
-  text-align: center;
 }
 
 #Formosa2 p {
@@ -75,25 +81,24 @@ main {
 
 #Midashiimg {
   position: relative;
+  display: inline;
   height: 0.5px;
-  /* 見出しの基準位置変更場所％で指定してください------- */
   left: 50%;
-  /* --------------------------------------------------- */
   width: 100%;
+
 }
 
 #Midashiimg::before {
   content: '';
   display: inline-block;
   position: absolute;
-  /* 画像サイズurl変更場所------------------------------ */
   background-image: url(../../common/image/h2_bg.png);
   background-size: contain;
   width: 220px;
   height: 40px;
   top: -8px;
   left: -110px;
-  /* --------------------------------------------------- */
+
 }
 
 /* ----------------------------------------------------- */
@@ -108,7 +113,6 @@ main {
 }
 
 #section3 h2 {
-  margin-top: 106px;
   text-align: center;
   font-size: 24px;
 }
@@ -117,27 +121,38 @@ main {
   font-size: 12px;
 }
 
+/* section3 */
+
+#Midashi2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#Midashi2 span {
+  font-size: 12px;
+}
+
 #Midashiimg2 {
   position: relative;
+  display: inline;
   height: 0.5px;
-  /* 見出しの基準位置変更場所％で指定してください------- */
   left: 50%;
-  /* --------------------------------------------------- */
+  width: 100%;
 }
 
 #Midashiimg2::before {
   content: '';
+  display: inline-block;
   position: absolute;
-  /* 画像サイズurl変更場所------------------------------ */
   background-image: url(../../common/image/h2_bg.png);
   background-size: contain;
   width: 220px;
   height: 40px;
-  top: 91px;
+  top: -8px;
   left: -110px;
 }
 
-/* section3 */
 #section3 p {
   padding: 12px 0;
   line-height: 19.2px;
@@ -146,7 +161,7 @@ main {
   border-bottom: 1px solid #000;
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 66px;
+  margin-top: 42px;
 }
 
 #section3 img {
@@ -156,16 +171,15 @@ main {
 }
 
 /* section3map */
-#section3 {
-  text-align: center;
-}
 
-#section3 div {
+#section3 #images {
   display: inline-block;
-  text-align: center;
   position: relative;
 }
 
+#p{
+  text-align: center;
+}
 #map {
   display: inline-block;
   width: 194px;
@@ -192,6 +206,193 @@ main {
   position: absolute;
   width: 57px;
   height: 121px;
-  top:275px;
-  left:55px;
+  top: 275px;
+  left: 55px;
+}
+
+/* section4 */
+
+#Midashi3 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#Midashi3 span {
+  font-size: 12px;
+}
+
+#Midashiimg3 {
+  position: relative;
+  display: inline;
+  height: 0.5px;
+  left: 50%;
+  width: 100%;
+}
+
+#Midashiimg3::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-image: url(../../common/image/h2_bg.png);
+  background-size: contain;
+  width: 220px;
+  height: 40px;
+  top: -8px;
+  left: -110px;
+}
+#rantan{
+  text-align:center;
+}
+#countdown{
+  text-align: center;
+}
+
+#section4 h2 {
+  margin-top: 106px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#section4 span {
+  font-size: 12px;
+}
+
+#section4 h3 {
+  font-size: 20px;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.eventimg {
+  display: block;
+  width: 335px;
+  height: 194px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+#eventimg2 {
+  display: block;
+  width: 335px;
+  height: 194px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+#section4 h4 {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 20px 0 8px;
+}
+
+.setumei1 {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.setumei2 {
+  display: inline-block;
+  width: 225px;
+  font-size: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  line-height: 19.2px;
+}
+
+/* section5 */
+#section5 {
+  margin: auto;
+}
+
+#Midashiimg4 {
+  position: relative;
+  display: inline;
+  height: 0.5px;
+  left: 50%;
+  width: 100%;
+}
+
+#Midashiimg4::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-image: url(../../common/image/h2_bg.png);
+  background-size: contain;
+  width: 220px;
+  height: 40px;
+  top: -8px;
+  left: -110px;
+}
+#section5 h2 {
+  margin-top: 68px;
+}
+
+#section5 h2 {
+  margin-top: 106px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section5 {
+  width: 78%;
+  margin-bottom: 130px;
+}
+
+#section5 li {
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+#section5 table {
+  font-size: 12px;
+  line-height: 19.2px;
+  border-spacing: 10px 0px;
+  border-collapse: collapse;
+}
+
+#theade {
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+@media screen and (min-width: 767px) {
+
+  #Formosa1 {
+    display: flex;
+
+  }
+
+  .introimg {
+    display: block;
+    width: 47%;
+    height: 140px;
+    margin: 0;
+    flex-basis: 55%;
+  }
+
+  #Formosa1 div {
+    display: inline-block;
+    flex-basis: 45%;
+    vertical-align: center;
+  }
+
+
+
 }
