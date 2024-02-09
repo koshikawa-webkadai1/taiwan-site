@@ -30,8 +30,8 @@ main {
 .introimg {
   display: block;
   margin: auto;
-  width: 89%;
   max-width: 500px;
+  width: 89%;
   height: 140px;
 }
 
@@ -177,9 +177,10 @@ main {
   position: relative;
 }
 
-#p{
+#p {
   text-align: center;
 }
+
 #map {
   display: inline-block;
   width: 194px;
@@ -241,10 +242,12 @@ main {
   top: -8px;
   left: -110px;
 }
-#rantan{
-  text-align:center;
+
+#rantan {
+  text-align: center;
 }
-#countdown{
+
+#countdown {
   text-align: center;
 }
 
@@ -326,6 +329,7 @@ main {
   top: -8px;
   left: -110px;
 }
+
 #section5 h2 {
   margin-top: 68px;
 }
@@ -336,19 +340,6 @@ main {
   font-size: 24px;
   margin-bottom: 48px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #section5 {
   width: 78%;
@@ -375,23 +366,72 @@ main {
 @media screen and (min-width: 767px) {
 
   #Formosa1 {
+    text-align: left;
     display: flex;
+    height: 458px;
+    padding-top: 80px;
+    text-align: center;
+  }
 
+  #formosaimg {
+    width: 117px;
+    height: 78px;
+  }
+
+  #Formosa1 h2 {
+    font-size: 48px;
+
+  }
+
+  #Formosa1 h3 {
+    font-size: 32px;
+    border-bottom: none;
   }
 
   .introimg {
     display: block;
-    width: 47%;
-    height: 140px;
+    width: 50%;
+    height: 298px;
     margin: 0;
     flex-basis: 55%;
+    margin-right: 6%;
+    max-width: 1000px;
+    background-size: auto;
+
+  }
+
+  #Formosa2 {
+    display: flex;
+    height: 458px;
+    padding-top: 80px;
+    text-align: left;
   }
 
   #Formosa1 div {
+    flex-basis: 45%;
     display: inline-block;
     flex-basis: 45%;
     vertical-align: center;
+    margin-left: 6%;
+    margin-top: 30px;
+    margin-right: 6%;
   }
+
+  #Formosa2 p {
+    width: 1%;
+    flex-basis: 55%;
+    display: block;
+    font-size: 20px;
+    display: inline-block;
+    flex-basis: 45%;
+    margin-left: 6%;
+    margin-top: 30px;
+    margin-right: 6%;
+    margin-bottom: 12%;
+    line-height: 32px;
+  }
+
+
 
 
 
