@@ -1,14 +1,32 @@
 @charset "UTF-8";
 
+
+div.pc-kasou {
+    margin: 0 0px;
+}
+
 /* --------------------main-------------------- */
 main div.kasou-main {
     text-align: center;
 }
 
-section.attraction {
-    margin-top: 40px;
-    margin-bottom: 40px;
+main div.kasou-main h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    margin-bottom: 20px;
 }
+
+main div.kasou-main img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main div.kasou-main div.text-align-change {
+    text-align: left;
+}
+
 
 /* -----------------見出し 共有-------------------------------------*/
 /* 疑似要素の親 */
@@ -46,27 +64,17 @@ section.attraction {
 /* ----------------------------------------------------- */
 
 
-
-main div.kasou-main h3 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 0.3em;
-    margin-bottom: 20px;
+main div.kasou-main section.attraction {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-main div.kasou-main section.attraction h3 {
+section.attraction h3 {
     margin-top: 60px;
 }
 
 
-
-main div.kasou-main img {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-main div.kasou-main p.attraction-ex {
+section.attraction p.attraction-ex {
     background: rgba(237, 161, 132, 0.2);
     font-size: 12px;
     line-height: 19.2px;
@@ -74,13 +82,13 @@ main div.kasou-main p.attraction-ex {
     margin-bottom: 20px;
 }
 
-main div.kasou-main p.attraction-exs {
+section.attraction p.attraction-exs {
     margin-bottom: 60px
 }
 
 
 
-main div.kasou-main p.museum {
+section.attraction p.museum {
     width: 76%;
     /* 225/295=0.763 */
     font-size: 12px;
@@ -209,26 +217,44 @@ section.sweets img#sweets-set {
 
     /* --------------------main-------------------- */
 
+    div.pc-kasou {
+        margin: 0 83px;
+    }
+
     main div.kasou-main {
         text-align: left;
     }
 
-    section.attraction {
-        margin-top: 80px;
-
-        margin-bottom: 120px;
+    main div.kasou-main h3 {
+        text-align: left;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 0.3em;
+        margin-bottom: 20px;
     }
+
+    main div.kasou-main img {
+        width: 44%;
+        /* 600/1366=0.44 */
+        margin-right: 40px;
+        margin-bottom: 0px;
+    }
+
+    main div.kasou-main div.text-align-change {
+        text-align: none;
+    }
+
 
     /* -----------------見出し 共有-------------------------------------*/
     /* 疑似要素の親 */
     .Midashi {
-        font-size: 24px;
+        font-size: 48px;
         text-align: center;
         margin-bottom: 48px;
     }
 
     .Midashi span {
-        font-size: 12px;
+        font-size: 24px;
     }
 
     .Midashiimg {
@@ -245,52 +271,64 @@ section.sweets img#sweets-set {
 
         /* 画像サイズurl変更場所------------------------------ */
         background-image: url(../../common/image/h2_bg.png);
-        width: 220px;
-        height: 40px;
-        top: -8px;
-        left: -110px;
+        width: 530px;
+        height: 96px;
+        top: -36px;
+        left: -265px;
         /* --------------------------------------------------- */
     }
 
     /* ----------------------------------------------------- */
 
+    main div.kasou-main section.attraction {
+        margin-top: 80px;
 
-
-    main div.kasou-main h3 {
-        text-align: left;
-        font-size: 24px;
-        font-weight: bold;
-        letter-spacing: 0.3em;
-        margin-bottom: 20px;
+        margin-bottom: 120px;
     }
 
-    main div.kasou-main section.attraction h3 {
+
+    section.attraction h3 {
         margin-top: 80px;
     }
 
-
-    main div.kasou-main img {
-        width: 44%;
-        /* 600/1366=0.44 */
-        margin-right: 40px;
-        margin-bottom: 0px;
-    }
-
-    main div.kasou-main p.attraction-ex {
+    section.attraction p.attraction-ex {
         background: rgba(237, 161, 132, 0.2);
-        font-size: 12px;
-        line-height: 19.2px;
-        padding: 20px 16px;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 20px 20px;
+        margin: 0px;
+    }
+
+    section.attraction p.attraction-exs {
         margin-bottom: 0px;
     }
 
-    main div.kasou-main p.attraction-exs {
-        margin-bottom: 60px
-    }
-
-    main div.kasou-main div#gaomei-wetland {
+    section.attraction div#gaomei-wetland {
         display: flex;
         margin-bottom: 20px;
+        align-items: center;
+    }
+
+    section.attraction div#lowtide-sunset {
+        display: flex;
+        margin-bottom: 120px;
+        align-items: center;
+    }
+
+    section.attraction h3#rainbow-village-h3 {
+        margin-top: 120px;
+    }
+
+    section.attraction div#rainbow-village {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    section.attraction div#rainbow-village-2 {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
     }
 
 
