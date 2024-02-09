@@ -21,14 +21,37 @@ main nav ul {
 
 
 /* -----main-----*/
+
+/* -----------------見出し 共有-------------------------------------*/
+/* 疑似要素の親 */
+.Midashi {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.Midashi span {
+  font-size: 12px;
+}
+
+.Midashiimg {
+  position: relative;
+  height: 0.5px;
+  /* 見出しの基準位置変更場所％で指定してください------- */
+  left: 50%;
+  /* --------------------------------------------------- */
+  width: 100%;
+}
+
 /* ********************************************* */
 main div.kasou-main {
-  text-align: center;
+  margin: 0 auto;
 }
 
 h3 {
   text-align: center;
   font-size: 24px;
+  font-weight: bold;
   letter-spacing: 0.3em;
   margin-bottom: 20px;
 }
@@ -38,41 +61,82 @@ main div.kasou-main img {
   margin-bottom: 20px;
 }
 
-p.att {
+.attraction p {
   background-color: rgba(108, 186, 216, 0.2);
   font-size: 12px;
   line-height: 19.2px;
   padding: 20px 16px;
   margin-bottom: 20px;
+  text-align: left;
+}
 
+.night-market p {
+  padding: 12px 0;
+  line-height: 19.2px;
+  font-size: 12px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 66px;
 }
 
 main div.kasou-main p.attraction-exs {
   margin-bottom: 60px
 }
 
+.att-sub {
+  width: 100%;
+  display: flex;
+  gap: 4%;
+  justify-content: center;
+}
+
+.att-sub img>* {
+  max-width: 45.4%;
+}
+
+.att-sub img {
+  /* aspect-ratio: 2/3;
+object-fit: cover; 
+display: block; */
+}
+
+/*section　access */
+
+.access p {
+  text-align: center;
+  padding: 12px 0;
+  line-height: 19.2px;
+  font-size: 12px;
+  border-bottom: 1px solid #000;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 66px;
+  margin-bottom: 20px;
+}
+
+.access dl {
+  width: 100%;
+  text-align: left;
+}
+
+.access dt dd {
+  display: block;
+  padding: 12px 0;
+  line-height: 19.2px;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.access dt img {
+  width: 26.6%;
+}
+
+
+
 /* ********************************************* */
 
-/* -----------------見出し 共有-------------------------------------*/
-/* 疑似要素の親 */
-#Midashi {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-#Midashi span {
-  font-size: 12px;
-}
-
-#Midashiimg {
-  position: relative;
-  height: 0.5px;
-  /* 見出しの基準位置変更場所％で指定してください------- */
-  left: 50%;
-  /* --------------------------------------------------- */
-  width: 100%;
-}
 
 
 
@@ -103,7 +167,7 @@ main div.kasou-main p.attraction-exs {
 
 
   .att {
-    width: 35.1%;
+    width: 100%;
     background-color: rgba(108, 186, 216, 0.2);
   }
 

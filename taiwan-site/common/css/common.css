@@ -400,7 +400,7 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 
 /* --------------------main領域スペース設定-------------------- */
 main {
-  margin: 0 40px 0 8px;
+  margin: 8px 40px 60px 8px;
 }
 
 main div.kasou-main {
@@ -410,7 +410,7 @@ main div.kasou-main {
 @media screen and (min-width: 767px) {
 
   main {
-    margin: 0 20px;
+    margin: 20px 20px;
   }
 
   main div.kasou-main {
@@ -433,6 +433,13 @@ main nav ul li.previous-screen {
   text-decoration-line: underline;
 
   margin-right: 4px;
+}
+
+@media screen and (min-width: 767px) {
+  main nav ul {
+    font-size: 20px;
+  }
+
 }
 
 /* ---パンくず--- */
