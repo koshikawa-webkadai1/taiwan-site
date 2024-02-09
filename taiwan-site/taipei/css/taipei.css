@@ -19,20 +19,20 @@ main nav ul {
 
 /* -----main-----*/
 /* *****imgに使用sp用クラス***************************** */
-/* .pc {
+.pc {
   display: none !important;
 }
 
 .sp {
-  display: block !important;
-} */
+  display: inline-block !important;
+}
 
 /* **************************************************** */
 
 /* -----------------見出し 共有-------------------------------------*/
 /* 疑似要素の親 */
-/* .Midashi {
-  font-size: 20px;
+.Midashi {
+  font-size: 24px;
   text-align: center;
   margin-bottom: 48px;
 }
@@ -43,12 +43,27 @@ main nav ul {
 
 .Midashiimg {
   position: relative;
-  height: 0.5px; */
-/* 見出しの基準位置変更場所％で指定してください------- */
-/* left: 50%; */
-/* --------------------------------------------------- */
-/* width: 100%;
-} */
+  display: inline;
+  height: 0.5px;
+  left: 50%;
+  width: 100%;
+
+}
+
+.Midashiimg::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-image: url(../../common/image/h2_bg.png);
+  background-size: contain;
+  width: 220px;
+  height: 40px;
+  top: -8px;
+  left: -110px;
+
+}
+
+/* ----------------------------------------------------- */
 
 
 /* ********attraction************** */
@@ -59,8 +74,6 @@ main div.kasou-main {
 .container {
   padding: 0 4vw;
 }
-
-
 
 h3 {
   text-align: center;
@@ -85,7 +98,6 @@ main div.kasou-main img {
 }
 
 .attraction p.point {
-
   text-align: center;
 }
 
@@ -102,14 +114,11 @@ main div.kasou-main p.attraction-exs {
   width: 100%;
   display: flex;
   column-gap: 5.8%;
-
 }
 
 .figure {
   width: 50%;
 }
-
-
 
 
 /* ********night market************ */
@@ -133,6 +142,7 @@ main div.kasou-main p.attraction-exs {
   grid-template-columns: 1fr 1fr;
   gap: 12px 12px;
 }
+
 
 
 /* *******section　access******** */
@@ -179,28 +189,121 @@ main div.kasou-main p.attraction-exs {
   /* -----header----- */
 
   /* -----main----- */
+  /* -----------------見出し 共有-------------------------------------*/
 
+  h2 {
+    text-align: left;
+  }
+
+  /* 疑似要素の親 */
+  .Midashi {
+    font-size: 48px;
+    text-align: left;
+    margin-left: 8%;
+    margin-bottom: 48px;
+  }
+
+  .Midashi span {
+    font-size: 24px;
+  }
+
+  .Midashiimg {
+    position: relative;
+    display: inline;
+    height: 0.5px;
+    left: 14%;
+    width: 100%;
+
+  }
+
+  .Midashiimg::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-image: url(../../common/image/h2_bg.png);
+    background-size: contain;
+    width: 530px;
+    height: 96px;
+    top: -25px;
+    left: -270px;
+
+  }
+
+  /* ----------------------------------------------------- */
 
   h3 {
     font-size: 24px;
     font-weight: bold;
   }
 
+
+
+  /* -----main----- */
+  /* *****imgに使用pc用クラス***************************** */
+  .pc {
+    display: inline-block !important;
+  }
+
+  .sp {
+    display: none !important;
+  }
+
+  /* attraction**************************************************** */
+
+  /* attractionの画像＋テキストのひとくくり画像とテキストの間にcolumun-gapで空きをつくる */
+  .attraction .cont_inner {
+    display: flex;
+    column-gap: 3.44%;
+    justify-content: right;
+  }
+
+  .attraction p {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  /* attractionのサブ画像２つ入っているdiv方の横サイズ */
+  .att-sub {
+    width: 50%;
+    column-gap: unset;
+  }
+
+  /* attractionのサブ画像*/
+  .figure {
+    width: 25%;
+    display: grid;
+    grid-template-columns: auto 50%;
+    column-gap: 10px;
+
+  }
+
+  /*attractionセクションの最初のイメージ */
+  .fig_01 {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .fig_02 {
+    margin-right: 19px;
+  }
+
+
+  .attraction p.point {
+    text-align: center;
+    height: 8.62%;
+    align-self: center;
+  }
+
+  /* night market****************** */
+
+  .night-market .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 40px;
+  }
+
+  .night-market .cont_inner {}
+
+
+
 }
-
-/* -----main----- */
-/* *****imgに使用pc用クラス***************************** */
-/* .pc {
-  display: block !important;
-}
-
-.sp {
-  display: none !important;
-} */
-
-/* **************************************************** */
-
-/* .cont_inner {
-  display: inline-block;
-
-} */
