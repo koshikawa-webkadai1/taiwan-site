@@ -12,7 +12,8 @@ div.pc-kasou {
 @media screen and (min-width: 767px) {
 
   div.pc-kasou {
-    margin: 0 83px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
