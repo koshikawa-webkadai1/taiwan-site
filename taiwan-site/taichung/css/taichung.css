@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 
-div.pc-kasou {
-    margin: 0 0px;
-}
-
 /* --------------------main-------------------- */
 main div.kasou-main {
     text-align: center;
@@ -216,10 +212,6 @@ section.sweets div#grid img#sweets-set {
 @media screen and (min-width: 767px) {
 
     /* --------------------main-------------------- */
-
-    div.pc-kasou {
-        margin: 0 83px;
-    }
 
     main div.kasou-main {
         text-align: left;
