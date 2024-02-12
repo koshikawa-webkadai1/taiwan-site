@@ -78,6 +78,14 @@ section.attraction p.attraction-ex {
   margin-bottom: 20px;
 }
 
+section.attraction div.attraction-2img {
+  width: 50%;
+  display: flex;
+
+
+}
+
+
 section.attraction p.attraction-exs {
   margin-bottom: 60px
 }
