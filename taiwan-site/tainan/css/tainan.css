@@ -152,7 +152,7 @@ section.museum div#museum div.button {
 
 section.museum div#museum div button {
   font-size: 12px;
-  border: 2px solid rgba(1, 128, 190, 0.5);
+  /* border: 2px solid rgba(1, 128, 190, 0.5); */
   padding: 12px;
 }
 
@@ -432,7 +432,7 @@ section.sweets div#grid img#sweets-set {
 
   section.museum div#museum div button {
     font-size: 20px;
-    border: 2px solid rgba(1, 128, 190, 0.5);
+    /* border: 2px solid rgba(1, 128, 190, 0.5); */
     padding: 21px 27px;
   }
 
@@ -566,7 +566,7 @@ section.sweets div#grid img#sweets-set {
   visibility: hidden;
   text-align: center;
   /* ----------------モーダル背景色変更場所------------------------- */
-
+  background-color: white;
   /* --------------------------------------------------------------- */
 }
 
@@ -658,7 +658,7 @@ section.sweets div#grid img#sweets-set {
   visibility: hidden;
   text-align: center;
   /* ----------------モーダル背景色変更場所------------------------- */
-
+  background-color: white;
   /* --------------------------------------------------------------- */
 }
 
@@ -749,7 +749,7 @@ section.sweets div#grid img#sweets-set {
   visibility: hidden;
   text-align: center;
   /* ----------------モーダル背景色変更場所------------------------- */
-
+  background-color: white;
   /* --------------------------------------------------------------- */
 }
 
@@ -841,7 +841,7 @@ section.sweets div#grid img#sweets-set {
   visibility: hidden;
   text-align: center;
   /* ----------------モーダル背景色変更場所------------------------- */
-
+  background-color: white;
   /* --------------------------------------------------------------- */
 }
 
@@ -913,6 +913,15 @@ section.sweets div#grid img#sweets-set {
 @media screen and (min-width: 767px) {
 
   /* PC版モーダル1 */
+  #modal-openbutton {
+    position: inherit;
+    border: 2px solid #ff7b00;
+    width: 210px;
+    height: 63px;
+    font-size: 20px;
+    text-align: center;
+  }
+
   .modal img {
     margin-top: 120px;
     width: 33%;
@@ -920,6 +929,15 @@ section.sweets div#grid img#sweets-set {
   }
 
   /* PC版モーダル2 */
+  #modal-openbutton2 {
+    position: inherit;
+    border: 2px solid #ff7b00;
+    width: 210px;
+    height: 63px;
+    font-size: 20px;
+    text-align: center;
+  }
+
   .modal2 img {
     margin-top: 120px;
     width: 33%;
@@ -927,6 +945,15 @@ section.sweets div#grid img#sweets-set {
   }
 
   /* PC版モーダル3 */
+  #modal-openbutton3 {
+    position: inherit;
+    border: 2px solid #ff7b00;
+    width: 210px;
+    height: 63px;
+    font-size: 20px;
+    text-align: center;
+  }
+
   .modal3 img {
     margin-top: 120px;
     width: 33%;
@@ -934,6 +961,15 @@ section.sweets div#grid img#sweets-set {
   }
 
   /* PC版モーダル4 */
+  #modal-openbutton4 {
+    position: inherit;
+    border: 2px solid #ff7b00;
+    width: 210px;
+    height: 63px;
+    font-size: 20px;
+    text-align: center;
+  }
+
   .modal4 img {
     margin-top: 120px;
     width: 33%;
