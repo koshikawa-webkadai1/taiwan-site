@@ -115,36 +115,49 @@
       <h2 id="Midashi">Gallery <span>ギャラリー</span></h2>
       <!-- ------------------------------------------------ -->
       <!-- ここにスライドショー 作成する-->
-      
-        <div id="image-box">
+      <div class="imgBox">
+        <img src="top/image/gall_slider_01.jpg" alt="" id="main_images" />
+        <div class="prevnext">
+          <div id="prev" class="btn"></div>
+          <div id="next" class="btn"></div>
+        </div>
+        <div class="btnBox">
+          <a href="#section2" id="btn1" onclick="buttonClick1()" class="now"></a>
+          <a href="#section2" id="btn2" onclick="buttonClick2()"></a>
+          <a href="#section2" id="btn3" onclick="buttonClick3()"></a>
+          <a href="#section2" id="btn4" onclick="buttonClick4()"></a>
+          <a href="#section2" id="btn5" onclick="buttonClick5()"></a>
+        </div>
+      </div>
+      <!-- <div id="image-box">
         <img src="top/image/gall_slider_01.jpg" alt="" id="main_images">
         </div>
         <div class="prevnext">
           <div id="prev" class="btn"></div>
          <div id="next" class="btn"></div>
         </div>
-      <div class="nav">
-        <div id="one" class="now" onclick="btn1()"></div>
+      <div class="navs">
+        <div id="one" class="nowi" onclick="btn1()"></div>
         <div id="two"  onclick="btn2()"></div>
         <div id="three" onclick="btn3()"></div>   
         <div id="four" onclick="btn4()"></div>
         <div id="five" onclick="btn5()"></div>
-      </div>
+      </div> -->
     </section>
 
     <section id="section3">
       <div id="Midashiimg2"></div>
       <h2 id="Midashi2">Travel <span>おすすめスポット</span></h2>
 
-      <p>訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介します。様々な風景に誰もが魅了されるでしょう。</p>
-
-
-      <div id="p">
-        <div id="images">
-          <img src="top/image/travel_map.svg" alt="" id="map">
-          <a href=""><img src="top/image/taipei_bt_img.svg" alt="" id="taipei"></a>
-          <a href=""><img src="top/image/taichung_bt_img.svg" alt="" id="taityun"></a>
-          <a href=""><img src="top/image/tainan_bt_img.svg" alt="" id="tainan"></a>
+      <div id="section3flex">
+        <p>訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介します。様々な風景に誰もが魅了されるでしょう。</p>
+        <div id="p">
+          <div id="images">
+            <img src="top/image/travel_map.svg" alt="" id="map">
+            <a href=""><img src="top/image/taipei_bt_img.svg" alt="" id="taipei"></a>
+            <a href=""><img src="top/image/taichung_bt_img.svg" alt="" id="taityun"></a>
+            <a href=""><img src="top/image/tainan_bt_img.svg" alt="" id="tainan"></a>
+          </div>
         </div>
       </div>
 
@@ -153,22 +166,30 @@
     <section id="section4">
       <!-- Event -->
       <div id="Midashiimg3"></div>
-      <h2>Event <span>おすすめイベント</span></h2>
+      <h2 id="Midashi3">Event <span>おすすめイベント</span></h2>
       <section id="rantan">
         <h3>台湾ランタンフェスティバル</h3>
-        <img src="top/image/event01_img.jpg" alt="ランタンフェス画像" class="eventimg">
-        <h4>開催期間</h4>
-        <p class="setumei1">春節 旧暦元日 (2月24日~3月2日)</p>
-        <p class="setumei2">春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。</p>
+        <div class="section4flex">
+          <img src="top/image/event01_img.jpg" alt="ランタンフェス画像" class="eventimg">
+          <div class="item">
+            <h4>開催期間</h4>
+            <p class="setumei1">春節 旧暦元日 (2月24日~3月2日)</p>
+            <p class="setumei2">春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。</p>
+          </div>
+        </div>
       </section>
 
       <section id="countdown">
         <h3>台北最High新年城<br>
           カウントダウンパーティー</h3>
-        <img src="top/image/event02_img.jpg" alt="カウントダウンパーティー" id="eventimg2">
-        <h4>開催期間</h4>
-        <p class="setumei1">12月31日~1月1日</p>
-        <p class="setumei2">台北101では毎年、元旦0時から約3分間、ビルを覆い尽くすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
+        <div class="section4flex">
+          <img src="top/image/event02_img.jpg" alt="カウントダウンパーティー" id="eventimg2">
+          <div class="item">
+            <h4>開催期間</h4>
+            <p class="setumei1">12月31日~1月1日</p>
+            <p class="setumei2">台北101では毎年、元旦0時から約3分間、ビルを覆い尽くすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
+          </div>
+        </div>
       </section>
     </section>
 
@@ -258,6 +279,7 @@
     </div>
 
     <small>Copylight(c)TAIWAN Traveler</small>
+    <script src="top/js/top.js"></script>
   </footer>
 </body>
 
