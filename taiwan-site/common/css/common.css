@@ -133,7 +133,7 @@ nav div.nav {
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 95;
 
 }
 
@@ -495,6 +495,7 @@ main nav ul li.previous-screen {
   top: -8px;
   left: -110px;
 }
+
 /* 見出し左スタイル！ h2が左端にある状態でコピペしてください*/
 
 /* #Midashi {
@@ -515,7 +516,8 @@ main nav ul li.previous-screen {
   left: -110px;
 } */
 
-/* /* 見出し右スタイル！ h2が右端にある状態でコピペしてください*/ */
+/* /* 見出し右スタイル！ h2が右端にある状態でコピペしてください*/
+*/
 /* #section3 h2{
   font-size: 48px;
 }

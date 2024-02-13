@@ -556,6 +556,7 @@ section.sweets div#grid img#sweets-set {
     text-align: center;
     /* ----------------モーダル背景色変更場所------------------------- */
     background-color: #0180BE;
+    z-index: 99;
     /* --------------------------------------------------------------- */
 }
 
@@ -648,6 +649,7 @@ section.sweets div#grid img#sweets-set {
     text-align: center;
     /* ----------------モーダル背景色変更場所------------------------- */
     background-color: #0180BE;
+    z-index: 99;
     /* --------------------------------------------------------------- */
 }
 
@@ -739,6 +741,7 @@ section.sweets div#grid img#sweets-set {
     text-align: center;
     /* ----------------モーダル背景色変更場所------------------------- */
     background-color: #0180BE;
+    z-index: 99;
     /* --------------------------------------------------------------- */
 }
 
@@ -831,6 +834,7 @@ section.sweets div#grid img#sweets-set {
     text-align: center;
     /* ----------------モーダル背景色変更場所------------------------- */
     background-color: #0180BE;
+    z-index: 99;
     /* --------------------------------------------------------------- */
 }
 
