@@ -60,7 +60,7 @@ main div.kasou-main div.text-align-change {
 /* ----------------------------------------------------- */
 
 
-main div.kasou-main section.attraction {
+/* main div.kasou-main section.attraction {
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -88,7 +88,7 @@ section.attraction div.attraction-2img {
 
 section.attraction p.attraction-exs {
   margin-bottom: 60px
-}
+} */
 
 
 
@@ -290,7 +290,8 @@ section.sweets div#grid img#sweets-set {
   }
 
 
-  section.attraction h3 {
+
+  /* section.attraction h3 {
     margin-top: 80px;
   }
 
@@ -332,7 +333,7 @@ section.sweets div#grid img#sweets-set {
     display: flex;
     margin-bottom: 120px;
     align-items: center;
-  }
+  } */
 
 
 
