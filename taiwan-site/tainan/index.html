@@ -48,6 +48,60 @@
   <!-------------->
 
 
+  <!-- モーダル作成 共有部分 各ページに4つ-->
+
+  <div class="modal">
+    <div id="modalinner">
+      <div class="modalclose"></div>
+      <div id="modalcontent">
+        <!-- --モーダル1中身変更場所- -->
+        <img src="image/gou_modal_img01.jpg" alt="">
+        <!-- ----------------------- -->
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------- -->
+
+  <!-- モーダル2つめ -->
+  <div class="modal2">
+    <div id="modalinner2">
+      <div class="modalclose2"></div>
+      <div id="modalcontent2">
+        <!-- --モーダル2中身変更場所- -->
+        <img src="image/gou_modal_img02.jpg" alt="">
+        <!-- ----------------------- -->
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------------- -->
+
+  <!-- モーダル3つめ -->
+  <div class="modal3">
+    <div id="modalinner3">
+      <div class="modalclose3"></div>
+      <div id="modalcontent3">
+        <!-- --モーダル2中身変更場所- -->
+        <img src="image/gou_img03.jpg" alt="">
+        <!-- ----------------------- -->
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------------- -->
+
+  <!-- モーダル4つめ -->
+  <div class="modal4">
+    <div id="modalinner4">
+      <div class="modalclose4"></div>
+      <div id="modalcontent4">
+        <!-- --モーダル2中身変更場所- -->
+        <img src="image/gou_img04.jpg" alt="">
+        <!-- ----------------------- -->
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------------- -->
+
+
 
   <!-- header領域のHTML、各ページに要コピー -->
   <header>
@@ -101,6 +155,7 @@
       </div>
     </div>
   </header>
+
 
 
   <main>
@@ -218,7 +273,8 @@
 
                 <div class="button">
 
-                  <button>画像を見る <span class="arrow"> </span></button>
+                  <!-- <button>画像を見る <span class="arrow"> </span></button> -->
+                  <button id="modal-openbutton" onclick="Open()">画像を見る<span>▶</span></button>
                 </div>
 
               </div>
@@ -233,7 +289,8 @@
                 <p class="explanation">台南10大美食にも選ばれている代表料理です。中でも有名な「矮仔成」は、台南に来ないと味わえない料理として知られており、日本人にも好まれる味です。　</p>
                 <div class="button">
 
-                  <button>画像を見る<span class="arrow"> </span></button>
+                  <!-- <button>画像を見る<span class="arrow"> </span></button> -->
+                  <button id="modal-openbutton2" onclick="Open2()">画像を見る<span>▶</span></button>
                 </div>
 
 
@@ -252,7 +309,8 @@
                 <p class="explanation">小籠包は世界中で愛されている台湾料理の一つですよね。「上海華都小吃」は、上海スタイルの料理を提供してくれるお店で、特に小籠包に定評があります。</p>
 
                 <div class="button">
-                  <button>画像を見る<span class="arrow"> </span></button>
+                  <!-- <button>画像を見る<span class="arrow"> </span></button> -->
+                  <button id="modal-openbutton3" onclick="Open3()">画像を見る<span>▶</span></button>
                 </div>
 
 
@@ -270,7 +328,9 @@
                 <p class="explanation">台湾の軽食文化を指す小吃は、台湾の人々の日々の食生活に欠かせないものとなっています。中でも「亞德當歸鴨」の鴨肉飯は人気の一品です。</p>
 
                 <div class="button">
-                  <button>画像を見る<span class="arrow"> </span></button>
+                  <!-- <button>画像を見る<span class="arrow"> </span></button> -->
+                  <button id="modal-openbutton4" onclick="Open4()">画像を見る<span>▶</span></button>
+
                 </div>
 
               </div>
@@ -366,62 +426,6 @@
 
   </footer>
 
-  <!-- モーダル作成 共有部分 各ページに4つ-->
-  <button id="modal-openbutton" onclick="Open()">画像を見る<span>▶</span></button>
-
-  <div class="modal">
-    <div id="modalinner">
-      <div class="modalclose"></div>
-      <div id="modalcontent">
-        <!-- --モーダル1中身変更場所- -->
-        <img src="image/gou_modal_img01.jpg" alt="">
-        <!-- ----------------------- -->
-      </div>
-    </div>
-  </div>
-  <!-- ------------------------------- -->
-  <!-- モーダル2つめ -->
-  <button id="modal-openbutton2" onclick="Open2()">画像を見る<span>▶</span></button>
-
-  <div class="modal2">
-    <div id="modalinner2">
-      <div class="modalclose2"></div>
-      <div id="modalcontent2">
-        <!-- --モーダル2中身変更場所- -->
-        <img src="image/gou_modal_img01.jpg" alt="">
-        <!-- ----------------------- -->
-      </div>
-    </div>
-  </div>
-  <!-- -------------------------------- -->
-  <!-- モーダル3つめ -->
-  <button id="modal-openbutton3" onclick="Open3()">画像を見る<span>▶</span></button>
-
-  <div class="modal3">
-    <div id="modalinner3">
-      <div class="modalclose3"></div>
-      <div id="modalcontent3">
-        <!-- --モーダル2中身変更場所- -->
-        <img src="image/gou_modal_img01.jpg" alt="">
-        <!-- ----------------------- -->
-      </div>
-    </div>
-  </div>
-  <!-- -------------------------------- -->
-  <!-- モーダル4つめ -->
-  <button id="modal-openbutton4" onclick="Open4()">画像を見る<span>▶</span></button>
-
-  <div class="modal4">
-    <div id="modalinner4">
-      <div class="modalclose4"></div>
-      <div id="modalcontent4">
-        <!-- --モーダル2中身変更場所- -->
-        <img src="image/gou_modal_img01.jpg" alt="">
-        <!-- ----------------------- -->
-      </div>
-    </div>
-  </div>
-  <!-- -------------------------------- -->
 
 
   <script src="../common/js/loading.js"></script>
