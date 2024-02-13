@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 header {
   /* height: 82vh;
    */
@@ -85,7 +84,6 @@ main {
   height: 0.5px;
   left: 50%;
   width: 100%;
-
 }
 
 #Midashiimg::before {
@@ -121,12 +119,39 @@ main {
   font-size: 12px;
 }
 
+/* スライドショー */
+#image-box {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 18px;
+}
+
+.nav {
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav div {
+  width: 18px;
+  height: 18px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.now {
+  background: #000;
+}
+
 /* section3 */
 
 #Midashi2 {
   font-size: 24px;
   text-align: center;
   margin-bottom: 48px;
+  margin-top: 60px;
 }
 
 #Midashi2 span {
@@ -380,7 +405,7 @@ main {
 
   #Formosa1 h2 {
     font-size: 48px;
-
+    text-align: left;
   }
 
   #Formosa1 h3 {
@@ -429,6 +454,51 @@ main {
     margin-right: 6%;
     margin-bottom: 12%;
     line-height: 32px;
+  }
+
+  /* section2 */
+  #section2{
+    text-align: left;
+  }
+  #Midashi {
+    font-size: 48px;
+    text-align: left;
+    margin-left: 16%;
+  }
+  #Midashi span {
+    font-size: 24px;
+  }
+  #Midashiimg {
+    left: 16%;
+  }
+  #Midashiimg::before {
+    width: 530px;
+    height: 96px;
+    top: -15px;
+    left: -110px;
+  }
+
+  /* section3 */
+  #section3 h2{
+    text-align: right;
+    font-size: 48px;
+  }
+
+  #Midashi2 {
+    
+    margin-right: 16%;
+  }
+  #Midashi2 span {
+    font-size: 24px;
+  }
+  #Midashiimg2 {
+    left: 84%;
+  }
+  #Midashiimg2::before {
+    width: 530px;
+    height: 96px;
+    top: -15px;
+    left: -430px;
   }
 
 
