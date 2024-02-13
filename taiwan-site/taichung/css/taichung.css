@@ -535,6 +535,37 @@ section.sweets div#grid img#sweets-set {
 }
 
 /* モーダル */
+
+div.modal-outside {
+    /* margin: 0 40px; */
+}
+
+div.modal-outside p.modal-start {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+
+div.modal-outside img.img-top {
+    margin-right: 15px;
+}
+
+
+div.modal-outside div.modal-end {
+    text-align: left;
+}
+
+p.business-hours {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 19.2px;
+    color: #ffffff;
+    margin: 0 40px;
+
+}
+
 /* モーダルウィンドウ */
 /* -----------ボタンスタイル変更場所------------ */
 #modal-openbutton {
@@ -614,10 +645,11 @@ section.sweets div#grid img#sweets-set {
 
 /*----------------------- モーダルの中身スタイル変更場所SP--------------- */
 .modal img {
-    width: 280px;
-    height: 280px;
-    margin-top: 80px;
-    box-shadow: 10px 10px 12px 4px #ccc;
+    width: 140px;
+    height: 140px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    box-shadow: none;
 }
 
 /* ----------------------------------------------------------------
@@ -707,10 +739,11 @@ section.sweets div#grid img#sweets-set {
 
 /*----------------------- モーダルの中身スタイル変更場所SP--------------- */
 .modal2 img {
-    width: 280px;
-    height: 280px;
-    margin-top: 80px;
-    box-shadow: 10px 10px 12px 4px #ccc;
+    width: 140px;
+    height: 140px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    box-shadow: none;
 }
 
 /* ----------------------------------------------------------------------
@@ -799,10 +832,11 @@ section.sweets div#grid img#sweets-set {
 
 /*----------------------- モーダルの中身スタイル変更場所SP--------------- */
 .modal3 img {
-    width: 280px;
-    height: 280px;
-    margin-top: 80px;
-    box-shadow: 10px 10px 12px 4px #ccc;
+    width: 140px;
+    height: 140px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    box-shadow: none;
 }
 
 /* ----------------------------------------------------------------
@@ -892,10 +926,10 @@ section.sweets div#grid img#sweets-set {
 
 /*----------------------- モーダルの中身スタイル変更場所SP--------------- */
 .modal4 img {
-    width: 280px;
-    height: 280px;
-    margin-top: 80px;
-    box-shadow: 10px 10px 12px 4px #ccc;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+    box-shadow: none;
 }
 
 /* ----------------------------------------------------------------
@@ -904,6 +938,25 @@ section.sweets div#grid img#sweets-set {
 
 
 @media screen and (min-width: 767px) {
+
+    p.modal-start {
+        font-weight: bold;
+        font-size: 36px;
+        color: #ffffff;
+    }
+
+
+    div.modal-outside img.img-top {
+        margin-right: 60px;
+    }
+
+    p.modal-end {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+
+    }
 
     /* PC版モーダル1 */
     #modal-openbutton {
@@ -916,9 +969,11 @@ section.sweets div#grid img#sweets-set {
     }
 
     .modal img {
-        margin-top: 120px;
-        width: 33%;
-        height: auto;
+        width: 280px;
+        height: 280px;
+
+        /* width: 33%;
+        height: auto; */
     }
 
     /* PC版モーダル2 */
@@ -932,9 +987,11 @@ section.sweets div#grid img#sweets-set {
     }
 
     .modal2 img {
-        margin-top: 120px;
+        width: 280px;
+        height: 280px;
+        /* 
         width: 33%;
-        height: auto;
+        height: auto; */
     }
 
     /* PC版モーダル3 */
@@ -948,9 +1005,11 @@ section.sweets div#grid img#sweets-set {
     }
 
     .modal3 img {
-        margin-top: 120px;
-        width: 33%;
-        height: auto;
+        width: 280px;
+        height: 280px;
+
+        /* width: 33%;
+        height: auto; */
     }
 
     /* PC版モーダル4 */
@@ -964,9 +1023,11 @@ section.sweets div#grid img#sweets-set {
     }
 
     .modal4 img {
-        margin-top: 120px;
-        width: 33%;
-        height: auto;
+        width: 280px;
+        height: 280px;
+
+        /* width: 33%;
+        height: auto; */
     }
 
     /* -------------------------------------------------------------- 
