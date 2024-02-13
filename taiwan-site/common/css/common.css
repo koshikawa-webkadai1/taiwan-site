@@ -5,6 +5,18 @@ body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
+div.pc-kasou {
+  margin: 0 0px;
+}
+
+@media screen and (min-width: 767px) {
+
+  div.pc-kasou {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 /* *********************************************** */
 /* ローディング***javascriptのパターンのcss */
 /* *********************************************** */

@@ -1,15 +1,562 @@
 @charset "UTF-8";
+
+
+/* --------------------main-------------------- */
+main div.kasou-main {
+  text-align: center;
+}
+
+main div.kasou-main h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  margin-bottom: 20px;
+}
+
+main div.kasou-main img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main div.kasou-main div.text-align-change {
+  text-align: left;
+}
+
+
+/* -----------------見出し 共有-------------------------------------*/
+/* 疑似要素の親 */
+.Midashi {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.Midashi span {
+  font-size: 12px;
+}
+
+.Midashiimg {
+  position: relative;
+  height: 0.5px;
+
+
+  /* 見出しの基準位置変更場所％で指定してください------- */
+  left: 50%;
+  /* --------------------------------------------------- */
+}
+
+.Midashiimg::before {
+
+  /* 画像サイズurl変更場所------------------------------ */
+  background-image: url(../../common/image/h2_bg.png);
+  width: 220px;
+  height: 40px;
+  top: -8px;
+  left: -110px;
+  /* --------------------------------------------------- */
+}
+
+/* ----------------------------------------------------- */
+
+
+main div.kasou-main section.attraction {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+section.attraction h3 {
+  margin-top: 60px;
+}
+
+
+section.attraction p.attraction-ex {
+  background: rgba(237, 161, 132, 0.2);
+  font-size: 12px;
+  line-height: 19.2px;
+  padding: 20px 16px;
+  margin-bottom: 20px;
+}
+
+section.attraction div.attraction-2img {
+  width: 50%;
+  display: flex;
+
+
+}
+
+
+section.attraction p.attraction-exs {
+  margin-bottom: 60px
+}
+
+
+
+section.museum p.museum {
+  width: 76%;
+  /* 225/295=0.763 */
+  font-size: 12px;
+  line-height: 19.2px;
+  padding: 12px 0;
+  margin: 0px auto;
+  margin-bottom: 40px;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+
+}
+
+
+section.museum div#museum {
+  text-align: left;
+}
+
+section.museum div#museum div.museum-elements {
+  margin-bottom: 40px;
+}
+
+section.museum div#museum div#taichung {
+  margin-bottom: 60px;
+}
+
+section.museum div#museum p.subtitle {
+  font-size: 12px;
+  line-height: 22.5px;
+}
+
+section.museum div#museum p.hall-name {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22.5px;
+  margin-bottom: 12px;
+
+}
+
+section.museum div#museum img {
+  margin-bottom: 12px;
+  height: 17vh;
+  /* 135/812=0.166 */
+  object-fit: cover;
+}
+
+section.museum div#museum p.explanation {
+  font-size: 12px;
+  line-height: 19.2px;
+  margin-bottom: 12px;
+
+}
+
+section.museum div#museum div.button {
+  display: flex;
+  justify-content: right;
+}
+
+section.museum div#museum div button {
+  font-size: 12px;
+  border: 2px solid rgba(1, 128, 190, 0.5);
+  padding: 12px;
+}
+
+
+section.museum div#museum button span.arrow {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid rgb(1, 128, 190);
+  /* (√2*7)/2＝5.94 */
+
+  margin-left: 7.1px;
+
+}
+
+
+
+
+
+
+main div.kasou-main section.sweets p {
+  font-size: 12px;
+  margin-bottom: 20px;
+
+}
+
+section.sweet div#grids img#ophthalmology {
+  margin-bottom: 20px;
+}
+
+section.sweets div#grid div#Instore-coffee {
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+}
+
+section.sweets div#grid div#Instore-coffee img {
+  width: 50%;
+  /* 140/295=0.47 */
+  margin-bottom: 0px;
+
+}
+
+section.sweets div#grid div#Instore-coffee img#calc {
+  padding-right: 15px;
+}
+
+section.sweets div#grid img#sweets-set {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------main-------------------- */
+
+@media screen and (min-width: 767px) {
+
+  /* --------------------main-------------------- */
+
+
+  main div.kasou-main {
+    text-align: left;
+  }
+
+  main div.kasou-main h3 {
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    margin-bottom: 20px;
+  }
+
+  main div.kasou-main img {
+    width: 44%;
+    /* 600/1366=0.44 */
+    margin-right: 40px;
+    margin-bottom: 0px;
+  }
+
+  main div.kasou-main div.text-align-change {
+    text-align: none;
+  }
+
+
+  /* -----------------見出し 共有-------------------------------------*/
+  /* 疑似要素の親 */
+  .Midashi {
+    font-size: 48px;
+    text-align: left;
+    margin-left: 63px;
+    margin-bottom: 48px;
+  }
+
+  .Midashi span {
+    font-size: 24px;
+  }
+
+  .Midashiimg {
+    position: relative;
+    height: 0.5px;
+
+
+    /* 見出しの基準位置変更場所％で指定してください------- */
+    left: 19%;
+    /* --------------------------------------------------- */
+  }
+
+  .Midashiimg::before {
+
+    /* 画像サイズurl変更場所------------------------------ */
+    background-image: url(../../common/image/h2_bg.png);
+    width: 530px;
+    height: 96px;
+    top: -21px;
+    /* 45(線と画像の底辺が同じ時)-24(スペース量)=21px */
+    left: -265px;
+    /* --------------------------------------------------- */
+  }
+
+  /* ----------------------------------------------------- */
+
+  main div.kasou-main section.attraction {
+    margin-top: 80px;
+
+    margin-bottom: 120px;
+  }
+
+
+  section.attraction h3 {
+    margin-top: 80px;
+  }
+
+  section.attraction p.attraction-ex {
+    background: rgba(237, 161, 132, 0.2);
+    font-size: 20px;
+    line-height: 32px;
+    padding: 20px 20px;
+    margin: 0px;
+  }
+
+  section.attraction p.attraction-exs {
+    margin-bottom: 0px;
+  }
+
+  section.attraction div#gaomei-wetland {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  section.attraction div#lowtide-sunset {
+    display: flex;
+    margin-bottom: 120px;
+    align-items: center;
+  }
+
+  section.attraction h3#rainbow-village-h3 {
+    margin-top: 120px;
+  }
+
+  section.attraction div#rainbow-village {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  section.attraction div#rainbow-village-2 {
+    display: flex;
+    margin-bottom: 120px;
+    align-items: center;
+  }
+
+
+
+
+  main div.kasou-main section.museum div#structural-change {
+    display: flex;
+    column-gap: 58px;
+  }
+
+  section.museum div#structural-change div#tentative,
+  section.museum div#structural-change div#midasi-explanation {
+    width: 50%;
+  }
+
+  section.museum div#museum div#museum-element-1,
+  section.museum div#museum div#museum-element-2 {
+    display: flex;
+    column-gap: 58px;
+  }
+
+  section.museum div#museum div.museum-elements,
+  section.museum div#museum div#taichung {
+    width: 50%;
+  }
+
+
+  section.museum p.museum {
+    width: 76%;
+    /* 225/295=0.763 */
+    font-size: 20px;
+    line-height: 32px;
+    padding: 20px;
+    /* margin: 0px auto; */
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+
+  }
+
+
+  section.museum div#museum {
+    text-align: left;
+  }
+
+  section.museum div#museum div.museum-elements {
+    margin-bottom: 60px;
+  }
+
+  section.museum div#museum div#taichung {
+    margin-bottom: 0px;
+  }
+
+  section.museum div#museum div#museum-element-2 {
+    margin-bottom: 120px;
+
+  }
+
+  section.museum div#museum p.subtitle {
+    font-size: 24px;
+    line-height: 45px;
+  }
+
+  section.museum div#museum p.hall-name {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 45px;
+    margin-bottom: 20px;
+
+  }
+
+  section.museum div#museum img {
+    margin-bottom: 20px;
+    height: 15vw;
+    /* 270/1755=0.15 */
+    object-fit: cover;
+    width: 100%;
+
+    margin-right: 0;
+  }
+
+  section.museum div#museum p.explanation {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 20px;
+
+  }
+
+  section.museum div#museum div.button {
+    /* width: 100%; */
+    /* 210/1033=0.20 */
+    display: block;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+  }
+
+  section.museum div#museum div button {
+    font-size: 20px;
+    border: 2px solid rgba(1, 128, 190, 0.5);
+    padding: 21px 27px;
+  }
+
+
+  section.museum div#museum button span.arrow {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgb(1, 128, 190);
+    /* (√2*14)/2＝9.89 */
+
+    margin-left: 6px;
+
+  }
+
+
+
+  main div.kasou-main section.sweets h3 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  section.sweets p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 0px;
+  }
+
+
+  section.sweets p.sweets {
+    width: 48%;
+    /* 420/877.13=0.48 */
+    font-size: 20px;
+    line-height: 32px;
+    padding: 20px 0;
+    margin-bottom: 60px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+  }
+
+  section.sweets div#miyahara-ophthalmology {
+    display: flex;
+    align-items: center;
+
+    column-gap: 40px;
+    margin-bottom: 40px;
+
+
+  }
+
+  section.sweets img#ophthalmology {
+    width: 47.5%;
+    margin-bottom: 0px;
+    margin-right: 0;
+  }
+
+  section.sweets div#grid {
+    display: grid;
+    grid-template-rows: 77% 23%;
+    grid-template-columns: 47.5% 5% 47.5%;
+    /* 300/388=0.77 */
+    /* 50/(580+50+480)=0.045 */
+  }
+
+
+
+
+  section.sweets div#grid div#Instore-coffee {
+    width: 100%;
+    /* 388/ */
+    display: flex;
+    object-fit: cover;
+
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+
+  section.sweets div#grid div#Instore-coffee img {
+    width: 50%;
+    /* 140/295=0.47 */
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+  }
+
+  section.sweets div#grid div#Instore-coffee img#calc {
+    padding-right: 20px;
+  }
+
+  section.sweets div#grid p#explanation {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+
+  section.sweets div#grid img#sweets-set {
+    object-fit: cover;
+    margin: 0;
+    margin-bottom: 0px;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* --------------------main-------------------- */
+}
+
+
+
 /* モーダル */
 /* モーダルウィンドウ */
 /* -----------ボタンスタイル変更場所------------ */
 #modal-openbutton {
-  position:inherit;
+  position: inherit;
   border: 2px solid #ff7b00;
   width: 120px;
   height: 36px;
   font-size: 12px;
   text-align: center;
 }
+
 /* --------------------------------------------- */
 .modal {
   position: fixed;
@@ -22,11 +569,13 @@
 
   /* --------------------------------------------------------------- */
 }
+
 /* クラス付与 */
 .Opening {
   visibility: visible;
   animation: modalanime forwards 0.5s ease-in 0s 1;
 }
+
 @keyframes modalanime {
   0% {
     opacity: 0;
@@ -47,6 +596,7 @@
   width: 1px;
   height: 1px;
 }
+
 /* ばってん疑似要素 */
 .modalclose::before {
   position: absolute;
@@ -59,6 +609,7 @@
   cursor: pointer;
   rotate: 45deg;
 }
+
 .modalclose::after {
   position: absolute;
   content: "";
@@ -70,6 +621,7 @@
   cursor: pointer;
   rotate: -45deg;
 }
+
 /*----------------------- モーダルの中身スタイル変更場所SP--------------- */
 .modal img {
   width: 280px;
@@ -77,6 +629,7 @@
   margin-top: 80px;
   box-shadow: 10px 10px 12px 4px #ccc;
 }
+
 /* ----------------------------------------------------------------
   spモーダルコンテンツSP版の上部マージンは80px */
 
@@ -84,17 +637,18 @@
 
 
 
-  /* モーダル2 */
+/* モーダル2 */
 /* モーダルウィンドウ */
 /* -----------ボタンスタイル変更場所------------ */
 #modal-openbutton2 {
-  position:inherit;
+  position: inherit;
   border: 2px solid #ff7b00;
   width: 120px;
   height: 36px;
   font-size: 12px;
   text-align: center;
 }
+
 /* ------------------------------------------------ */
 .modal2 {
   position: fixed;
@@ -107,11 +661,13 @@
 
   /* --------------------------------------------------------------- */
 }
+
 /* クラス付与 */
 .Opening2 {
   visibility: visible;
   animation: modalanime forwards 0.5s ease-in 0s 1;
 }
+
 @keyframes modalanime {
   0% {
     opacity: 0;
@@ -132,6 +688,7 @@
   width: 1px;
   height: 1px;
 }
+
 /* ばってん疑似要素 */
 .modalclose2::before {
   position: absolute;
@@ -144,6 +701,7 @@
   cursor: pointer;
   rotate: 45deg;
 }
+
 .modalclose2::after {
   position: absolute;
   content: "";
@@ -155,6 +713,7 @@
   cursor: pointer;
   rotate: -45deg;
 }
+
 /*----------------------- モーダルの中身スタイル変更場所SP--------------- */
 .modal2 img {
   width: 280px;
@@ -162,23 +721,25 @@
   margin-top: 80px;
   box-shadow: 10px 10px 12px 4px #ccc;
 }
+
 /* ----------------------------------------------------------------------
   spモーダルコンテンツSP版の上部マージンは80px */
 
 
 
 
-    /* モーダル3 */
+/* モーダル3 */
 /* モーダルウィンドウ */
 /* -----------ボタンスタイル変更場所------------ */
 #modal-openbutton3 {
-  position:inherit;
+  position: inherit;
   border: 2px solid #ff7b00;
   width: 120px;
   height: 36px;
   font-size: 12px;
   text-align: center;
 }
+
 /* ---------------------------------------------- */
 .modal3 {
   position: fixed;
@@ -191,11 +752,13 @@
 
   /* --------------------------------------------------------------- */
 }
+
 /* クラス付与 */
 .Opening3 {
   visibility: visible;
   animation: modalanime forwards 0.5s ease-in 0s 1;
 }
+
 @keyframes modalanime {
   0% {
     opacity: 0;
@@ -216,6 +779,7 @@
   width: 1px;
   height: 1px;
 }
+
 /* ばってん疑似要素 */
 .modalclose3::before {
   position: absolute;
@@ -228,6 +792,7 @@
   cursor: pointer;
   rotate: 45deg;
 }
+
 .modalclose3::after {
   position: absolute;
   content: "";
@@ -239,6 +804,7 @@
   cursor: pointer;
   rotate: -45deg;
 }
+
 /*----------------------- モーダルの中身スタイル変更場所SP--------------- */
 .modal3 img {
   width: 280px;
@@ -246,23 +812,25 @@
   margin-top: 80px;
   box-shadow: 10px 10px 12px 4px #ccc;
 }
+
 /* ----------------------------------------------------------------
   spモーダルコンテンツSP版の上部マージンは80px */
 
 
 
 
-      /* モーダル4 */
+/* モーダル4 */
 /* モーダルウィンドウ */
 /* -----------ボタンスタイル変更場所------------ */
 #modal-openbutton4 {
-  position:inherit;
+  position: inherit;
   border: 2px solid #ff7b00;
   width: 120px;
   height: 36px;
   font-size: 12px;
   text-align: center;
 }
+
 /* ----------------------------------------------- */
 
 .modal4 {
@@ -276,11 +844,13 @@
 
   /* --------------------------------------------------------------- */
 }
+
 /* クラス付与 */
 .Opening4 {
   visibility: visible;
   animation: modalanime forwards 0.5s ease-in 0s 1;
 }
+
 @keyframes modalanime {
   0% {
     opacity: 0;
@@ -301,6 +871,7 @@
   width: 1px;
   height: 1px;
 }
+
 /* ばってん疑似要素 */
 .modalclose4::before {
   position: absolute;
@@ -313,6 +884,7 @@
   cursor: pointer;
   rotate: 45deg;
 }
+
 .modalclose4::after {
   position: absolute;
   content: "";
@@ -324,6 +896,7 @@
   cursor: pointer;
   rotate: -45deg;
 }
+
 /*----------------------- モーダルの中身スタイル変更場所SP--------------- */
 .modal4 img {
   width: 280px;
@@ -331,12 +904,14 @@
   margin-top: 80px;
   box-shadow: 10px 10px 12px 4px #ccc;
 }
+
 /* ----------------------------------------------------------------
   spモーダルコンテンツSP版の上部マージンは80px */
 
 
 
-  @media screen and (min-width: 767px){
+@media screen and (min-width: 767px) {
+
   /* PC版モーダル1 */
   .modal img {
     margin-top: 120px;
@@ -344,26 +919,27 @@
     height: auto;
   }
 
-/* PC版モーダル2 */
+  /* PC版モーダル2 */
   .modal2 img {
     margin-top: 120px;
     width: 33%;
     height: auto;
   }
 
-/* PC版モーダル3 */
+  /* PC版モーダル3 */
   .modal3 img {
     margin-top: 120px;
     width: 33%;
     height: auto;
   }
 
-/* PC版モーダル4 */
+  /* PC版モーダル4 */
   .modal4 img {
     margin-top: 120px;
     width: 33%;
     height: auto;
   }
+
   /* -------------------------------------------------------------- 
 pcモーダルコンテンツPC版の上部マージンは120px*/
-  }
+}
