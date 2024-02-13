@@ -41,7 +41,7 @@
 
     <div class="kasou">
 
-      <img src="../common/image/top_logo.svg" alt="TAIWAN画像" class="header-rogo1">
+      <img src="../common/image/top_logo.svg" alt="" class="header-rogo1">
       <div>
 
         <!-- ナビアイコン共通 -->
@@ -115,16 +115,20 @@
       <h2 id="Midashi">Gallery <span>ギャラリー</span></h2>
       <!-- ------------------------------------------------ -->
       <!-- ここにスライドショー 作成する-->
-      <div class="slide">
-        <div id="image-box"></div>
-        <img src="top/image/gall_slider_01.jpg" alt="" id="slide1img">
-      </div>
+      
+        <div id="image-box">
+        <img src="top/image/gall_slider_01.jpg" alt="" id="main_images">
+        </div>
+        <div class="prevnext">
+          <div id="prev" class="btn"></div>
+         <div id="next" class="btn"></div>
+        </div>
       <div class="nav">
-        <div id="one"></div>
-        <div id="two"></div>
-        <div id="three"></div>
-        <div id="four"></div>
-        <div id="five"></div>
+        <div id="one" class="now" onclick="btn1()"></div>
+        <div id="two"  onclick="btn2()"></div>
+        <div id="three" onclick="btn3()"></div>   
+        <div id="four" onclick="btn4()"></div>
+        <div id="five" onclick="btn5()"></div>
       </div>
     </section>
 

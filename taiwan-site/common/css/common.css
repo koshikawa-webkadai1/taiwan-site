@@ -483,7 +483,47 @@ main nav ul li.previous-screen {
   top: -8px;
   left: -110px;
 }
+/* 見出し左スタイル！ h2が左端にある状態でコピペしてください*/
 
+/* #Midashi {
+  font-size: 48px;
+  text-align: left;
+  margin-left: 16%;
+}
+#Midashi span {
+  font-size: 24px;
+}
+#Midashiimg {
+  left: 16%;
+}
+#Midashiimg::before {
+  width: 530px;
+  height: 96px;
+  top: -15px;
+  left: -110px;
+} */
+
+/* /* 見出し右スタイル！ h2が右端にある状態でコピペしてください*/ */
+/* #section3 h2{
+  font-size: 48px;
+}
+
+#Midashi2 {
+  
+  margin-right: 16%;
+}
+#Midashi2 span {
+  font-size: 24px;
+}
+#Midashiimg2 {
+  left: 84%;
+}
+#Midashiimg2::before {
+  width: 530px;
+  height: 96px;
+  top: -15px;
+  left: -430px;
+} */
 
 /* 区切り線sp */
 .kugiri {
