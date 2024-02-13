@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 
-div.pc-kasou {
-    margin: 0 0px;
-}
-
 /* --------------------main-------------------- */
 main div.kasou-main {
     text-align: center;
@@ -129,8 +125,6 @@ section.museum div#museum p.hall-name {
 
 section.museum div#museum img {
     margin-bottom: 12px;
-    height: 17vh;
-    /* 135/812=0.166 */
     object-fit: cover;
 }
 
@@ -148,7 +142,7 @@ section.museum div#museum div.button {
 
 section.museum div#museum div button {
     font-size: 12px;
-    border: 2px solid rgba(1, 128, 190, 0.5);
+    /* border: 2px solid rgba(1, 128, 190, 0.5); */
     padding: 12px;
 }
 
@@ -171,7 +165,7 @@ section.museum div#museum button span.arrow {
 
 
 
-main div.kasou-main section.sweets p {
+section.sweets p {
     font-size: 12px;
     margin-bottom: 20px;
 
@@ -217,10 +211,6 @@ section.sweets div#grid img#sweets-set {
 
     /* --------------------main-------------------- */
 
-    div.pc-kasou {
-        margin: 0 83px;
-    }
-
     main div.kasou-main {
         text-align: left;
     }
@@ -250,7 +240,7 @@ section.sweets div#grid img#sweets-set {
     .Midashi {
         font-size: 48px;
         text-align: left;
-        margin-left: 63px;
+        margin-left: 16%;
         margin-bottom: 48px;
     }
 
@@ -264,7 +254,7 @@ section.sweets div#grid img#sweets-set {
 
 
         /* 見出しの基準位置変更場所％で指定してください------- */
-        left: 19%;
+        left: 16%;
         /* --------------------------------------------------- */
     }
 
@@ -274,9 +264,9 @@ section.sweets div#grid img#sweets-set {
         background-image: url(../../common/image/h2_bg.png);
         width: 530px;
         height: 96px;
-        top: -21px;
+        top: -15px;
         /* 45(線と画像の底辺が同じ時)-24(スペース量)=21px */
-        left: -265px;
+        left: -110px;
         /* --------------------------------------------------- */
     }
 
@@ -345,6 +335,17 @@ section.sweets div#grid img#sweets-set {
     section.museum div#structural-change div#midasi-explanation {
         width: 50%;
     }
+
+    /* ミュージアムの見出し画像 微調整 */
+    section.museum div#structural-change div#midasi-explanation div.Midashiimg {
+        margin-left: 5%;
+    }
+
+    /* ミュージアムの見出し文字 微調整 */
+    section.museum div#structural-change div#midasi-explanation h2 {
+        margin-left: 25%;
+    }
+
 
     section.museum div#museum div#museum-element-1,
     section.museum div#museum div#museum-element-2 {
@@ -431,7 +432,7 @@ section.sweets div#grid img#sweets-set {
 
     section.museum div#museum div button {
         font-size: 20px;
-        border: 2px solid rgba(1, 128, 190, 0.5);
+        /* border: 2px solid rgba(1, 128, 190, 0.5); */
         padding: 21px 27px;
     }
 
@@ -540,4 +541,509 @@ section.sweets div#grid img#sweets-set {
 
 
     /* --------------------main-------------------- */
+}
+
+/* モーダル */
+
+p.modal-start {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+
+img.img-top {
+    margin-right: 15px;
+}
+
+
+div.modal-end {
+    text-align: left;
+}
+
+p.business-hours {
+    width: 79%;
+    /* (140*2+15)/375=0.786 */
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 19.2px;
+    color: #ffffff;
+    margin: 0 40px;
+
+}
+
+/* モーダルウィンドウ */
+/* -----------ボタンスタイル変更場所------------ */
+#modal-openbutton {
+    position: inherit;
+    border: 2px solid rgba(1, 128, 190, 0.5);
+    width: 120px;
+    height: 36px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* --------------------------------------------- */
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    /* ----------------モーダル背景色変更場所------------------------- */
+    background-color: #0180BE;
+    z-index: 99;
+    /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening {
+    visibility: visible;
+    animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 閉じるボタンdiv */
+.modalclose {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 99%;
+    width: 1px;
+    height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: 45deg;
+}
+
+.modalclose::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: -12px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身スタイル変更場所SP--------------- */
+.modal img {
+    width: 140px;
+    height: 140px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+
+/* ----------------------------------------------------------------
+    spモーダルコンテンツSP版の上部マージンは80px */
+
+
+
+
+
+/* モーダル2 */
+/* モーダルウィンドウ */
+/* -----------ボタンスタイル変更場所------------ */
+#modal-openbutton2 {
+    position: inherit;
+    border: 2px solid rgba(1, 128, 190, 0.5);
+    width: 120px;
+    height: 36px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ------------------------------------------------ */
+.modal2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    /* ----------------モーダル背景色変更場所------------------------- */
+    background-color: #0180BE;
+    z-index: 99;
+    /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening2 {
+    visibility: visible;
+    animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 閉じるボタンdiv */
+.modalclose2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 99%;
+    width: 1px;
+    height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose2::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: 45deg;
+}
+
+.modalclose2::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: -12px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身スタイル変更場所SP--------------- */
+.modal2 img {
+    width: 140px;
+    height: 140px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+
+/* ----------------------------------------------------------------------
+    spモーダルコンテンツSP版の上部マージンは80px */
+
+
+
+
+/* モーダル3 */
+/* モーダルウィンドウ */
+/* -----------ボタンスタイル変更場所------------ */
+#modal-openbutton3 {
+    position: inherit;
+    border: 2px solid rgba(1, 128, 190, 0.5);
+    width: 120px;
+    height: 36px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ---------------------------------------------- */
+.modal3 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    /* ----------------モーダル背景色変更場所------------------------- */
+    background-color: #0180BE;
+    z-index: 99;
+    /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening3 {
+    visibility: visible;
+    animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 閉じるボタンdiv */
+.modalclose3 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 99%;
+    width: 1px;
+    height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose3::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: 45deg;
+}
+
+.modalclose3::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: -12px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身スタイル変更場所SP--------------- */
+.modal3 img {
+    width: 140px;
+    height: 140px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+
+/* ----------------------------------------------------------------
+    spモーダルコンテンツSP版の上部マージンは80px */
+
+
+
+
+/* モーダル4 */
+/* モーダルウィンドウ */
+/* -----------ボタンスタイル変更場所------------ */
+#modal-openbutton4 {
+    position: inherit;
+    border: 2px solid rgba(1, 128, 190, 0.5);
+    width: 120px;
+    height: 36px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ----------------------------------------------- */
+
+.modal4 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    /* ----------------モーダル背景色変更場所------------------------- */
+    background-color: #0180BE;
+    z-index: 99;
+    /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening4 {
+    visibility: visible;
+    animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 閉じるボタンdiv */
+.modalclose4 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 99%;
+    width: 1px;
+    height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose4::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: 45deg;
+}
+
+.modalclose4::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: -12px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px solid #000;
+    cursor: pointer;
+    rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身スタイル変更場所SP--------------- */
+.modal4 img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+
+/* ----------------------------------------------------------------
+    spモーダルコンテンツSP版の上部マージンは80px */
+
+
+
+@media screen and (min-width: 767px) {
+
+    p.modal-start {
+        font-weight: bold;
+        font-size: 36px;
+        color: #ffffff;
+    }
+
+
+    img.img-top {
+        margin-right: 60px;
+    }
+
+    div.modal-end {
+        text-align: left;
+    }
+
+    p.business-hours {
+        width: 57%;
+        /* (360*2+60)/1366=0.57 */
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+        margin: 0 auto;
+
+    }
+
+    /* PC版モーダル1 */
+    #modal-openbutton {
+        position: inherit;
+        border: 2px solid rgba(1, 128, 190, 0.5);
+        width: 210px;
+        height: 63px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .modal img {
+        width: 360px;
+        height: 360px;
+
+        /* width: 33%;
+        height: auto; */
+    }
+
+    /* PC版モーダル2 */
+    #modal-openbutton2 {
+        position: inherit;
+        border: 2px solid rgba(1, 128, 190, 0.5);
+        width: 210px;
+        height: 63px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .modal2 img {
+        width: 360px;
+        height: 360px;
+        /* 
+        width: 33%;
+        height: auto; */
+    }
+
+    /* PC版モーダル3 */
+    #modal-openbutton3 {
+        position: inherit;
+        border: 2px solid rgba(1, 128, 190, 0.5);
+        width: 210px;
+        height: 63px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .modal3 img {
+        width: 360px;
+        height: 360px;
+
+        /* width: 33%;
+        height: auto; */
+    }
+
+    /* PC版モーダル4 */
+    #modal-openbutton4 {
+        position: inherit;
+        border: 2px solid rgba(1, 128, 190, 0.5);
+        width: 210px;
+        height: 63px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .modal4 img {
+        width: 360px;
+        height: 360px;
+
+        /* width: 33%;
+        height: auto; */
+    }
+
+    /* -------------------------------------------------------------- 
+  pcモーダルコンテンツPC版の上部マージンは120px*/
 }

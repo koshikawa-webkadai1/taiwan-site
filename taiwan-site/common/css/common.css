@@ -5,6 +5,18 @@ body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
+div.pc-kasou {
+  margin: 0 0px;
+}
+
+@media screen and (min-width: 767px) {
+
+  div.pc-kasou {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 /* *********************************************** */
 /* ローディング***javascriptのパターンのcss */
 /* *********************************************** */
@@ -121,7 +133,7 @@ nav div.nav {
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 95;
 
 }
 
@@ -484,6 +496,50 @@ main nav ul li.previous-screen {
   left: -110px;
 }
 
+/* 見出し左スタイル！ h2が左端にある状態でコピペしてください*/
+
+/* #Midashi {
+  font-size: 48px;
+  text-align: left;
+  margin-left: 16%;
+}
+#Midashi span {
+  font-size: 24px;
+}
+#Midashiimg {
+  left: 16%;
+}
+#Midashiimg::before {
+  width: 530px;
+  height: 96px;
+  top: -15px;
+  left: -110px;
+} */
+
+/* /* 見出し右スタイル！ h2が右端にある状態でコピペしてください*/
+
+/* #section3 h2{
+  font-size: 48px;
+}
+
+#Midashi2 {
+  
+  margin-right: 16%;
+}
+#Midashi2 span {
+  font-size: 24px;
+}
+#Midashiimg2 {
+  left: 84%;
+}
+#Midashiimg2::before {
+  width: 530px;
+  height: 96px;
+  top: -15px;
+  left: -430px;
+} */
+
+
 
 /* 区切り線sp */
 .kugiri {
@@ -493,7 +549,7 @@ main nav ul li.previous-screen {
   border-top: 1px solid #000000;
 }
 
-/* --------------------------------------------------- */
+
 
 
 /* モーダルウィンドウ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -597,20 +653,24 @@ main nav ul li.previous-screen {
     height: auto;
   }
 
+
+  /* 区切り線 pc*/
+  .kugiri {
+    display: block;
+    margin: 0 auto;
+    max-width: 420px;
+    border-top: 1px solid #000000;
+  }
+
+  /* ----------------------------------------------------- */
   /* -------------------------------------------------------------- 
 pcモーダルコンテンツPC版の上部マージンは120px*/
 }
 
 /* ----------------------------------------------------- */
-/* 区切り線 pc*/
-.kugiri {
-  display: block;
-  margin: 0 auto;
-  max-width: 420px;
-  border-top: 1px solid #000000;
-}
 
-/* ----------------------------------------------------- */
+
+
 
 /* 共有部分footer!!!!!!!!!!!!!!!!!!!!! ***************************/
 
