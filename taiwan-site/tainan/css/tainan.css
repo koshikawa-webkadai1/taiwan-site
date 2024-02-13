@@ -59,6 +59,64 @@ main div.kasou-main div.text-align-change {
 
 /* ----------------------------------------------------- */
 
+/* ********attraction************** */
+main div.kasou-main {
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0 0 0 32px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  margin-bottom: 20px;
+}
+
+main div.kasou-main img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.attraction p {
+  background-color: rgba(108, 186, 216, 0.2);
+  font-size: 12px;
+  line-height: 19.2px;
+  padding: 20px 16px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.attraction p.point {
+  text-align: center;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main div.kasou-main p.attraction-exs {
+  margin-bottom: 60px
+}
+
+.att-sub {
+  width: 100%;
+  display: flex;
+}
+
+.figure {
+  width: 50%;
+}
+
+.fig_02 {
+  margin-right: 15px;
+}
+
+
 
 /* main div.kasou-main section.attraction {
   margin-top: 40px;
@@ -283,7 +341,70 @@ section.sweets div#grid img#sweets-set {
 
   /* ----------------------------------------------------- */
 
-  main div.kasou-main section.attraction {
+  /*attraction**************************************************** */
+
+  main div.kasou-main img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* attractionの画像＋テキストのひとくくり画像とテキストの間にcolumun-gapで空きをつくる */
+  .attraction .cont_inner {
+    display: flex;
+    column-gap: 3.44%;
+    justify-content: right;
+  }
+
+  .attraction p {
+    width: 50%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .time {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  /* attractionのサブ画像２つ入っているdiv方の横サイズ */
+  .att-sub {
+    width: 50%;
+    column-gap: unset;
+  }
+
+  /* attractionのサブ画像*/
+  .figure {
+    width: 25%;
+    display: grid;
+    grid-template-columns: auto 50%;
+    column-gap: 10px;
+
+  }
+
+  /*attractionセクションの最初のイメージ */
+  .fig_01 {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .fig_02 {
+    margin-right: 19px;
+  }
+
+
+  .attraction p.point {
+    text-align: center;
+    height: 8.62%;
+    align-self: center;
+  }
+
+  .kugiri {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+
+  /* main div.kasou-main section.attraction {
     margin-top: 80px;
 
     margin-bottom: 120px;
@@ -291,7 +412,7 @@ section.sweets div#grid img#sweets-set {
 
 
 
-  /* section.attraction h3 {
+  section.attraction h3 {
     margin-top: 80px;
   }
 
