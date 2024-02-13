@@ -239,6 +239,22 @@ main div.kasou-main section.sweets p {
 
 }
 
+
+/* ---調整--- */
+
+section.sweets p#healing {
+  width: 76%;
+  /* 225/295=0.763 */
+  font-size: 12px;
+  line-height: 19.2px;
+  padding: 12px 0;
+  margin: 0px auto;
+  margin-bottom: 40px;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+
+}
+
 section.sweet div#grids img#ophthalmology {
   margin-bottom: 20px;
 }
@@ -264,6 +280,7 @@ section.sweets div#grid img#sweets-set {
   margin-bottom: 60px;
 }
 
+/* ---調整--- */
 
 
 
@@ -309,7 +326,7 @@ section.sweets div#grid img#sweets-set {
   .Midashi {
     font-size: 48px;
     text-align: left;
-    margin-left: 63px;
+    margin-left: 16%;
     margin-bottom: 48px;
   }
 
@@ -323,7 +340,7 @@ section.sweets div#grid img#sweets-set {
 
 
     /* 見出しの基準位置変更場所％で指定してください------- */
-    left: 19%;
+    left: 16%;
     /* --------------------------------------------------- */
   }
 
@@ -333,9 +350,9 @@ section.sweets div#grid img#sweets-set {
     background-image: url(../../common/image/h2_bg.png);
     width: 530px;
     height: 96px;
-    top: -21px;
+    top: -15px;
     /* 45(線と画像の底辺が同じ時)-24(スペース量)=21px */
-    left: -265px;
+    left: -110px;
     /* --------------------------------------------------- */
   }
 
@@ -467,6 +484,16 @@ section.sweets div#grid img#sweets-set {
   section.museum div#structural-change div#tentative,
   section.museum div#structural-change div#midasi-explanation {
     width: 50%;
+  }
+
+  /* ミュージアムの見出し画像 微調整 */
+  section.museum div#structural-change div#midasi-explanation div.Midashiimg {
+    margin-left: 5%;
+  }
+
+  /* ミュージアムの見出し文字 微調整 */
+  section.museum div#structural-change div#midasi-explanation h2 {
+    margin-left: 25%;
   }
 
   section.museum div#museum div#museum-element-1,
@@ -613,6 +640,23 @@ section.sweets div#grid img#sweets-set {
     margin-right: 0;
   }
 
+
+  /* ---調整--- */
+  section.sweet p#healing {
+    width: 76%;
+    /* 225/295=0.763 */
+    font-size: 12px;
+    line-height: 19.2px;
+    padding: 12px 0;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+
+  }
+
+
+
   section.sweets div#grid {
     display: grid;
     grid-template-rows: 77% 23%;
@@ -661,6 +705,7 @@ section.sweets div#grid img#sweets-set {
     height: 100%;
   }
 
+  /* ---調整--- */
 
   /* --------------------main-------------------- */
 }
