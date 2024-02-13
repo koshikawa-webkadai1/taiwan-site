@@ -120,29 +120,40 @@ main {
 }
 
 /* スライドショー */
-#image-box {
-  text-align: center;
+
+
+.imgBox {
   margin: 0 auto;
+  /* height: 100vh; */
   width: 80%;
   margin-bottom: 18px;
 }
 
-.nav {
+#section2 img {
+  display: block;
+  width: 100%;
   margin: 0 auto;
-  width: 300px;
+  margin-bottom: 18px;
+}
+
+.btnBox {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: space-around;
 }
 
-.nav div {
+#section2 a {
+  /*コレ*/
   width: 18px;
   height: 18px;
   background-color: gray;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.now {
-  background: #000;
+#section2 .now {
+  background: black;
 }
 
 /* section3 */
@@ -207,6 +218,7 @@ main {
 }
 
 #map {
+  text-align: left;
   display: inline-block;
   width: 194px;
   height: 381px;
@@ -457,20 +469,24 @@ main {
   }
 
   /* section2 */
-  #section2{
+  #section2 {
     text-align: left;
   }
+
   #Midashi {
     font-size: 48px;
     text-align: left;
     margin-left: 16%;
   }
+
   #Midashi span {
     font-size: 24px;
   }
+
   #Midashiimg {
     left: 16%;
   }
+
   #Midashiimg::before {
     width: 530px;
     height: 96px;
@@ -479,21 +495,23 @@ main {
   }
 
   /* section3 */
-  #section3 h2{
+  #section3 h2 {
     text-align: right;
     font-size: 48px;
   }
 
   #Midashi2 {
-    
     margin-right: 16%;
   }
+
   #Midashi2 span {
     font-size: 24px;
   }
+
   #Midashiimg2 {
     left: 84%;
   }
+
   #Midashiimg2::before {
     width: 530px;
     height: 96px;
@@ -501,8 +519,120 @@ main {
     left: -430px;
   }
 
+  /* flex親要素 */
+  #section3flex {
+    display: flex;
+  }
 
 
+  /* flex子要素１ */
+  #section3flex p {
+    padding: 0;
+    margin: 0;
+    flex-basis: 35%;
+    max-width: 420px;
+    width: 100%;
+    height: 100%;
+    margin-top: 280px;
+    margin-left: 16%;
+    margin-right: 0%;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 60px 0;
+  }
 
+  /* flex子要素2 */
+  #p {
+    flex-basis: 50%;
+    width: 100%;
+
+  }
+
+  /* map調整 */
+  #map {
+    display: inline-block;
+    width: 108%;
+    height: auto;
+    margin-left: 15%;
+  }
+
+  #section3 img {
+    margin-top: 80px;
+  }
+
+  #taipei {
+    position: absolute;
+    width: 27%;
+    height: 212px;
+    top: 55px;
+    left: 298px;
+  }
+
+  #taityun {
+    position: absolute;
+    width: 27%;
+    height: 212px;
+    top: 163px;
+    left: -18px;
+  }
+
+  #tainan {
+    position: absolute;
+    width: 27%;
+    height: 212px;
+    top: 522px;
+    left: 108px;
+  }
+
+  /* section4 */
+  #section4 h2 {
+    font-size: 48px;
+    margin-top: 144px;
+    text-align: left;
+  }
+
+  #Midashi3 {
+    font-size: 48px;
+    text-align: left;
+    margin: 0;
+    margin-left: 16%;
+
+  }
+
+  #Midashi3 span {
+    font-size: 24px;
+  }
+
+  #Midashiimg3 {
+    left: 16%;
+  }
+
+  #Midashiimg3::before {
+    width: 530px;
+    height: 96px;
+    top: -15px;
+    left: -110px;
+  }
+
+  .section4flex {
+    display: flex;
+  }
+
+
+  #countdown {
+    text-align: left;
+  }
+
+  .eventimg {
+    margin: 0;
+    width: 42%;
+    height: auto;
+  }
+
+  #eventimg2 {
+    margin: 0;
+    width: 42%;
+    height: auto;
+  }
 
 }

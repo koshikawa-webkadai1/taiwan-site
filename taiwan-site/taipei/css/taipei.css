@@ -72,7 +72,7 @@ main div.kasou-main {
 }
 
 .container {
-  padding: 0 4vw;
+  padding: 0 0 0 32px;
 }
 
 h3 {
@@ -113,27 +113,29 @@ main div.kasou-main p.attraction-exs {
 .att-sub {
   width: 100%;
   display: flex;
-  column-gap: 5.8%;
 }
 
 .figure {
   width: 50%;
 }
 
+.fig_02 {
+  margin-right: 15px;
+}
 
 /* ********night market************ */
 
 .night-market p {
+  width: 100%;
   padding: 12px 0;
   line-height: 19.2px;
   font-size: 12px;
+  letter-spacing: 12;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 66px;
   margin-bottom: 20px;
 }
+
 
 .night-market ul {
   /* height: 114.08px; */
@@ -143,21 +145,18 @@ main div.kasou-main p.attraction-exs {
   gap: 12px 12px;
 }
 
-
-
 /* *******section　access******** */
 
 .access p {
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
   padding: 12px 0;
   line-height: 19.2px;
   font-size: 12px;
   border-bottom: 1px solid #000;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 66px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 8px;
 }
 
 .access dl {
@@ -165,11 +164,14 @@ main div.kasou-main p.attraction-exs {
   text-align: left;
 }
 
-.access dt dd {
-  display: block;
-  padding: 12px 0;
-  line-height: 19.2px;
+.access dt,
+dd {
   font-size: 12px;
+  line-height: 19.2px;
+}
+
+.access dt {
+  margin-bottom: 12px;
 }
 
 .access dd {
@@ -189,6 +191,10 @@ main div.kasou-main p.attraction-exs {
   /* -----header----- */
 
   /* -----main----- */
+  .kasou-main {
+    width: 87.85%;
+  }
+
   /* -----------------見出し 共有-------------------------------------*/
 
   h2 {
@@ -232,8 +238,10 @@ main div.kasou-main p.attraction-exs {
   /* ----------------------------------------------------- */
 
   h3 {
-    font-size: 24px;
+    text-align: left;
+    font-size: 36px;
     font-weight: bold;
+    margin-left: 30px;
   }
 
 
@@ -259,6 +267,12 @@ main div.kasou-main p.attraction-exs {
 
   .attraction p {
     width: 50%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .time {
+    font-weight: bold;
     font-size: 20px;
   }
 
@@ -294,6 +308,11 @@ main div.kasou-main p.attraction-exs {
     align-self: center;
   }
 
+  .kugiri {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
   /* night market****************** */
 
   .night-market .container {
@@ -304,6 +323,646 @@ main div.kasou-main p.attraction-exs {
 
   .night-market .cont_inner {}
 
+  .night-market p {
+    width: 77%;
+    padding: 12px 0;
+    line-height: 32px;
+    font-size: 20px;
+    letter-spacing: 20;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 3% auto 3% auto;
+    align-items: center;
+  }
+
+  .night-market ul {
+    /* height: 114.08px; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 32px;
+  }
+
+  .night-market ul li img {
+    width: 100%;
+  }
 
 
+
+
+  /* accsess****************** */
+
+  .access p {
+    width: 40%;
+    float: left;
+    text-align: left;
+    line-height: 24px;
+    font-size: 24px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 89px;
+  }
+
+  .access dl {
+    clear: both;
+    width: 100%;
+    text-align: left;
+  }
+
+  .access dt,
+  dd {
+    font-size: 24px;
+    line-height: 38.4px;
+  }
+
+  .access dt {
+    margin-bottom: 20px;
+  }
+
+  .access dd {
+    margin-bottom: 60px;
+  }
+
+  .yuyu {
+    width: 20.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* ******************************************* */
+/* ******************************************* */
+/* モーダル */
+/* モーダルウィンドウ */
+/* -----------ボタンスタイル変更場所------------ */
+#modal-openbutton {
+  position: inherit;
+  border: none;
+  width: none;
+  height: none;
+  /* font-size: none; */
+  /* text-align: center; */
+}
+
+/* --------------------------------------------- */
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  z-index: 1000;
+  /* ----------------モーダル背景色変更場所------------------------- */
+  background-color: #0180BE;
+  /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening {
+  visibility: visible;
+  animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 閉じるボタンdiv */
+.modalclose {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 99%;
+  width: 1px;
+  height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: 45deg;
+}
+
+.modalclose::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身スタイル変更場所SP--------------- */
+#modalcontent {
+  margin: 0 auto;
+}
+
+.modal h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 80px;
+  margin-bottom: 32px;
+}
+
+.modal img {
+  width: 89.3%;
+  margin-bottom: 20px;
+}
+
+.modal p {
+  width: 80.8%;
+  text-align: left;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #fff;
+  margin: 0 auto 20px auto;
+}
+
+.p01 {
+  width: 80.8%;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------------
+  spモーダルコンテンツSP版の上部マージンは80px */
+
+
+
+
+
+/* モーダル2 */
+/* モーダルウィンドウ */
+/* -----------ボタンスタイル変更場所------------ */
+/* #modal-openbutton2 {
+  position: inherit;
+  border: 2px solid #ff7b00;
+  width: 120px;
+  height: 36px;
+  font-size: 12px;
+  text-align: center;
+} */
+
+/* ------------------------------------------------ */
+.modal2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  z-index: 1000;
+  /* ----------------モーダル背景色変更場所------------------------- */
+  background-color: #0180BE;
+  /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening2 {
+  visibility: visible;
+  animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 閉じるボタンdiv */
+.modalclose2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 99%;
+  width: 1px;
+  height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose2::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: 45deg;
+}
+
+.modalclose2::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身スタイル変更場所SP--------------- */
+
+#modalcontent2 {
+  margin: 0 auto;
+}
+
+.modal2 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 80px;
+  margin-bottom: 32px;
+}
+
+.modal2 img {
+  width: 89.3%;
+  margin-bottom: 20px;
+}
+
+.modal2 p {
+  width: 80.8%;
+  text-align: left;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #fff;
+  margin: 0 auto 20px auto;
+}
+
+.p01 {
+  width: 80.8%;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------------------
+  spモーダルコンテンツSP版の上部マージンは80px */
+
+
+
+
+/* モーダル3 */
+/* モーダルウィンドウ */
+/* -----------ボタンスタイル変更場所------------ */
+/* #modal-openbutton3 {
+  position: inherit;
+  border: 2px solid #ff7b00;
+  width: 120px;
+  height: 36px;
+  font-size: 12px;
+  text-align: center;
+} */
+
+/* ---------------------------------------------- */
+.modal3 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  z-index: 1000;
+  /* ----------------モーダル背景色変更場所------------------------- */
+  background-color: #0180BE;
+  /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening3 {
+  visibility: visible;
+  animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 閉じるボタンdiv */
+.modalclose3 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 99%;
+  width: 1px;
+  height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose3::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: 45deg;
+}
+
+.modalclose3::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身スタイル変更場所SP--------------- */
+#modalcontent3 {
+  margin: 0 auto;
+}
+
+.modal3 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 80px;
+  margin-bottom: 32px;
+}
+
+.modal3 img {
+  width: 89.3%;
+  margin-bottom: 20px;
+}
+
+.modal3 p {
+  width: 80.8%;
+  text-align: left;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #fff;
+  margin: 0 auto 20px auto;
+}
+
+.p01 {
+  width: 80.8%;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------------
+  spモーダルコンテンツSP版の上部マージンは80px */
+
+
+
+
+/* モーダル4 */
+/* モーダルウィンドウ */
+/* -----------ボタンスタイル変更場所------------ */
+/* #modal-openbutton4 {
+  position: inherit;
+  border: 2px solid #ff7b00;
+  width: 120px;
+  height: 36px;
+  font-size: 12px;
+  text-align: center;
+} */
+
+/* ----------------------------------------------- */
+
+.modal4 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  z-index: 1000;
+  /* ----------------モーダル背景色変更場所------------------------- */
+  background-color: #0180BE;
+  /* --------------------------------------------------------------- */
+}
+
+/* クラス付与 */
+.Opening4 {
+  visibility: visible;
+  animation: modalanime forwards 0.5s ease-in 0s 1;
+}
+
+@keyframes modalanime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 閉じるボタンdiv */
+.modalclose4 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 99%;
+  width: 1px;
+  height: 1px;
+}
+
+/* ばってん疑似要素 */
+.modalclose4::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: 45deg;
+}
+
+.modalclose4::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  border-top: 8px solid #000;
+  cursor: pointer;
+  rotate: -45deg;
+}
+
+/*----------------------- モーダルの中身スタイル変更場所SP--------------- */
+#modalcontent4 {
+  margin: 0 auto;
+}
+
+.modal4 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 80px;
+  margin-bottom: 32px;
+}
+
+.modal4 img {
+  width: 89.3%;
+  margin-bottom: 20px;
+}
+
+.modal4 p {
+  width: 80.8%;
+  text-align: left;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #fff;
+  margin: 0 auto 20px auto;
+}
+
+.p04 {
+  width: 80.8%;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #fff;
+}
+
+
+/* ----------------------------------------------------------------
+  spモーダルコンテンツSP版の上部マージンは80px */
+
+
+
+@media screen and (min-width: 767px) {
+
+  /* PC版モーダル1 */
+  .modal img {
+    margin-top: 120px;
+    width: 43.92%;
+    height: auto;
+  }
+
+  /* ----------------------------------------------------------------
+  /* PC版モーダル2 */
+
+  #modalcontent2 {
+    display: flex;
+    justify-content: left;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-left: 103px;
+  }
+
+  .mo-img-left {
+    display: flex;
+    j
+  }
+
+  .mo-text-right {
+    display: block;
+  }
+
+  .modal2 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .cont-pc {}
+
+  .modal2 img {
+    display: inline-block;
+    width: 43.92%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .modal2 p {
+    width: 36.6%;
+    height: 288px;
+    display: inline-block;
+    text-align: left;
+    font-size: 12px;
+    line-height: 19.2px;
+    color: #fff;
+    margin-left: 60px;
+
+  }
+
+  .p01 {
+    width: 36.6%;
+    height: 20px;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+  }
+
+
+
+  /* ----------------------------------------------------------------
+  /* PC版モーダル3 */
+  .modal3 img {
+    margin-top: 120px;
+    width: 43.92%;
+    ;
+    height: auto;
+  }
+
+  /* ----------------------------------------------------------------
+  /* PC版モーダル4 */
+  .modal4 img {
+    margin-top: 120px;
+    width: 43.92%;
+    ;
+    height: auto;
+  }
+
+  /* -------------------------------------------------------------- 
+pcモーダルコンテンツPC版の上部マージンは120px*/
 }
