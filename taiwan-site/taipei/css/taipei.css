@@ -13,46 +13,53 @@ html {
 /* ページトップへ戻るボタン */
 /* ******************* */
 .arrow {
-  width: 48px; 
+  width: 48px;
   height: 48px;
   border-radius: 50%;
   background-color: #6C6565;
-  margin: 0 0 0 95%;
-  position: static;
-  position: relative; 
-  z-index:2;
+  margin: 0 0 0 90%;
+  position: relative;
+  z-index: 2;
   transition: .3s;
 }
+
 .arrow::before,
 .arrow::after {
-  content: ""; 
-  width: 18px; 
-  height: 5px; 
-  display: inline-block; 
-  border-radius: 4px; 
-  background: #fff;  
-  position: absolute; 
-  right: 12px; 
-  top:20px;
+  content: "";
+  width: 18px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 4px;
+  background: #fff;
+  position: absolute;
+  right: 12px;
+  top: 20px;
 }
+
 .arrow::before {
-  left: calc(50% - 4px);    
-  transform: rotate(45deg); 
+  left: calc(50% - 4px);
+  transform: rotate(45deg);
 }
+
 .arrow::after {
-  right: calc(50% - 4px);   
+  right: calc(50% - 4px);
   transform: rotate(-45deg);
 }
 
 .arrow:hover {
-    background-color:rgba(118,111,111,0.5);
+  background-color: rgba(118, 111, 111, 0.5);
 }
- 
+
 .arrow:hover::before {
-    background: #aaa;   
+  background: #aaa;
 }
+
 .arrow:hover::after {
-    background: #aaa;  
+  background: #aaa;
+}
+
+.pagetop {
+  position: static;
 }
 
 /* -----main----- */
@@ -74,7 +81,8 @@ main nav ul {
 
 /* **************************************************** */
 
-/* -----------------見出し 共有-------------------------------------*/
+
+/* -----------------見出し 共有sp-------------------------------------*/
 /* 疑似要素の親 */
 .Midashi {
   font-size: 24px;
@@ -108,12 +116,18 @@ main nav ul {
 
 }
 
+
 /* ----------------------------------------------------- */
 
 
 /* ********attraction************** */
 main div.kasou-main {
   margin: 0 auto;
+}
+
+section .attraction {
+  justify-content: left;
+  text-align: left;
 }
 
 .container {
@@ -240,18 +254,14 @@ dd {
     width: 87.85%;
   }
 
-  /* -----------------見出し 共有-------------------------------------*/
+  /* -----------------見出し 共有
+  /* 見出し左スタイル！ h2が左端にある状態でコピペしてください*/
 
-  h2 {
-    text-align: left;
-  }
-
-  /* 疑似要素の親 */
   .Midashi {
     font-size: 48px;
     text-align: left;
-    margin-left: 8%;
-    margin-bottom: 48px;
+    margin-left: 16%;
+    margin-bottom: 80px;
   }
 
   .Midashi span {
@@ -259,24 +269,23 @@ dd {
   }
 
   .Midashiimg {
-    position: relative;
-    display: inline;
-    height: 0.5px;
-    left: 14%;
-    width: 100%;
+    left: 16%;
 
   }
 
   .Midashiimg::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    background-image: url(../../common/image/h2_bg.png);
-    background-size: contain;
     width: 530px;
     height: 96px;
-    top: -25px;
-    left: -270px;
+    top: -15px;
+    left: -110px;
+  }
+
+  /* -------------------------------------*/
+  h2 {
+
+    text-align: left;
+    margin-top: 104px;
+    margin-right: 50px;
 
   }
 
@@ -369,7 +378,7 @@ dd {
   .night-market .cont_inner {}
 
   .night-market p {
-    width: 77%;
+    width: 75%;
     padding: 12px 0;
     line-height: 32px;
     font-size: 20px;
@@ -444,10 +453,14 @@ dd {
 #modal-openbutton {
   position: inherit;
   border: none;
-  width: 100%;
+  width: none;
   height: none;
   /* font-size: none; */
   /* text-align: center; */
+}
+
+#modal-openbutton img {
+  width: auto;
 }
 
 /* --------------------------------------------- */
@@ -924,63 +937,115 @@ dd {
 @media screen and (min-width: 767px) {
 
   /* PC版モーダル1 */
+  #modalcontent {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-left: 300px;
+  }
+
+  .mo-img-left {
+    /* display:table;
+    border-collapse:collapse; */
+  }
+
+  .mo-text-right {
+    display: block;
+    margin-top: 55px;
+  }
+
+  .modal h2 {
+    font-size: 36px;
+    width: 100%;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+  }
+
   .modal img {
-    margin-top: 120px;
-    width: 43.92%;
+    margin: 0;
+    width: 100%;
     height: auto;
+    object-fit: cover;
+    box-shadow: none;
+  }
+
+  .modal p {
+    margin: 0 0 60px 60px;
+    width: 70%;
+    height: 200px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  .p01 p {
+    width: 36.6%;
+    height: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #fff;
   }
 
   /* ----------------------------------------------------------------
   /* PC版モーダル2 */
 
   #modalcontent2 {
-    width:1200px;
-    height:400px;
+    display: flex;
+    width: 100%;
+    height: 400px;
     margin: 0 auto;
     padding-top: 100px;
-    padding-left: 103px;
+    padding-left: 300px;
   }
 
   .mo-img-left {
-    display:table;
-    border-collapse:collapse;
+    /* display:table;
+    border-collapse:collapse; */
   }
+
   .mo-text-right {
-    display:inline;
- 
+    display: block;
+    margin-top: 55px;
   }
+
   .modal2 h2 {
     font-size: 36px;
-    width:50%;
-    height:20%;
+    width: 100%;
+    height: 20%;
     padding: 0;
     margin: 0;
     font-weight: bold;
     color: #fff;
-
   }
+
   .modal2 img {
-    display: table-row;
-    width: 43.92%;   
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
 
   .modal2 p {
-    width: 36.6%;
+    margin: 0 0 60px 60px;
+    width: 70%;
     height: 200px;
     text-align: left;
     font-size: 20px;
     line-height: 32px;
     color: #fff;
-    margin-left:50%;
-
   }
 
-  .p01 {
+  .p01 p {
     width: 36.6%;
-    height: 20px;
+    height: 50px;
     font-size: 36px;
+    font-weight: bold;
     line-height: 36px;
     color: #fff;
   }
@@ -989,22 +1054,121 @@ dd {
 
   /* ----------------------------------------------------------------
   /* PC版モーダル3 */
+  #modalcontent3 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-left: 300px;
+  }
+
+  .mo-img-left {
+    /* display:table;
+    border-collapse:collapse; */
+  }
+
+  .mo-text-right {
+    display: block;
+    margin-top: 55px;
+  }
+
+  .modal3 h2 {
+    font-size: 36px;
+    width: 100%;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+  }
+
   .modal3 img {
-    margin-top: 120px;
-    width: 43.92%;
-    ;
+    width: 100%;
     height: auto;
+    object-fit: cover;
+  }
+
+  .modal3 p {
+    margin: 0 0 60px 60px;
+    width: 70%;
+    height: 200px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  .p01 p {
+    width: 36.6%;
+    height: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #fff;
   }
 
   /* ----------------------------------------------------------------
   /* PC版モーダル4 */
-  .modal4 img {
-    margin-top: 120px;
-    width: 43.92%;
-    ;
-    height: auto;
+  #modalcontent4 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-left: 300px;
   }
+
+  .mo-img-left {
+    /* display:table;
+    border-collapse:collapse; */
+  }
+
+  .mo-text-right {
+    display: block;
+    margin-top: 55px;
+  }
+
+  .modal4 h2 {
+    font-size: 36px;
+    width: 100%;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .modal4 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .modal4 p {
+    margin: 0 0 60px 60px;
+    width: 70%;
+    height: 200px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  .p01 p {
+    width: 36.6%;
+    height: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #fff;
+  }
+
 
   /* -------------------------------------------------------------- 
 pcモーダルコンテンツPC版の上部マージンは120px*/
+
+
+
+
 }
