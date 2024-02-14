@@ -206,18 +206,45 @@ section.museum div#museum button span.arrow {
 
 
 
-main div.kasou-main section.sweets p {
+
+section.sweets p {
+  text-align: left;
   font-size: 12px;
   margin-bottom: 20px;
 
 }
 
+section.sweet div#grids img#ophthalmology {
+  margin-bottom: 20px;
+}
+
+section.sweets div#grid div#Instore-coffee {
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+}
+
+section.sweets div#grid div#Instore-coffee img {
+  width: 50%;
+  /* 140/295=0.47 */
+  margin-bottom: 0px;
+
+}
+
+section.sweets div#grid div#Instore-coffee img#calc {
+  padding-right: 15px;
+}
+
+section.sweets div#grid img#sweets-set {
+  margin-bottom: 60px;
+}
 
 /* ---調整--- */
 
 section.sweets p#healing {
-  width: 76%;
-  /* 225/295=0.763 */
+  text-align: left;
+  width: 69%;
+  /* 225/327=0.688 */
   font-size: 12px;
   line-height: 19.2px;
   padding: 12px 0;
@@ -267,7 +294,7 @@ section.sweets p#healing {
   }
 
   main div.kasou-main div.text-align-change {
-    text-align: none;
+    text-align: left;
   }
 
 
@@ -276,7 +303,8 @@ section.sweets p#healing {
   .Midashi {
     font-size: 48px;
     text-align: left;
-    margin-left: 16%;
+    margin-left: 8%;
+
     margin-bottom: 48px;
   }
 
@@ -290,7 +318,7 @@ section.sweets p#healing {
 
 
     /* 見出しの基準位置変更場所％で指定してください------- */
-    left: 16%;
+    left: 9%;
     /* --------------------------------------------------- */
   }
 
@@ -389,7 +417,7 @@ section.sweets p#healing {
 
   /* ミュージアムの見出し画像 微調整 */
   section.museum div#structural-change div#midasi-explanation div.Midashiimg {
-    margin-left: 5%;
+    margin-left: 12%;
   }
 
   /* ミュージアムの見出し文字 微調整 */
