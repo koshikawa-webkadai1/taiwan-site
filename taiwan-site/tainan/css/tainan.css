@@ -60,12 +60,9 @@ main div.kasou-main div.text-align-change {
 /* ----------------------------------------------------- */
 
 /* ********attraction************** */
-main div.kasou-main {
-  margin: 0 auto;
-}
 
 .container {
-  padding: 0 0 0 32px;
+  /* padding: 0 0 0 32px; */
 }
 
 h3 {
@@ -74,6 +71,14 @@ h3 {
   font-weight: bold;
   letter-spacing: 0.3em;
   margin-bottom: 20px;
+}
+
+section.attraction h3#attraction-h3-1 {
+  margin-top: 80px;
+}
+
+section.attraction h3#attraction-h3-2 {
+  margin-top: 120px;
 }
 
 main div.kasou-main img {
@@ -98,9 +103,14 @@ main div.kasou-main img {
   text-align: center;
 }
 
+.kugiri {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .time {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 main div.kasou-main p.attraction-exs {
@@ -202,49 +212,12 @@ section.museum div#museum button span.arrow {
 }
 
 
-
-
-
-
-
-section.sweets p {
-  text-align: left;
-  font-size: 12px;
-  margin-bottom: 20px;
-
-}
-
-section.sweet div#grids img#ophthalmology {
-  margin-bottom: 20px;
-}
-
-section.sweets div#grid div#Instore-coffee {
-  width: 100%;
-  display: flex;
-  object-fit: cover;
-}
-
-section.sweets div#grid div#Instore-coffee img {
-  width: 50%;
-  /* 140/295=0.47 */
-  margin-bottom: 0px;
-
-}
-
-section.sweets div#grid div#Instore-coffee img#calc {
-  padding-right: 15px;
-}
-
-section.sweets div#grid img#sweets-set {
-  margin-bottom: 60px;
-}
-
 /* ---調整--- */
 
 section.sweets p#healing {
   text-align: left;
-  width: 69%;
-  /* 225/327=0.688 */
+  width: 76%;
+  /* 225/295=0.762 */
   font-size: 12px;
   line-height: 19.2px;
   padding: 12px 0;
@@ -255,9 +228,23 @@ section.sweets p#healing {
 
 }
 
-
-
 /* ---調整--- */
+
+section.sweets p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 19.2px;
+  margin-bottom: 20px;
+
+}
+
+section.sweets p#explanation {
+  margin-bottom: 128px;
+  /* 60+48+20=128 */
+}
+
+
+
 
 
 
@@ -343,8 +330,13 @@ section.sweets p#healing {
     margin-bottom: 20px;
   }
 
+  .container {
+    padding: 0 0 0 20px;
+  }
+
   .attraction {
     margin-top: 120px;
+
   }
 
   /* attractionの画像＋テキストのひとくくり画像とテキストの間にcolumun-gapで空きをつくる */
