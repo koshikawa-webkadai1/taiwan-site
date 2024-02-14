@@ -141,6 +141,11 @@ section.museum div#museum {
   text-align: left;
 }
 
+section.museum div#museum p.subtitle,
+section.museum div#museum p.hall-name {
+  text-align: center;
+}
+
 section.museum div#museum div.museum-elements {
   margin-bottom: 40px;
 }
@@ -150,14 +155,11 @@ section.museum div#museum div#taichung {
 }
 
 section.museum div#museum p.subtitle {
-  font-size: 12px;
-  line-height: 22.5px;
+  font-size: 24px;
 }
 
 section.museum div#museum p.hall-name {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 22.5px;
+  font-size: 12px;
   margin-bottom: 12px;
 
 }
@@ -438,17 +440,22 @@ section.sweets p#healing {
 
   }
 
+  section.museum div#museum div.title {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+
+    margin-bottom: 20px;
+  }
+
   section.museum div#museum p.subtitle {
-    font-size: 24px;
-    line-height: 45px;
+    font-size: 36px;
+
   }
 
   section.museum div#museum p.hall-name {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 45px;
-    margin-bottom: 20px;
-
+    font-size: 24px;
+    margin-bottom: 0;
   }
 
   section.museum div#museum img {
@@ -500,6 +507,7 @@ section.sweets p#healing {
 
 
   main div.kasou-main section.sweets h3 {
+    text-align: center;
     margin-top: 80px;
     margin-bottom: 40px;
   }
