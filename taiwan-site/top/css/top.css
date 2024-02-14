@@ -120,32 +120,51 @@ main {
 }
 
 /* スライドショー */
-#image-box {
-  text-align: center;
+
+
+.imgBox {
   margin: 0 auto;
+  /* height: 100vh; */
   width: 80%;
   margin-bottom: 18px;
 }
 
-.nav {
+#section2 img {
+  display: block;
+  width: 100%;
   margin: 0 auto;
-  width: 300px;
+  margin-bottom: 18px;
+}
+
+.btnBox {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: space-around;
 }
 
-.nav div {
+#section2 a {
+  /*コレ*/
   width: 18px;
   height: 18px;
   background-color: gray;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.now {
-  background: #000;
+#section2 .now {
+  background: black;
+}
+
+#section2 #main_images2{
+  display: none;
+}
+#section2 #main_images3{
+  display: none;
 }
 
 /* section3 */
+
 
 #Midashi2 {
   font-size: 24px;
@@ -207,6 +226,7 @@ main {
 }
 
 #map {
+  text-align: left;
   display: inline-block;
   width: 194px;
   height: 381px;
@@ -457,20 +477,24 @@ main {
   }
 
   /* section2 */
-  #section2{
+  #section2 {
     text-align: left;
   }
+
   #Midashi {
     font-size: 48px;
     text-align: left;
     margin-left: 16%;
   }
+
   #Midashi span {
     font-size: 24px;
   }
+
   #Midashiimg {
     left: 16%;
   }
+
   #Midashiimg::before {
     width: 530px;
     height: 96px;
@@ -478,22 +502,72 @@ main {
     left: -110px;
   }
 
+  /* スライドショー */
+
+
+.imgBox {
+  margin: 0;
+  width: 100%;
+}
+
+#section2 img {
+  display: block;
+  width: 25%;
+  margin:0;
+  margin-top: 80px;
+  margin-left:9%;
+  margin-bottom: 78px;
+}
+
+/* スライド3枚並べるスタイル */
+#sildeflex{
+  display: flex;
+}
+
+#section2 #main_images2{
+  display: block;
+  margin-left: 3.5%;
+}
+#section2 #main_images3{
+  display: block;
+  margin-left:3.5%
+}
+
+.btnBox {
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#section2 a {
+  /*コレ*/
+  width: 28px;
+  height: 28px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
   /* section3 */
-  #section3 h2{
+
+  #section3 h2 {
     text-align: right;
     font-size: 48px;
   }
 
   #Midashi2 {
-    
     margin-right: 16%;
   }
+
   #Midashi2 span {
     font-size: 24px;
   }
+
   #Midashiimg2 {
     left: 84%;
   }
+
   #Midashiimg2::before {
     width: 530px;
     height: 96px;
@@ -501,8 +575,178 @@ main {
     left: -430px;
   }
 
+  /* flex親要素 */
+  #section3flex {
+    display: flex;
+  }
 
 
+  /* flex子要素１ */
+  #section3flex p {
+    padding: 0;
+    margin: 0;
+    flex-basis: 35%;
+    max-width: 420px;
+    width: 100%;
+    height: 100%;
+    margin-top: 280px;
+    margin-left: 16%;
+    margin-right: 0%;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 60px 0;
+  }
+
+  /* flex子要素2 */
+  #p {
+    flex-basis: 50%;
+    width: 100%;
+
+  }
+
+  /* map調整 */
+  #map {
+    display: inline-block;
+    width: 108%;
+    height: auto;
+    margin-left: 15%;
+  }
+
+  #section3 img {
+    margin-top: 80px;
+  }
+
+  #taipei {
+    position: absolute;
+    width: 27%;
+    height: 212px;
+    top: 55px;
+    left: 298px;
+  }
+
+  #taityun {
+    position: absolute;
+    width: 27%;
+    height: 212px;
+    top: 163px;
+    left: -18px;
+  }
+
+  #tainan {
+    position: absolute;
+    width: 27%;
+    height: 212px;
+    top: 522px;
+    left: 108px;
+  }
+
+  /* section4 */
+  #section4 h2 {
+    font-size: 48px;
+    margin-top: 144px;
+    text-align: left;
+  }
+
+  #Midashi3 {
+    font-size: 48px;
+    text-align: left;
+    margin: 0;
+    margin-left: 16%;
+
+  }
+
+  #Midashi3 span {
+    font-size: 24px;
+  }
+
+  #Midashiimg3 {
+    left: 16%;
+  }
+
+  #Midashiimg3::before {
+    width: 530px;
+    height: 96px;
+    top: -15px;
+    left: -110px;
+  }
+
+  .section4flex {
+    display: flex;
+  }
 
 
+  #countdown {
+    text-align: left;
+
+  }
+
+  .eventimg {
+    margin: 0;
+    width: 42%;
+    height: auto;
+    margin-left: 10%;
+    max-height: 500px;
+  }
+
+  #eventimg2 {
+    margin: 0;
+    width: 42%;
+    height: auto;
+    margin-left: 10%;
+    max-height: 500px;
+  }
+  .item{
+    margin-left:5%;
+    flex-basis: 30%;
+    text-align: center;
+  }
+  #section4 h4{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .setumei1{
+    margin-bottom: 40px;
+    font-size: 20px;
+
+  }
+  .setumei2{
+    padding: 40px 0;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  
+  #rantan {
+    text-align: left;
+    
+  }
+  #section4 h3{
+    margin-top: 80px;
+    margin-left: 10%;
+    font-size:36px ;
+  }
+  
+  /* section5 */
+  #section5 {
+    margin-bottom: 240px;
+  }
+
+  #section5 li {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  #theade {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  #section5 table {
+    font-size: 20px;
+    line-height: 32px;
+    border-spacing: 0px 0px;
+    border-collapse: collapse;
+  }
+  .section5border{
+    border:2px solid #000;
+    padding:40px;
+  }
 }

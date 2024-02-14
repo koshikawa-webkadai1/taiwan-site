@@ -276,7 +276,6 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 @media screen and (min-width: 767px) {
 
   header div.kasou {
-    padding: 0 83px;
     position: relative;
   }
 
