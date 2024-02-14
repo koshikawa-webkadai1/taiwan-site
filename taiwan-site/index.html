@@ -116,17 +116,23 @@
       <!-- ------------------------------------------------ -->
       <!-- ここにスライドショー 作成する-->
       <div class="imgBox">
-        <img src="top/image/gall_slider_01.jpg" alt="" id="main_images" />
+        <div id="sildeflex">
+          <img src="top/image/gall_slider_01.jpg" alt="" id="main_images" />
+          <img src="top/image/gall_slider_02.jpg" alt="" id="main_images2"/>
+          <img src="top/image/gall_slider_03.jpg" alt="" id="main_images3" />
+        </div>
         <div class="prevnext">
           <div id="prev" class="btn"></div>
           <div id="next" class="btn"></div>
         </div>
         <div class="btnBox">
+          <a href="#section2" id="prev" ></a>
           <a href="#section2" id="btn1" onclick="buttonClick1()" class="now"></a>
           <a href="#section2" id="btn2" onclick="buttonClick2()"></a>
           <a href="#section2" id="btn3" onclick="buttonClick3()"></a>
           <a href="#section2" id="btn4" onclick="buttonClick4()"></a>
           <a href="#section2" id="btn5" onclick="buttonClick5()"></a>
+          <a href="#section2" id="next" ></a>
         </div>
       </div>
       <!-- <div id="image-box">
@@ -197,7 +203,7 @@
       <!-- 台湾基本情報 -->
       <div id="Midashiimg4"></div>
       <h2>台湾基本情報</h2>
-
+      <div class="section5border">
       <ul>
         <li>■国名:中華民国・台湾</li>
         <li>■首都:台北</li>
@@ -214,7 +220,7 @@
         </li>
       </ul>
       <table>
-        <thead id="theade">■台湾の祝祭日:</thead>
+        <p id="theade">■台湾の祝祭日:</p>
         <tbody>
           <tr>
             <td>正月</td>
@@ -246,6 +252,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
     </section>
   </main>
 
