@@ -81,6 +81,10 @@ main div.kasou-main img {
   margin-bottom: 20px;
 }
 
+.attraction {
+  margin-top: 40px;
+}
+
 .attraction p {
   background-color: rgba(108, 186, 216, 0.2);
   font-size: 12px;
@@ -116,37 +120,6 @@ main div.kasou-main p.attraction-exs {
   margin-right: 15px;
 }
 
-
-
-/* main div.kasou-main section.attraction {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-section.attraction h3 {
-  margin-top: 60px;
-}
-
-
-section.attraction p.attraction-ex {
-  background: rgba(237, 161, 132, 0.2);
-  font-size: 12px;
-  line-height: 19.2px;
-  padding: 20px 16px;
-  margin-bottom: 20px;
-}
-
-section.attraction div.attraction-2img {
-  width: 50%;
-  display: flex;
-
-
-}
-
-
-section.attraction p.attraction-exs {
-  margin-bottom: 60px
-} */
 
 
 
@@ -340,6 +313,10 @@ section.sweets p#healing {
     margin-bottom: 20px;
   }
 
+  .attraction {
+    margin-top: 120px;
+  }
+
   /* attractionの画像＋テキストのひとくくり画像とテキストの間にcolumun-gapで空きをつくる */
   .attraction .cont_inner {
     display: flex;
@@ -396,59 +373,6 @@ section.sweets p#healing {
   }
 
 
-  /* main div.kasou-main section.attraction {
-    margin-top: 80px;
-
-    margin-bottom: 120px;
-  }
-
-
-
-  section.attraction h3 {
-    margin-top: 80px;
-  }
-
-  section.attraction p.attraction-ex {
-    background: rgba(237, 161, 132, 0.2);
-    font-size: 20px;
-    line-height: 32px;
-    padding: 20px 20px;
-    margin: 0px;
-  }
-
-  section.attraction p.attraction-exs {
-    margin-bottom: 0px;
-  }
-
-  section.attraction div#gaomei-wetland {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-  }
-
-  section.attraction div#lowtide-sunset {
-    display: flex;
-    margin-bottom: 120px;
-    align-items: center;
-  }
-
-  section.attraction h3#rainbow-village-h3 {
-    margin-top: 120px;
-  }
-
-  section.attraction div#rainbow-village {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-  }
-
-  section.attraction div#rainbow-village-2 {
-    display: flex;
-    margin-bottom: 120px;
-    align-items: center;
-  } */
-
-
 
 
   main div.kasou-main section.museum div#structural-change {
@@ -489,7 +413,6 @@ section.sweets p#healing {
     font-size: 20px;
     line-height: 32px;
     padding: 20px;
-    /* margin: 0px auto; */
     margin-top: 80px;
     margin-bottom: 80px;
     border-top: solid 1px #000;
@@ -609,26 +532,35 @@ section.sweets p#healing {
     /* 40/1120=0.036 */
     /* 480/1120=0.428 */
 
+    margin-left: 20px;
   }
 
   section.sweets div#miyahara-ophthalmology img#ophthalmology {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin: 0 0 40px 0;
   }
 
   section.sweets div#miyahara-ophthalmology p {
     grid-row: 1/2;
     grid-column: 3/4;
+    margin: auto 0;
+
+    width: 94.6%;
+    /* 480/507.39=0.946 */
   }
 
 
   section.sweets div#Instore-coffee {
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 43% 4% 54%;
-    /* 600/(600+40+480)=0.535 */
+    grid-template-columns: 43% 4% 53%;
+    /* 600/(20+600+40+480)=0.535 */
     /* 40/1120=0.036 */
     /* 480/1120=0.428 */
+
+    margin-left: 20px;
+    margin-bottom: 240px;
   }
 
   section.sweets div#Instore-coffee img#calc {
@@ -639,6 +571,9 @@ section.sweets p#healing {
   section.sweets div#Instore-coffee p#explanation {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin: auto 0;
+    width: 94.6%;
+    /* 480/507.39=0.946 */
   }
 
 
