@@ -341,10 +341,18 @@ section.sweets p#explanation {
   }
 
   /* attractionの画像＋テキストのひとくくり画像とテキストの間にcolumun-gapで空きをつくる */
-  .attraction .cont_inner {
+  .attraction .cont_inner1 {
     display: flex;
     column-gap: 3.44%;
     justify-content: right;
+  }
+
+  .attraction .cont_inner2 {
+    display: flex;
+    column-gap: 3.44%;
+    justify-content: right;
+
+    margin-bottom: 120px;
   }
 
   .attraction p {
