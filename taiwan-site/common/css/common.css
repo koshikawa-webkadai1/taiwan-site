@@ -14,6 +14,7 @@ div.pc-kasou {
   div.pc-kasou {
     max-width: 1200px;
     margin: 0 auto;
+    border: 2px solid #00FFF0;
   }
 }
 
@@ -276,7 +277,11 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 @media screen and (min-width: 767px) {
 
   header div.kasou {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #00FFF0;
     position: relative;
+
   }
 
   header div.kasou img.header-rogo1 {
@@ -430,6 +435,8 @@ main div.kasou-main img.pc {
 
 
 @media screen and (min-width: 767px) {
+
+  div.pc-kasou {}
 
   main {
     margin: 20px 20px;

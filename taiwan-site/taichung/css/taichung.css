@@ -280,7 +280,8 @@ section.sweets div#grid img#sweets-set {
 
 
     section.attraction h3 {
-        margin-top: 80px;
+        margin-top: 104px;
+        /* 24(h2から見出し画像底辺までの距離)+80＝104 */
     }
 
     section.attraction p.attraction-ex {
@@ -339,11 +340,13 @@ section.sweets div#grid img#sweets-set {
     /* ミュージアムの見出し画像 微調整 */
     section.museum div#structural-change div#midasi-explanation div.Midashiimg {
         margin-left: 5%;
+        top: 24px;
     }
 
     /* ミュージアムの見出し文字 微調整 */
     section.museum div#structural-change div#midasi-explanation h2 {
         margin-left: 25%;
+
     }
 
 
@@ -366,7 +369,8 @@ section.sweets div#grid img#sweets-set {
         line-height: 32px;
         padding: 20px;
         /* margin: 0px auto; */
-        margin-top: 80px;
+        margin-top: 104px;
+        /* 24(h2から見出し画像底辺までの距離)+80＝104 */
         margin-bottom: 80px;
         border-top: solid 1px #000;
         border-bottom: solid 1px #000;
@@ -453,7 +457,8 @@ section.sweets div#grid img#sweets-set {
 
 
     main div.kasou-main section.sweets h3 {
-        margin-top: 80px;
+        margin-top: 104px;
+        /* 24(h2から見出し画像底辺までの距離)+80＝104 */
         margin-bottom: 40px;
     }
 

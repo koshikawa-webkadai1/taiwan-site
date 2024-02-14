@@ -60,12 +60,9 @@ main div.kasou-main div.text-align-change {
 /* ----------------------------------------------------- */
 
 /* ********attraction************** */
-main div.kasou-main {
-  margin: 0 auto;
-}
 
 .container {
-  padding: 0 0 0 32px;
+  /* padding: 0 0 0 32px; */
 }
 
 h3 {
@@ -76,9 +73,22 @@ h3 {
   margin-bottom: 20px;
 }
 
+section.attraction h3#attraction-h3-1 {
+  margin-top: 104px;
+  /* 24+80＝148 */
+}
+
+section.attraction h3#attraction-h3-2 {
+  margin-top: 120px;
+}
+
 main div.kasou-main img {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.attraction {
+  margin-top: 40px;
 }
 
 .attraction p {
@@ -94,9 +104,14 @@ main div.kasou-main img {
   text-align: center;
 }
 
+.kugiri {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .time {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 main div.kasou-main p.attraction-exs {
@@ -118,37 +133,6 @@ main div.kasou-main p.attraction-exs {
 
 
 
-/* main div.kasou-main section.attraction {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-section.attraction h3 {
-  margin-top: 60px;
-}
-
-
-section.attraction p.attraction-ex {
-  background: rgba(237, 161, 132, 0.2);
-  font-size: 12px;
-  line-height: 19.2px;
-  padding: 20px 16px;
-  margin-bottom: 20px;
-}
-
-section.attraction div.attraction-2img {
-  width: 50%;
-  display: flex;
-
-
-}
-
-
-section.attraction p.attraction-exs {
-  margin-bottom: 60px
-} */
-
-
 
 section.museum p.museum {
   width: 76%;
@@ -168,6 +152,11 @@ section.museum div#museum {
   text-align: left;
 }
 
+section.museum div#museum p.subtitle,
+section.museum div#museum p.hall-name {
+  text-align: center;
+}
+
 section.museum div#museum div.museum-elements {
   margin-bottom: 40px;
 }
@@ -177,22 +166,17 @@ section.museum div#museum div#taichung {
 }
 
 section.museum div#museum p.subtitle {
-  font-size: 12px;
-  line-height: 22.5px;
+  font-size: 24px;
 }
 
 section.museum div#museum p.hall-name {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 22.5px;
+  font-size: 12px;
   margin-bottom: 12px;
 
 }
 
 section.museum div#museum img {
   margin-bottom: 12px;
-  height: 17vh;
-  /* 135/812=0.166 */
   object-fit: cover;
 }
 
@@ -229,22 +213,12 @@ section.museum div#museum button span.arrow {
 }
 
 
-
-
-
-
-main div.kasou-main section.sweets p {
-  font-size: 12px;
-  margin-bottom: 20px;
-
-}
-
-
 /* ---調整--- */
 
 section.sweets p#healing {
+  text-align: left;
   width: 76%;
-  /* 225/295=0.763 */
+  /* 225/295=0.762 */
   font-size: 12px;
   line-height: 19.2px;
   padding: 12px 0;
@@ -255,9 +229,23 @@ section.sweets p#healing {
 
 }
 
-
-
 /* ---調整--- */
+
+section.sweets p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 19.2px;
+  margin-bottom: 20px;
+
+}
+
+section.sweets p#explanation {
+  margin-bottom: 128px;
+  /* 60+48+20=128 */
+}
+
+
+
 
 
 
@@ -294,7 +282,7 @@ section.sweets p#healing {
   }
 
   main div.kasou-main div.text-align-change {
-    text-align: none;
+    text-align: left;
   }
 
 
@@ -303,7 +291,8 @@ section.sweets p#healing {
   .Midashi {
     font-size: 48px;
     text-align: left;
-    margin-left: 16%;
+    margin-left: 8%;
+
     margin-bottom: 48px;
   }
 
@@ -317,7 +306,7 @@ section.sweets p#healing {
 
 
     /* 見出しの基準位置変更場所％で指定してください------- */
-    left: 16%;
+    left: 9%;
     /* --------------------------------------------------- */
   }
 
@@ -342,11 +331,28 @@ section.sweets p#healing {
     margin-bottom: 20px;
   }
 
+  .container {
+    padding: 0 0 0 20px;
+  }
+
+  .attraction {
+    margin-top: 120px;
+
+  }
+
   /* attractionの画像＋テキストのひとくくり画像とテキストの間にcolumun-gapで空きをつくる */
-  .attraction .cont_inner {
+  .attraction .cont_inner1 {
     display: flex;
     column-gap: 3.44%;
     justify-content: right;
+  }
+
+  .attraction .cont_inner2 {
+    display: flex;
+    column-gap: 3.44%;
+    justify-content: right;
+
+    margin-bottom: 120px;
   }
 
   .attraction p {
@@ -398,59 +404,6 @@ section.sweets p#healing {
   }
 
 
-  /* main div.kasou-main section.attraction {
-    margin-top: 80px;
-
-    margin-bottom: 120px;
-  }
-
-
-
-  section.attraction h3 {
-    margin-top: 80px;
-  }
-
-  section.attraction p.attraction-ex {
-    background: rgba(237, 161, 132, 0.2);
-    font-size: 20px;
-    line-height: 32px;
-    padding: 20px 20px;
-    margin: 0px;
-  }
-
-  section.attraction p.attraction-exs {
-    margin-bottom: 0px;
-  }
-
-  section.attraction div#gaomei-wetland {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-  }
-
-  section.attraction div#lowtide-sunset {
-    display: flex;
-    margin-bottom: 120px;
-    align-items: center;
-  }
-
-  section.attraction h3#rainbow-village-h3 {
-    margin-top: 120px;
-  }
-
-  section.attraction div#rainbow-village {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-  }
-
-  section.attraction div#rainbow-village-2 {
-    display: flex;
-    margin-bottom: 120px;
-    align-items: center;
-  } */
-
-
 
 
   main div.kasou-main section.museum div#structural-change {
@@ -465,7 +418,8 @@ section.sweets p#healing {
 
   /* ミュージアムの見出し画像 微調整 */
   section.museum div#structural-change div#midasi-explanation div.Midashiimg {
-    margin-left: 5%;
+    margin-left: 12%;
+    top: 24px;
   }
 
   /* ミュージアムの見出し文字 微調整 */
@@ -491,8 +445,8 @@ section.sweets p#healing {
     font-size: 20px;
     line-height: 32px;
     padding: 20px;
-    /* margin: 0px auto; */
-    margin-top: 80px;
+    margin-top: 104px;
+    /* 24+80=104 */
     margin-bottom: 80px;
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
@@ -517,17 +471,22 @@ section.sweets p#healing {
 
   }
 
+  section.museum div#museum div.title {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+
+    margin-bottom: 20px;
+  }
+
   section.museum div#museum p.subtitle {
-    font-size: 24px;
-    line-height: 45px;
+    font-size: 36px;
+
   }
 
   section.museum div#museum p.hall-name {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 45px;
-    margin-bottom: 20px;
-
+    font-size: 24px;
+    margin-bottom: 0;
   }
 
   section.museum div#museum img {
@@ -579,24 +538,27 @@ section.sweets p#healing {
 
 
   main div.kasou-main section.sweets h3 {
-    margin-top: 80px;
+    text-align: center;
     margin-bottom: 40px;
   }
 
-  section.sweets p {
+  main div.kasou-main section.sweets p {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 0px;
   }
 
 
-  section.sweet p#healing {
-    width: 48%;
-    /* 420/877.13=0.48 */
+  section.sweets p#healing {
+    width: 37%;
+    /* 420/1140=0.37 */
     font-size: 20px;
     line-height: 32px;
+    margin: 0 0 0 75px;
     padding: 20px 0;
-    margin-bottom: 60px;
+    margin-top: 104px;
+    /* 24+80=104 */
+    margin-bottom: 80px;
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
 
@@ -610,26 +572,35 @@ section.sweets p#healing {
     /* 40/1120=0.036 */
     /* 480/1120=0.428 */
 
+    margin-left: 20px;
   }
 
   section.sweets div#miyahara-ophthalmology img#ophthalmology {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin: 0 0 40px 0;
   }
 
   section.sweets div#miyahara-ophthalmology p {
     grid-row: 1/2;
     grid-column: 3/4;
+    margin: auto 0;
+
+    width: 94.6%;
+    /* 480/507.39=0.946 */
   }
 
 
   section.sweets div#Instore-coffee {
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 43% 4% 54%;
-    /* 600/(600+40+480)=0.535 */
+    grid-template-columns: 43% 4% 53%;
+    /* 600/(20+600+40+480)=0.535 */
     /* 40/1120=0.036 */
     /* 480/1120=0.428 */
+
+    margin-left: 20px;
+    margin-bottom: 240px;
   }
 
   section.sweets div#Instore-coffee img#calc {
@@ -640,6 +611,9 @@ section.sweets p#healing {
   section.sweets div#Instore-coffee p#explanation {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin: auto 0;
+    width: 94.6%;
+    /* 480/507.39=0.946 */
   }
 
 
