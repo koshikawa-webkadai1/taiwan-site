@@ -277,6 +277,7 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 @media screen and (min-width: 767px) {
 
   header div.kasou {
+    padding: 0px;
     max-width: 1200px;
     margin: 0 auto;
     border: 2px solid #00FFF0;
@@ -294,7 +295,6 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
 
   header div.kasou div {
     display: block;
-
   }
 
   header div.kasou div img.header-rogo2 {

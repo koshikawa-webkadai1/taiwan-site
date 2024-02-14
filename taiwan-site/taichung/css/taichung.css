@@ -1,6 +1,17 @@
 @charset "UTF-8";
 
 
+/* TOP-otamesi  */
+header div.kasou div img.header-rogo2 {
+    width: 65%;
+    /* 780/1200=0.65 */
+    margin-bottom: 16%;
+
+    /* 116/710.91=0.163 */
+    /* 116⇒開けたいスペースの高さ(ｐ要素の高さ) */
+    /* 710.91⇒(ｐ要素の親要素の高さ) */
+}
+
 /* --------------------main-------------------- */
 main div.kasou-main {
     text-align: center;
@@ -233,6 +244,7 @@ section.sweets div#grid img#sweets-set {
     main div.kasou-main div.text-align-change {
         text-align: none;
     }
+
 
 
     /* -----------------見出し 共有-------------------------------------*/
