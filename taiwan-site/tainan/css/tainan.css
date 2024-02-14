@@ -191,8 +191,6 @@ section.museum div#museum p.hall-name {
 
 section.museum div#museum img {
   margin-bottom: 12px;
-  height: 17vh;
-  /* 135/812=0.166 */
   object-fit: cover;
 }
 
