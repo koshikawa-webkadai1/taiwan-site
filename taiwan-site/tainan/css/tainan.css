@@ -59,6 +59,64 @@ main div.kasou-main div.text-align-change {
 
 /* ----------------------------------------------------- */
 
+/* ********attraction************** */
+main div.kasou-main {
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0 0 0 32px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  margin-bottom: 20px;
+}
+
+main div.kasou-main img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.attraction p {
+  background-color: rgba(108, 186, 216, 0.2);
+  font-size: 12px;
+  line-height: 19.2px;
+  padding: 20px 16px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.attraction p.point {
+  text-align: center;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main div.kasou-main p.attraction-exs {
+  margin-bottom: 60px
+}
+
+.att-sub {
+  width: 100%;
+  display: flex;
+}
+
+.figure {
+  width: 50%;
+}
+
+.fig_02 {
+  margin-right: 15px;
+}
+
+
 
 /* main div.kasou-main section.attraction {
   margin-top: 40px;
@@ -181,31 +239,25 @@ main div.kasou-main section.sweets p {
 
 }
 
-section.sweet div#grids img#ophthalmology {
-  margin-bottom: 20px;
+
+/* ---調整--- */
+
+section.sweets p#healing {
+  width: 76%;
+  /* 225/295=0.763 */
+  font-size: 12px;
+  line-height: 19.2px;
+  padding: 12px 0;
+  margin: 0px auto;
+  margin-bottom: 40px;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+
 }
 
-section.sweets div#grid div#Instore-coffee {
-  width: 100%;
-  display: flex;
-  object-fit: cover;
-}
 
-section.sweets div#grid div#Instore-coffee img {
-  width: 50%;
-  /* 140/295=0.47 */
-  margin-bottom: 0px;
 
-}
-
-section.sweets div#grid div#Instore-coffee img#calc {
-  padding-right: 15px;
-}
-
-section.sweets div#grid img#sweets-set {
-  margin-bottom: 60px;
-}
-
+/* ---調整--- */
 
 
 
@@ -251,7 +303,7 @@ section.sweets div#grid img#sweets-set {
   .Midashi {
     font-size: 48px;
     text-align: left;
-    margin-left: 63px;
+    margin-left: 16%;
     margin-bottom: 48px;
   }
 
@@ -265,7 +317,7 @@ section.sweets div#grid img#sweets-set {
 
 
     /* 見出しの基準位置変更場所％で指定してください------- */
-    left: 19%;
+    left: 16%;
     /* --------------------------------------------------- */
   }
 
@@ -275,15 +327,78 @@ section.sweets div#grid img#sweets-set {
     background-image: url(../../common/image/h2_bg.png);
     width: 530px;
     height: 96px;
-    top: -21px;
+    top: -15px;
     /* 45(線と画像の底辺が同じ時)-24(スペース量)=21px */
-    left: -265px;
+    left: -110px;
     /* --------------------------------------------------- */
   }
 
   /* ----------------------------------------------------- */
 
-  main div.kasou-main section.attraction {
+  /*attraction**************************************************** */
+
+  main div.kasou-main img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* attractionの画像＋テキストのひとくくり画像とテキストの間にcolumun-gapで空きをつくる */
+  .attraction .cont_inner {
+    display: flex;
+    column-gap: 3.44%;
+    justify-content: right;
+  }
+
+  .attraction p {
+    width: 50%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .time {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  /* attractionのサブ画像２つ入っているdiv方の横サイズ */
+  .att-sub {
+    width: 50%;
+    column-gap: unset;
+  }
+
+  /* attractionのサブ画像*/
+  .figure {
+    width: 25%;
+    display: grid;
+    grid-template-columns: auto 50%;
+    column-gap: 10px;
+
+  }
+
+  /*attractionセクションの最初のイメージ */
+  .fig_01 {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .fig_02 {
+    margin-right: 19px;
+  }
+
+
+  .attraction p.point {
+    text-align: center;
+    height: 8.62%;
+    align-self: center;
+  }
+
+  .kugiri {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+
+  /* main div.kasou-main section.attraction {
     margin-top: 80px;
 
     margin-bottom: 120px;
@@ -291,7 +406,7 @@ section.sweets div#grid img#sweets-set {
 
 
 
-  /* section.attraction h3 {
+  section.attraction h3 {
     margin-top: 80px;
   }
 
@@ -346,6 +461,16 @@ section.sweets div#grid img#sweets-set {
   section.museum div#structural-change div#tentative,
   section.museum div#structural-change div#midasi-explanation {
     width: 50%;
+  }
+
+  /* ミュージアムの見出し画像 微調整 */
+  section.museum div#structural-change div#midasi-explanation div.Midashiimg {
+    margin-left: 5%;
+  }
+
+  /* ミュージアムの見出し文字 微調整 */
+  section.museum div#structural-change div#midasi-explanation h2 {
+    margin-left: 25%;
   }
 
   section.museum div#museum div#museum-element-1,
@@ -465,7 +590,7 @@ section.sweets div#grid img#sweets-set {
   }
 
 
-  section.sweets p.sweets {
+  section.sweet p#healing {
     width: 48%;
     /* 420/877.13=0.48 */
     font-size: 20px;
@@ -474,70 +599,47 @@ section.sweets div#grid img#sweets-set {
     margin-bottom: 60px;
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
+
   }
 
   section.sweets div#miyahara-ophthalmology {
-    display: flex;
-    align-items: center;
-
-    column-gap: 40px;
-    margin-bottom: 40px;
-
-
-  }
-
-  section.sweets img#ophthalmology {
-    width: 47.5%;
-    margin-bottom: 0px;
-    margin-right: 0;
-  }
-
-  section.sweets div#grid {
     display: grid;
-    grid-template-rows: 77% 23%;
-    grid-template-columns: 47.5% 5% 47.5%;
-    /* 300/388=0.77 */
-    /* 50/(580+50+480)=0.045 */
+    grid-template-rows: 100%;
+    grid-template-columns: 54% 4% 43%;
+    /* 600/(600+40+480)=0.535 */
+    /* 40/1120=0.036 */
+    /* 480/1120=0.428 */
+
   }
 
-
-
-
-  section.sweets div#grid div#Instore-coffee {
-    width: 100%;
-    /* 388/ */
-    display: flex;
-    object-fit: cover;
-
-    grid-row: 1/3;
+  section.sweets div#miyahara-ophthalmology img#ophthalmology {
+    grid-row: 1/2;
     grid-column: 1/2;
   }
 
-  section.sweets div#grid div#Instore-coffee img {
-    width: 50%;
-    /* 140/295=0.47 */
-    margin-bottom: 0px;
-    margin-right: 0px;
-
-  }
-
-  section.sweets div#grid div#Instore-coffee img#calc {
-    padding-right: 20px;
-  }
-
-  section.sweets div#grid p#explanation {
-    grid-row: 2/3;
-    grid-column: 3/4;
-  }
-
-  section.sweets div#grid img#sweets-set {
-    object-fit: cover;
-    margin: 0;
-    margin-bottom: 0px;
+  section.sweets div#miyahara-ophthalmology p {
     grid-row: 1/2;
     grid-column: 3/4;
-    width: 100%;
-    height: 100%;
+  }
+
+
+  section.sweets div#Instore-coffee {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 43% 4% 54%;
+    /* 600/(600+40+480)=0.535 */
+    /* 40/1120=0.036 */
+    /* 480/1120=0.428 */
+  }
+
+  section.sweets div#Instore-coffee img#calc {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+
+  section.sweets div#Instore-coffee p#explanation {
+    grid-row: 1/2;
+    grid-column: 1/2;
   }
 
 
