@@ -583,18 +583,19 @@ section.sweets p#healing {
     margin-bottom: 40px;
   }
 
-  section.sweets p {
+  main div.kasou-main section.sweets p {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 0px;
   }
 
 
-  section.sweet p#healing {
-    width: 48%;
-    /* 420/877.13=0.48 */
+  section.sweets p#healing {
+    width: 37%;
+    /* 420/1140=0.37 */
     font-size: 20px;
     line-height: 32px;
+    margin: 0 0 0 75px;
     padding: 20px 0;
     margin-bottom: 60px;
     border-top: solid 1px #000;
