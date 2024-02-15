@@ -425,8 +425,6 @@ section.sweets div#grid img#sweets-set {
 
     section.museum div#museum img {
         margin-bottom: 20px;
-        height: 15vw;
-        /* 270/1755=0.15 */
         object-fit: cover;
         width: 100%;
 
