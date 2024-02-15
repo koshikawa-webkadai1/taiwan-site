@@ -334,7 +334,7 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
     top: 0;
     right: 6%;
 
-    width: 100%;
+    width: 50%;
     height: 58px;
     margin-top: 20px;
   }
