@@ -78,10 +78,44 @@ html {
 }
 
 /* ******************* */
-/* ページトップへ戻るボタン */
+/* ページトップへ戻るボタンpc */
 /* ******************* */
+@media screen and (min-width: 767px) {
+  .arrow {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #6C6565;
 
+    position: relative;
+    z-index: 100;
+    transition: .3s;
+  }
 
+  .arrow::before,
+  .arrow::after {
+    content: "";
+    width: 36px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    background: #fff;
+    position: absolute;
+    right: 24px;
+    top: 40px;
+  }
+
+  .arrow::before {
+    left: calc(50% - 8px);
+    transform: rotate(45deg);
+  }
+
+  .arrow::after {
+    right: calc(50% - 8px);
+    transform: rotate(-45deg);
+  }
+
+}
 
 /* -----main----- */
 
