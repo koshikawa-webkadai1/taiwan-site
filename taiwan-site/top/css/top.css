@@ -6,6 +6,10 @@ header {
   height: 667px;
 }
 
+.header-rogo1 {
+  display: none;
+}
+
 main {
   margin: 0;
 }
@@ -29,7 +33,7 @@ main {
 .introimg {
   display: block;
   margin: auto;
-  max-width: 500px;
+  max-width: 400px;
   width: 89%;
   height: 140px;
 }
@@ -156,10 +160,19 @@ main {
   background: black;
 }
 
-#section2 #main_images2{
+#section2 #main_images2 {
   display: none;
 }
-#section2 #main_images3{
+
+#section2 #main_images3 {
+  display: none;
+}
+
+#section2 #prev {
+  display: none;
+}
+
+#section2 #next {
   display: none;
 }
 
@@ -410,7 +423,7 @@ main {
 
 @media screen and (min-width: 767px) {
 
- 
+
 
 
   /* header調整 */
@@ -428,27 +441,33 @@ main {
 
   header div.kasou div img.header-rogo2 {
     width: 57%;
-    margin: 80px 0 0 20%;
+    margin: 180px 0 0 20%;
   }
 
   /* section1 */
+
   #Formosa1 {
-    text-align: left;
-    display: flex;
     height: 458px;
     padding-top: 80px;
+  }
+
+  #Formosa1 .formosaflex {
+    max-width: 1200px;
+    display: flex;
     margin: 0 auto;
-    
   }
 
   #formosaimg {
     width: 100%;
     height: 78px;
+    margin-bottom: 20px;
+    margin-left: 80px;
   }
 
   #Formosa1 h2 {
     font-size: 48px;
     text-align: left;
+    margin-left: 10px;
   }
 
   #Formosa1 h3 {
@@ -464,28 +483,30 @@ main {
     height: 298px;
     margin: 0;
     flex-basis: 55%;
-    margin-right: 6%;
+    margin-right: 0%;
     max-width: 1000px;
     background-size: auto;
 
   }
 
   #Formosa2 {
-    display: flex;
-    margin: auto;
     height: 458px;
     padding-top: 80px;
     text-align: left;
-    max-width: 1200px;;
   }
 
-  #Formosa1 div {
-    text-align: center;
-    flex-basis: 45%;
+  #Formosa2 .formosaflex2 {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #Formosa1 .leftitem {
+    flex-basis: 50%;
     display: inline;
     margin-left: 6%;
     margin-top: 30px;
-    margin-right: 17%;
+    margin-right: 15%;
   }
 
   #Formosa2 p {
@@ -548,6 +569,7 @@ main {
   }
 
   #section2 #prev {
+    display: inherit;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -584,6 +606,7 @@ main {
   }
 
   #section2 #next {
+    display: inherit;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -673,10 +696,11 @@ main {
   }
 
   /* section3 */
-  #section3{
+  #section3 {
     margin: 0 auto;
     max-width: 1360px;
   }
+
   #section3 h2 {
     text-align: right;
     font-size: 48px;
@@ -767,10 +791,11 @@ main {
   }
 
   /* section4 */
-  #section4{
+  #section4 {
     margin: 0 auto;
     max-width: 1496px;
   }
+
   #section4 h2 {
     font-size: 48px;
     margin-top: 144px;

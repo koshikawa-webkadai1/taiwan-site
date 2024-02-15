@@ -41,7 +41,7 @@
 
     <div class="kasou">
 
-      <img src="../common/image/top_logo.svg" alt="" class="header-rogo1">
+      <img src="common/image/top_logo.svg" alt="" class="header-rogo1">
       <div>
 
         <!-- ナビアイコン共通 -->
@@ -90,167 +90,162 @@
 
   </header>
 
-  <main>
-
-    <section id="Formosa1">
-      <!-- formasa -->
-      <div>
-        <img src="common/image/taiwankokki.svg" alt="フォルモサ国旗" id="formosaimg">
-        <h2>Formosa</h2>
-        <h3>フォルモサ (麗しの島)</h3>
-      </div>
-      <img src="top/image/intro_img01.jpg" alt="フォルモサ上部" class="introimg">
-    </section>
-
-    <section id="Formosa2">
-      <p>フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
-      <img src="top/image/intro_img02.jpg" alt="フォルモサ下部" class="introimg" id="intro2img">
-    </section>
-
-
-
-    <section id="section2">
-      <!-- 見出し 共有変更場所----------------------------->
-      <div id="Midashiimg"></div>
-      <h2 id="Midashi">Gallery <span>ギャラリー</span></h2>
-      <!-- ------------------------------------------------ -->
-      <!-- ここにスライドショー 作成する-->
-      <div class="imgBox">
-        <div id="sildeflex">
-          <img src="top/image/gall_slider_01.jpg" alt="" id="main_images" />
-          <img src="top/image/gall_slider_02.jpg" alt="" id="main_images2"/>
-          <img src="top/image/gall_slider_03.jpg" alt="" id="main_images3" />
+  
+    <main>
+      <section id="Formosa1">
+        <!-- formasa -->
+        <div class="formosaflex">
+          <div class="leftitem">
+            <img src="common/image/taiwankokki.svg" alt="フォルモサ国旗" id="formosaimg">
+            <h2>Formosa</h2>
+            <h3>フォルモサ (麗しの島)</h3>
+          </div>
+          <img src="top/image/intro_img01.jpg" alt="フォルモサ上部" class="introimg">
         </div>
-        <div class="btnBox">
-          <a href="javascript:void(0)" id="prev" ></a>
-          <a href="javascript:void(0)" id="btn1" onclick="buttonClick1()" class="now"></a>
-          <a href="javascript:void(0)" id="btn2" onclick="buttonClick2()"></a>
-          <a href="javascript:void(0)" id="btn3" onclick="buttonClick3()"></a>
-          <a href="javascript:void(0)" id="btn4" onclick="buttonClick4()"></a>
-          <a href="javascript:void(0)" id="btn5" onclick="buttonClick5()"></a>
-          <a href="javascript:void(0)" id="next" ></a>
+      </section>
+      <div id="Formosa2">
+        <div class="formosaflex2">
+          <p>フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
+          <img src="top/image/intro_img02.jpg" alt="フォルモサ下部" class="introimg" id="intro2img">
         </div>
       </div>
-      <!-- <div id="image-box">
-        <img src="top/image/gall_slider_01.jpg" alt="" id="main_images">
-        </div>
-        <div class="prevnext">
-          <div id="prev" class="btn"></div>
-         <div id="next" class="btn"></div>
-        </div>
-      <div class="navs">
-        <div id="one" class="nowi" onclick="btn1()"></div>
-        <div id="two"  onclick="btn2()"></div>
-        <div id="three" onclick="btn3()"></div>   
-        <div id="four" onclick="btn4()"></div>
-        <div id="five" onclick="btn5()"></div>
-      </div> -->
-    </section>
-
-    <section id="section3">
-      <div id="Midashiimg2"></div>
-      <h2 id="Midashi2">Travel <span>おすすめスポット</span></h2>
-
-      <div id="section3flex">
-        <p>訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介します。様々な風景に誰もが魅了されるでしょう。</p>
-        <div id="p">
-          <div id="images">
-            <img src="top/image/travel_map.svg" alt="" id="map">
-            <a href=""><img src="top/image/taipei_bt_img.svg" alt="" id="taipei"></a>
-            <a href=""><img src="top/image/taichung_bt_img.svg" alt="" id="taityun"></a>
-            <a href=""><img src="top/image/tainan_bt_img.svg" alt="" id="tainan"></a>
+      <section id="section2">
+        <!-- 見出し 共有変更場所----------------------------->
+        <div id="Midashiimg"></div>
+        <h2 id="Midashi">Gallery <span>ギャラリー</span></h2>
+        <!-- ------------------------------------------------ -->
+        <!-- ここにスライドショー 作成する-->
+        <div class="imgBox">
+          <div id="sildeflex">
+            <img src="top/image/gall_slider_01.jpg" alt="" id="main_images" >
+            <img src="top/image/gall_slider_02.jpg" alt="" id="main_images2" >
+            <img src="top/image/gall_slider_03.jpg" alt="" id="main_images3" >
+          </div>
+          <div class="btnBox">
+            <a href="javascript:void(0)" id="prev"></a>
+            <a href="javascript:void(0)" id="btn1" onclick="buttonClick1()" class="now"></a>
+            <a href="javascript:void(0)" id="btn2" onclick="buttonClick2()"></a>
+            <a href="javascript:void(0)" id="btn3" onclick="buttonClick3()"></a>
+            <a href="javascript:void(0)" id="btn4" onclick="buttonClick4()"></a>
+            <a href="javascript:void(0)" id="btn5" onclick="buttonClick5()"></a>
+            <a href="javascript:void(0)" id="next"></a>
           </div>
         </div>
-      </div>
-
-    </section>
-
-    <section id="section4">
-      <!-- Event -->
-      <div id="Midashiimg3"></div>
-      <h2 id="Midashi3">Event <span>おすすめイベント</span></h2>
-      <section id="rantan">
-        <h3>台湾ランタンフェスティバル</h3>
-        <div class="section4flex">
-          <img src="top/image/event01_img.jpg" alt="ランタンフェス画像" class="eventimg">
-          <div class="item">
-            <h4>開催期間</h4>
-            <p class="setumei1">春節 旧暦元日 (2月24日~3月2日)</p>
-            <p class="setumei2">春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。</p>
+        <!-- <div id="image-box">
+          <img src="top/image/gall_slider_01.jpg" alt="" id="main_images">
+          </div>
+          <div class="prevnext">
+            <div id="prev" class="btn"></div>
+           <div id="next" class="btn"></div>
+          </div>
+        <div class="navs">
+          <div id="one" class="nowi" onclick="btn1()"></div>
+          <div id="two"  onclick="btn2()"></div>
+          <div id="three" onclick="btn3()"></div>
+          <div id="four" onclick="btn4()"></div>
+          <div id="five" onclick="btn5()"></div>
+        </div> -->
+      </section>
+      <section id="section3">
+        <div id="Midashiimg2"></div>
+        <h2 id="Midashi2">Travel <span>おすすめスポット</span></h2>
+        <div id="section3flex">
+          <p>訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介します。様々な風景に誰もが魅了されるでしょう。</p>
+          <div id="p">
+            <div id="images">
+              <img src="top/image/travel_map.svg" alt="" id="map">
+              <a href=""><img src="top/image/taipei_bt_img.svg" alt="" id="taipei"></a>
+              <a href=""><img src="top/image/taichung_bt_img.svg" alt="" id="taityun"></a>
+              <a href=""><img src="top/image/tainan_bt_img.svg" alt="" id="tainan"></a>
+            </div>
           </div>
         </div>
       </section>
-
-      <section id="countdown">
-        <h3>台北最High新年城<br>
-          カウントダウンパーティー</h3>
-        <div class="section4flex">
-          <img src="top/image/event02_img.jpg" alt="カウントダウンパーティー" id="eventimg2">
-          <div class="item">
-            <h4>開催期間</h4>
-            <p class="setumei1">12月31日~1月1日</p>
-            <p class="setumei2">台北101では毎年、元旦0時から約3分間、ビルを覆い尽くすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
+      <section id="section4">
+        <!-- Event -->
+        <div id="Midashiimg3"></div>
+        <h2 id="Midashi3">Event <span>おすすめイベント</span></h2>
+        <section id="rantan">
+          <h3>台湾ランタンフェスティバル</h3>
+          <div class="section4flex">
+            <img src="top/image/event01_img.jpg" alt="ランタンフェス画像" class="eventimg">
+            <div class="item">
+              <h4>開催期間</h4>
+              <p class="setumei1">春節 旧暦元日 (2月24日~3月2日)</p>
+              <p class="setumei2">春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。</p>
+            </div>
           </div>
+        </section>
+        <section id="countdown">
+          <h3>台北最High新年城<br>
+            カウントダウンパーティー</h3>
+          <div class="section4flex">
+            <img src="top/image/event02_img.jpg" alt="カウントダウンパーティー" id="eventimg2">
+            <div class="item">
+              <h4>開催期間</h4>
+              <p class="setumei1">12月31日~1月1日</p>
+              <p class="setumei2">台北101では毎年、元旦0時から約3分間、ビルを覆い尽くすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="section5">
+        <!-- 台湾基本情報 -->
+        <div id="Midashiimg4"></div>
+        <h2>台湾基本情報</h2>
+        <div class="section5border">
+          <ul>
+            <li>■国名:中華民国・台湾</li>
+            <li>■首都:台北</li>
+            <li>■人口:約2,300</li>
+            <li>■面積:約3万6,000㎢</li>
+            <li>■人種・民族:漢民族、先住民</li>
+            <li>■宗教:仏教、道教、キリスト教、その他</li>
+            <li>■言語:北京語、台湾語</li>
+            <li>■通貨:元(ニュー台湾ドル)</li>
+            <li>■時差1時間</li>
+            <li>■台湾の気候:服装:
+              <br>亜熱帯に属し一年を通じて温暖な台湾。しかし北回帰線から南は熱帯で熱く、北部は大陸性気候の
+              影響を受けて冷え込むこともあります。地域差を考慮して服装を準備しましょう。
+            </li>
+          </ul>
+          <table>
+            <thead id="theade">■台湾の祝祭日:</thead>
+            <tbody>
+              <tr>
+                <td>正月</td>
+                <td>1月1日</td>
+              </tr>
+              <tr>
+                <td>端午節</td>
+                <td>6月22日</td>
+              </tr>
+              <tr>
+                <td>春節</td>
+                <td>1月20日~1月29日</td>
+              </tr>
+              <tr>
+                <td>中秋節</td>
+                <td>9月29日</td>
+              </tr>
+              <tr>
+                <td>平和記念日</td>
+                <td>2月28日</td>
+              </tr>
+              <tr>
+                <td>国慶節</td>
+                <td>10月10日</td>
+              </tr>
+              <tr>
+                <td>清明節</td>
+                <td>4月5日</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
-    </section>
-
-    <section id="section5">
-      <!-- 台湾基本情報 -->
-      <div id="Midashiimg4"></div>
-      <h2>台湾基本情報</h2>
-      <div class="section5border">
-      <ul>
-        <li>■国名:中華民国・台湾</li>
-        <li>■首都:台北</li>
-        <li>■人口:約2,300</li>
-        <li>■面積:約3万6,000㎢</li>
-        <li>■人種・民族:漢民族、先住民</li>
-        <li>■宗教:仏教、道教、キリスト教、その他</li>
-        <li>■言語:北京語、台湾語</li>
-        <li>■通貨:元(ニュー台湾ドル)</li>
-        <li>■時差1時間</li>
-        <li>■台湾の気候:服装:
-          <br>亜熱帯に属し一年を通じて温暖な台湾。しかし北回帰線から南は熱帯で熱く、北部は大陸性気候の
-          影響を受けて冷え込むこともあります。地域差を考慮して服装を準備しましょう。
-        </li>
-      </ul>
-      <table>
-        <p id="theade">■台湾の祝祭日:</p>
-        <tbody>
-          <tr>
-            <td>正月</td>
-            <td>1月1日</td>
-          </tr>
-          <tr>
-            <td>端午節</td>
-            <td>6月22日</td>
-          </tr>
-          <tr>
-            <td>春節</td>
-            <td>1月20日~1月29日</td>
-          </tr>
-          <tr>
-            <td>中秋節</td>
-            <td>9月29日</td>
-          </tr>
-          <tr>
-            <td>平和記念日</td>
-            <td>2月28日</td>
-          </tr>
-          <tr>
-            <td>国慶節</td>
-            <td>10月10日</td>
-          </tr>
-          <tr>
-            <td>清明節</td>
-            <td>4月5日</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    </section>
-  </main>
+    </main>
+  
 
   <footer>
 
