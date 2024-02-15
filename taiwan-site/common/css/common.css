@@ -834,6 +834,9 @@ footer small {
     height: 100px;
   }
 
+  footer ul {
+    margin-left: 2%;
+  }
   .snslink {
     display: inline;
   }

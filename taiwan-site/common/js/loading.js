@@ -14,6 +14,6 @@ window.addEventListener('load', () => {
   setTimeout(function () {
     //ローディング要素にhideクラスを付与
     loading.classList.add('hide');
-  }, 500);
+  }, 1500);
 });
 

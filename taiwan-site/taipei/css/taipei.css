@@ -59,7 +59,7 @@ html {
 }
 
 .pagetop {
-  position: static;
+  position: fixed;
 }
 
 /* -----main----- */
