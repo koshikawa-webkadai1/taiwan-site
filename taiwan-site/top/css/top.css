@@ -423,7 +423,11 @@ main {
 
 @media screen and (min-width: 767px) {
 
-
+  .pc-kasou {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #00FFF0;
+  }
 
 
   /* header調整 */
@@ -441,7 +445,7 @@ main {
 
   header div.kasou div img.header-rogo2 {
     width: 57%;
-    margin: 180px 0 0 20%;
+    margin: 180px 0 244px 20%;
   }
 
   /* section1 */
@@ -899,7 +903,7 @@ main {
   }
 
   #theade {
-    font-size: 20px;
+    font-size: 230px;
     line-height: 32px;
   }
 

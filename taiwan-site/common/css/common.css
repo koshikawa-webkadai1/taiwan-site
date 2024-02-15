@@ -22,55 +22,55 @@ div.pc-kasou {
 /* ローディング***javascriptのパターンのcss */
 /* *********************************************** */
 
-/* .loading { */
-/* background-color: #0180BE; */
-/* width: 100vw; */
-/* height: 100vh; */
-/* position: fixed; */
-/* top: 0; */
-/* left: 0; */
-/* z-index: 1000; */
-/* display: flex; */
-/* align-items: center; */
-/* justify-content: center; */
-/* } */
+.loading {
+  background-color: #0180BE;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* .loading img { */
-/* width: 287px; */
-/* position: absolute; */
-/* top: 50%; */
-/* left: 50%; */
-/* margin: 0 auto; */
-/* opacity: 0;
-  transform: translate(-50%, -50%); */
-/* animation: img_fade 2.0s 0.5s forwards; */
-/* } */
+.loading img {
+  width: 287px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: img_fade 2.0s 0.5s forwards;
+}
 
-/* @keyframes img_fade { */
-/* 0% { */
-/* opacity: 0; */
-/* } */
+@keyframes img_fade {
+  0% {
+    opacity: 0;
+  }
 
-/* 60% { */
-/* opacity: 1; */
-/* } */
+  60% {
+    opacity: 1;
+  }
 
-/* 100% { */
-/* opacity: 0; */
-/* } */
-/* } */
+  100% {
+    opacity: 0;
+  }
+}
 
 /* ローディングが終わったらhideクラスを付与 */
-/* .loading.hide { */
-/* opacity: 0; */
-/* pointer-events: none; */
-/* transition: opacity 2000ms; */
-/* } */
+.loading.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2000ms;
+}
 
-/* ローディングpc */
-/* .loading img { */
-/* width: 318px; */
-/* } */
+/* ローディングpc  */
+.loading img {
+  width: 318px;
+}
 
 /* *********************************************** */
 
@@ -697,7 +697,7 @@ footer {
 }
 
 footer ul {
-  margin-left: 31%;
+  margin-left: 2%;
 }
 
 footer li {
@@ -712,11 +712,6 @@ footer li {
   display: none
 }
 
-footer div {
-  justify-content: center;
-  display: flex;
-  width: 100%;
-}
 
 footer .snslink {
   display: block;
@@ -755,7 +750,6 @@ footer small {
 
 footer div {
   justify-content: center;
-  display: flex;
   width: 100%;
 }
 
@@ -784,12 +778,11 @@ footer small {
     margin-bottom: 13px;
     margin-top: 20px;
   }
-  footer ul {
-    margin-left: 7%;
-  }
+
   footer small {
     position: relative;
   }
+
   #footer-tiwandiv {
     display: block;
     width: 20px;
@@ -798,17 +791,20 @@ footer small {
     height: 1px;
     left: 50%
   }
+
   #footer-tiwanicon {
     position: absolute;
     right: -90px;
     bottom: 0px;
   }
+
   #footer-snsdiv {
     position: relative;
     height: 14px;
     left: 99%;
     width: 0.2px;
   }
+
   footer #snslink1 {
     position: absolute;
     display: inline;
@@ -834,12 +830,12 @@ footer small {
     width: 100%;
     height: 100px;
   }
+
   .snslink {
     display: inline;
   }
-  footer ul {
-    margin-left: 7%;
-  }
+
+
   footer li {
     width: 26%;
   }
