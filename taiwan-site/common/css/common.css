@@ -14,7 +14,6 @@ div.pc-kasou {
   div.pc-kasou {
     max-width: 1200px;
     margin: 0 auto;
-    border: 2px solid #00FFF0;
   }
 }
 
@@ -88,7 +87,7 @@ div.pc-kasou {
 /* ローディング***javascriptのパターンのcss */
 /* *********************************************** */
 
-/* .loading {
+.loading {
   background-color: #0180BE;
   width: 100vw;
   height: 100vh;
@@ -110,7 +109,7 @@ div.pc-kasou {
   opacity: 0;
   transform: translate(-50%, -50%);
   animation: img_fade 2.0s 0.5s forwards;
-} */
+}
 
 @keyframes img_fade {
   0% {

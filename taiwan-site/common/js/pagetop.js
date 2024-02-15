@@ -5,7 +5,7 @@
 
 jQuery(function () {
 
-  var footer = $('.kasou-main').innerHeight(); // footerの高さを取得
+  var footer = $('main').innerHeight(); // footerの高さを取得
 
   window.onscroll = function () {
     var point = window.pageYOffset; // 現在のスクロール地点 
