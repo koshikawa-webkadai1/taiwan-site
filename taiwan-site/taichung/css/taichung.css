@@ -1,6 +1,19 @@
 @charset "UTF-8";
 
 
+/* TOP-otamesi  */
+/* header div.kasou div img.header-rogo2 { */
+/* width: 65%; */
+/* 780/1200=0.65 */
+
+/* margin-top: ???; */
+
+/* margin-bottom: 16%; */
+/* 116/710.91=0.163 */
+/* 116⇒開けたいスペースの高さ(ｐ要素の高さ) */
+/* 710.91⇒(ｐ要素の親要素の高さ) */
+/* } */
+
 /* --------------------main-------------------- */
 main div.kasou-main {
     text-align: center;
@@ -230,9 +243,9 @@ section.sweets div#grid img#sweets-set {
         margin-bottom: 0px;
     }
 
-    main div.kasou-main div.text-align-change {
-        text-align: none;
-    }
+    /* main div.kasou-main div.text-align-change { */
+    /* } */
+
 
 
     /* -----------------見出し 共有-------------------------------------*/
@@ -240,7 +253,9 @@ section.sweets div#grid img#sweets-set {
     .Midashi {
         font-size: 48px;
         text-align: left;
-        margin-left: 16%;
+
+        margin-left: 8%;
+
         margin-bottom: 48px;
     }
 
@@ -254,7 +269,7 @@ section.sweets div#grid img#sweets-set {
 
 
         /* 見出しの基準位置変更場所％で指定してください------- */
-        left: 16%;
+        left: 9%;
         /* --------------------------------------------------- */
     }
 
@@ -410,8 +425,6 @@ section.sweets div#grid img#sweets-set {
 
     section.museum div#museum img {
         margin-bottom: 20px;
-        height: 15vw;
-        /* 270/1755=0.15 */
         object-fit: cover;
         width: 100%;
 

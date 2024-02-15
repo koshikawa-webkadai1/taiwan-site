@@ -281,9 +281,8 @@ section.sweets p#explanation {
     margin-bottom: 0px;
   }
 
-  main div.kasou-main div.text-align-change {
-    text-align: left;
-  }
+  /* main div.kasou-main div.text-align-change { */
+  /* } */
 
 
   /* -----------------見出し 共有-------------------------------------*/
@@ -291,6 +290,7 @@ section.sweets p#explanation {
   .Midashi {
     font-size: 48px;
     text-align: left;
+
     margin-left: 8%;
 
     margin-bottom: 48px;
@@ -359,6 +359,9 @@ section.sweets p#explanation {
     width: 50%;
     font-size: 20px;
     line-height: 32px;
+    text-align: center;
+    height: 8.62%;
+    align-self: center;
   }
 
   .time {
@@ -491,8 +494,6 @@ section.sweets p#explanation {
 
   section.museum div#museum img {
     margin-bottom: 20px;
-    height: 15vw;
-    /* 270/1755=0.15 */
     object-fit: cover;
     width: 100%;
 
