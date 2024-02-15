@@ -18,6 +18,72 @@ div.pc-kasou {
   }
 }
 
+/* ******************* */
+/* ページトップへ戻るボタン */
+/* ******************* */
+.arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #6C6565;
+
+  position: relative;
+  z-index: 100;
+  transition: .3s;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  width: 18px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 4px;
+  background: #fff;
+  position: absolute;
+  right: 12px;
+  top: 20px;
+}
+
+.arrow::before {
+  left: calc(50% - 4px);
+  transform: rotate(45deg);
+}
+
+.arrow::after {
+  right: calc(50% - 4px);
+  transform: rotate(-45deg);
+}
+
+.arrow:hover {
+  background-color: rgba(118, 111, 111, 0.5);
+}
+
+.arrow:hover::before {
+  background: #aaa;
+}
+
+.arrow:hover::after {
+  background: #aaa;
+}
+
+.pagetop {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  display: block;
+  z-index: 101;
+  bottom: 25px;
+  right: 25px;
+}
+
+.is-hidden {
+  visibility: inherit;
+  opacity: 1;
+}
+
+
 /* *********************************************** */
 /* ローディング***javascriptのパターンのcss */
 /* *********************************************** */
@@ -837,6 +903,7 @@ footer small {
   footer ul {
     margin-left: 2%;
   }
+
   .snslink {
     display: inline;
   }
