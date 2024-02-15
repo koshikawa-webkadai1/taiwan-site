@@ -281,9 +281,8 @@ section.sweets p#explanation {
     margin-bottom: 0px;
   }
 
-  main div.kasou-main div.text-align-change {
-    text-align: left;
-  }
+  /* main div.kasou-main div.text-align-change { */
+  /* } */
 
 
   /* -----------------見出し 共有-------------------------------------*/
@@ -291,6 +290,7 @@ section.sweets p#explanation {
   .Midashi {
     font-size: 48px;
     text-align: left;
+
     margin-left: 8%;
 
     margin-bottom: 48px;
