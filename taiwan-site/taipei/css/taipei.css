@@ -9,6 +9,9 @@ html {
 
 /* ---ナビ作成 共通--- */
 /* -----header----- */
+
+/* @media screen and (min-width: 767px) {} */
+
 /* ******************* */
 /* ページトップへ戻るボタン */
 /* ******************* */
@@ -17,9 +20,9 @@ html {
   height: 48px;
   border-radius: 50%;
   background-color: #6C6565;
-  margin: 0 0 0 90%;
+
   position: relative;
-  z-index: 2;
+  z-index: 100;
   transition: .3s;
 }
 
@@ -60,7 +63,25 @@ html {
 
 .pagetop {
   position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  display: block;
+  z-index: 101;
+  bottom: 25px;
+  right: 25px;
 }
+
+.is-hidden {
+  visibility: inherit;
+  opacity: 1;
+}
+
+/* ******************* */
+/* ページトップへ戻るボタン */
+/* ******************* */
+
+
 
 /* -----main----- */
 
@@ -457,11 +478,10 @@ dd {
   height: none;
   /* font-size: none; */
   /* text-align: center; */
+  width: 100%;
+  height: 100%;
 }
 
-#modal-openbutton img {
-  width: auto;
-}
 
 /* --------------------------------------------- */
 .modal {
@@ -471,7 +491,7 @@ dd {
   opacity: 0;
   visibility: hidden;
   text-align: center;
-  z-index: 1000;
+  z-index: 100;
   /* ----------------モーダル背景色変更場所------------------------- */
   background-color: #0180BE;
   /* --------------------------------------------------------------- */
@@ -545,6 +565,7 @@ dd {
 .modal img {
   width: 89.3%;
   margin-bottom: 20px;
+  box-shadow: none;
 }
 
 .modal p {
@@ -592,7 +613,7 @@ dd {
   opacity: 0;
   visibility: hidden;
   text-align: center;
-  z-index: 1000;
+  z-index: 100;
   /* ----------------モーダル背景色変更場所------------------------- */
   background-color: #0180BE;
   /* --------------------------------------------------------------- */
@@ -713,7 +734,7 @@ dd {
   opacity: 0;
   visibility: hidden;
   text-align: center;
-  z-index: 1000;
+  z-index: 100;
   /* ----------------モーダル背景色変更場所------------------------- */
   background-color: #0180BE;
   /* --------------------------------------------------------------- */
@@ -834,7 +855,7 @@ dd {
   opacity: 0;
   visibility: hidden;
   text-align: center;
-  z-index: 1000;
+  z-index: 100;
   /* ----------------モーダル背景色変更場所------------------------- */
   background-color: #0180BE;
   /* --------------------------------------------------------------- */
