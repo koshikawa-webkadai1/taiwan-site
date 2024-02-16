@@ -148,7 +148,7 @@ header div.kasou {
 header div.kasou img.header-rogo1 {
   width: 30%;
   /*111/375= 0.296*/
-  opacity: 45%;
+  /* opacity: 45%; */
 
 }
 
@@ -352,7 +352,7 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
   header div.kasou img.header-rogo1 {
     width: 10%;
     /*140/1366= 0.102*/
-    opacity: 45%;
+    /* opacity: 45%; */
     margin: 20px 0 0 20px;
 
   }
