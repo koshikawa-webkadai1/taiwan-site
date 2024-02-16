@@ -148,7 +148,7 @@ header div.kasou {
 header div.kasou img.header-rogo1 {
   width: 30%;
   /*111/375= 0.296*/
-  opacity: 45%;
+  /* opacity: 45%; */
 
 }
 
@@ -345,7 +345,6 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
     padding: 0px;
     max-width: 1200px;
     margin: 0 auto;
-    border: 2px solid #00FFF0;
     position: relative;
 
   }
@@ -353,7 +352,7 @@ nav input.menu-botan:checked~label.menu-icon span.nav-icon::after {
   header div.kasou img.header-rogo1 {
     width: 10%;
     /*140/1366= 0.102*/
-    opacity: 45%;
+    /* opacity: 45%; */
     margin: 20px 0 0 20px;
 
   }
@@ -501,7 +500,7 @@ main div.kasou-main img.pc {
 
 @media screen and (min-width: 767px) {
 
-  div.pc-kasou {}
+
 
   main {
     margin: 20px 20px;

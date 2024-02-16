@@ -426,13 +426,12 @@ main {
   .pc-kasou {
     max-width: 1200px;
     margin: 0 auto;
-    border: 2px solid #00FFF0;
   }
-
 
   /* header調整 */
   header {
     height: 768px;
+    padding-top: 30px;
   }
 
   .header-rogo1 {
@@ -440,7 +439,12 @@ main {
   }
 
   header div.kasou img.header-rogo1 {
+    margin: 20px 0 0 90px;
     opacity: 100%;
+  }
+
+  a div.nav {
+    margin: 0 0 0;
   }
 
   header div.kasou div img.header-rogo2 {
