@@ -10,7 +10,7 @@ html {
 /* ---ナビ作成 共通--- */
 /* -----header----- */
 
-/* @media screen and (min-width: 767px) {} */
+
 
 /* ******************* */
 /* ページトップへ戻るボタン */
@@ -77,45 +77,6 @@ html {
   opacity: 1;
 }
 
-/* ******************* */
-/* ページトップへ戻るボタンpc */
-/* ******************* */
-@media screen and (min-width: 767px) {
-  .arrow {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #6C6565;
-
-    position: relative;
-    z-index: 100;
-    transition: .3s;
-  }
-
-  .arrow::before,
-  .arrow::after {
-    content: "";
-    width: 36px;
-    height: 10px;
-    display: inline-block;
-    border-radius: 8px;
-    background: #fff;
-    position: absolute;
-    right: 24px;
-    top: 40px;
-  }
-
-  .arrow::before {
-    left: calc(50% - 8px);
-    transform: rotate(45deg);
-  }
-
-  .arrow::after {
-    right: calc(50% - 8px);
-    transform: rotate(-45deg);
-  }
-
-}
 
 /* -----main----- */
 
@@ -135,7 +96,14 @@ main nav ul {
 }
 
 /* **************************************************** */
+h2 {
 
+  margin-top: 40px;
+}
+
+h3 {
+  margin-top: 40px;
+}
 
 /* -----------------見出し 共有sp-------------------------------------*/
 /* 疑似要素の親 */
@@ -213,6 +181,7 @@ main div.kasou-main img {
 
 .attraction p.point {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .time {
