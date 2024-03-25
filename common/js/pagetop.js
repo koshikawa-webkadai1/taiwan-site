@@ -9,6 +9,7 @@ jQuery(function () {
 
   window.onscroll = function () {
     var point = window.pageYOffset; // 現在のスクロール地点 
+    console.log(window.pageYOffset)
     var docHeight = $(document).height(); // ドキュメントの高さ
     var dispHeight = $(window).height(); // 表示領域の高さ
 
